@@ -1,0 +1,574 @@
+{
+  "asset_id": "AN02",
+  "form": "elf",
+  "action": "attack",
+  "canvas": [
+    512,
+    512
+  ],
+  "fps": 24,
+  "frame_index_base": 0,
+  "frame_count": 12,
+  "duration_seconds": 0.5,
+  "loop": false,
+  "pivot": {
+    "origin": "top_left",
+    "xy": [
+      256,
+      448
+    ]
+  },
+  "events": [
+    {
+      "name": "visual_hit",
+      "frame_index": 4,
+      "time_seconds": 0.16666666666666666,
+      "scope": "visual_only"
+    }
+  ],
+  "end_action": "idle",
+  "alpha": "straight",
+  "color_space": "sRGB",
+  "source_frame_indices": [
+    0,
+    24,
+    40,
+    76,
+    80,
+    84,
+    88,
+    96,
+    104,
+    112,
+    120,
+    123
+  ],
+  "source_layout": {
+    "kind": "canonical",
+    "canvas": [
+      512,
+      512
+    ],
+    "pivot": [
+      256,
+      448
+    ]
+  },
+  "detached_projectiles": [
+    {
+      "frame_index": 4,
+      "source_index": 80,
+      "file": "projectiles/layer_004.png",
+      "source_components": [
+        {
+          "bbox": [
+            398,
+            216,
+            76,
+            5
+          ],
+          "threshold_area": 299
+        }
+      ],
+      "note": "已观测独立箭层，可能在源画布边界截断，不是完整可复用箭设计"
+    }
+  ],
+  "frames": [
+    {
+      "file": "frames/attack_000.png",
+      "source_index": 0,
+      "index": 0,
+      "page": 0,
+      "rect": [
+        3,
+        3,
+        221,
+        282
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        175,
+        167
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/attack_001.png",
+      "source_index": 24,
+      "index": 1,
+      "page": 0,
+      "rect": [
+        228,
+        3,
+        229,
+        297
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        179,
+        168
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/attack_002.png",
+      "source_index": 40,
+      "index": 2,
+      "page": 0,
+      "rect": [
+        461,
+        3,
+        289,
+        323
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        172,
+        126
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/attack_003.png",
+      "source_index": 76,
+      "index": 3,
+      "page": 0,
+      "rect": [
+        754,
+        3,
+        229,
+        320
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        179,
+        129
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/attack_004.png",
+      "source_index": 80,
+      "index": 4,
+      "page": 0,
+      "rect": [
+        987,
+        3,
+        333,
+        324
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        179,
+        125
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/attack_005.png",
+      "source_index": 84,
+      "index": 5,
+      "page": 0,
+      "rect": [
+        1324,
+        3,
+        202,
+        315
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        178,
+        134
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/attack_006.png",
+      "source_index": 88,
+      "index": 6,
+      "page": 0,
+      "rect": [
+        1530,
+        3,
+        201,
+        283
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        175,
+        166
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/attack_007.png",
+      "source_index": 96,
+      "index": 7,
+      "page": 0,
+      "rect": [
+        1735,
+        3,
+        224,
+        282
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        172,
+        167
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/attack_008.png",
+      "source_index": 104,
+      "index": 8,
+      "page": 0,
+      "rect": [
+        3,
+        331,
+        221,
+        282
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        175,
+        167
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/attack_009.png",
+      "source_index": 112,
+      "index": 9,
+      "page": 0,
+      "rect": [
+        228,
+        331,
+        221,
+        282
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        175,
+        167
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/attack_010.png",
+      "source_index": 120,
+      "index": 10,
+      "page": 0,
+      "rect": [
+        453,
+        331,
+        221,
+        282
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        175,
+        167
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/attack_011.png",
+      "source_index": 123,
+      "index": 11,
+      "page": 0,
+      "rect": [
+        678,
+        331,
+        221,
+        282
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        175,
+        167
+      ],
+      "rotated": false
+    }
+  ],
+  "atlas": {
+    "pages": [
+      "atlas/page_00.png"
+    ],
+    "regions": [
+      {
+        "index": 0,
+        "page": 0,
+        "rect": [
+          3,
+          3,
+          221,
+          282
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          175,
+          167
+        ],
+        "rotated": false
+      },
+      {
+        "index": 1,
+        "page": 0,
+        "rect": [
+          228,
+          3,
+          229,
+          297
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          179,
+          168
+        ],
+        "rotated": false
+      },
+      {
+        "index": 2,
+        "page": 0,
+        "rect": [
+          461,
+          3,
+          289,
+          323
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          172,
+          126
+        ],
+        "rotated": false
+      },
+      {
+        "index": 3,
+        "page": 0,
+        "rect": [
+          754,
+          3,
+          229,
+          320
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          179,
+          129
+        ],
+        "rotated": false
+      },
+      {
+        "index": 4,
+        "page": 0,
+        "rect": [
+          987,
+          3,
+          333,
+          324
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          179,
+          125
+        ],
+        "rotated": false
+      },
+      {
+        "index": 5,
+        "page": 0,
+        "rect": [
+          1324,
+          3,
+          202,
+          315
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          178,
+          134
+        ],
+        "rotated": false
+      },
+      {
+        "index": 6,
+        "page": 0,
+        "rect": [
+          1530,
+          3,
+          201,
+          283
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          175,
+          166
+        ],
+        "rotated": false
+      },
+      {
+        "index": 7,
+        "page": 0,
+        "rect": [
+          1735,
+          3,
+          224,
+          282
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          172,
+          167
+        ],
+        "rotated": false
+      },
+      {
+        "index": 8,
+        "page": 0,
+        "rect": [
+          3,
+          331,
+          221,
+          282
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          175,
+          167
+        ],
+        "rotated": false
+      },
+      {
+        "index": 9,
+        "page": 0,
+        "rect": [
+          228,
+          331,
+          221,
+          282
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          175,
+          167
+        ],
+        "rotated": false
+      },
+      {
+        "index": 10,
+        "page": 0,
+        "rect": [
+          453,
+          331,
+          221,
+          282
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          175,
+          167
+        ],
+        "rotated": false
+      },
+      {
+        "index": 11,
+        "page": 0,
+        "rect": [
+          678,
+          331,
+          221,
+          282
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          175,
+          167
+        ],
+        "rotated": false
+      }
+    ],
+    "page_size": [
+      2048,
+      2048
+    ],
+    "spacing": 2,
+    "extrude": 1,
+    "alpha": "straight",
+    "texture_bytes": 16777216
+  },
+  "untrimmed_rgba_bytes": 12582912
+}

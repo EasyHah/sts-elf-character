@@ -1,0 +1,84 @@
+{
+  "batch": "B2-B5",
+  "design": "cards-relics-design.md v4",
+  "plan": "art-production-plan.md",
+  "workflow": {
+    "based_on": "sts1-art-pipeline/production-tools/elf_production.py highres() graph",
+    "unet": "qwen_image_2.1_int8_convrot.safetensors",
+    "clip": [
+      "qwen3vl_8b_int8_convrot.safetensors",
+      "qwen_image"
+    ],
+    "vae": "qwen_image_2.1_vae_bf16.safetensors",
+    "encoder": "TextEncodeQwenImage21",
+    "resolution": 0,
+    "negative_prompt": "",
+    "sampler": {
+      "steps": 25,
+      "cfg": 3.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    },
+    "latent": "encoder output #2 (size of image1)",
+    "comfy": "http://127.0.0.1:8188 (engine ComfyUI of WalkingwithAI-Studio)"
+  },
+  "counts": {
+    "1": 360,
+    "2": 159
+  },
+  "jobs": [
+    {
+      "id": "Vigil_icon__v2",
+      "round": 3,
+      "kind": "power_icon",
+      "card_type": null,
+      "face": null,
+      "size": [
+        1024,
+        1024
+      ],
+      "images": {},
+      "prompt": "Draw ONE isolated painterly 2D fantasy roguelike inventory icon, readable at 64 pixels: broad simple shapes, strong dark warm-brown contour, restrained shading, crisp silhouette, object within the central 72 percent. PURE WHITE background, no shadow, no platform, no frame, no text, letters, runes, numbers, hands, people or duplicate object. Object only, no people, no character, no figure, no silhouette of a person. Subject: a small golden lantern with a warm flame. Must read clearly at 32 pixels; very few shapes.",
+      "post": "BiRefNet matting (birefnet.safetensors)",
+      "runtime": [
+        "powers/large/Vigil.png (84)",
+        "powers/Vigil.png (32, local)"
+      ],
+      "seeds": [
+        40910000,
+        40910001,
+        40910002,
+        40910003
+      ],
+      "candidates": 4,
+      "out_dir": "/workspace/sts1-art-pipeline/elf-art/Vigil_icon__v2"
+    },
+    {
+      "id": "Afterglow_icon__v2",
+      "round": 3,
+      "kind": "power_icon",
+      "card_type": null,
+      "face": null,
+      "size": [
+        1024,
+        1024
+      ],
+      "images": {},
+      "prompt": "Draw ONE isolated painterly 2D fantasy roguelike inventory icon, readable at 64 pixels: broad simple shapes, strong dark warm-brown contour, restrained shading, crisp silhouette, object within the central 72 percent. PURE WHITE background, no shadow, no platform, no frame, no text, letters, runes, numbers, hands, people or duplicate object. Object only, no people, no character, no figure, no silhouette of a person. Subject: a half sun sinking behind a violet horizon line. Must read clearly at 32 pixels; very few shapes.",
+      "post": "BiRefNet matting (birefnet.safetensors)",
+      "runtime": [
+        "powers/large/Afterglow.png (84)",
+        "powers/Afterglow.png (32, local)"
+      ],
+      "seeds": [
+        40911000,
+        40911001,
+        40911002,
+        40911003
+      ],
+      "candidates": 4,
+      "out_dir": "/workspace/sts1-art-pipeline/elf-art/Afterglow_icon__v2"
+    }
+  ]
+}

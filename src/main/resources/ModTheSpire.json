@@ -1,0 +1,14 @@
+{
+  "modid": "${modID}",
+  "name": "Elf Prototype",
+  "version": "${project.version}",
+  "author_list": [
+    "${author}"
+  ],
+  "description": "Elf character prototype (design v4): light / cursed card faces, erode, auto seal, chime, backlash. Starter deck and relic only. Also keeps the optional PNG test skin for one vanilla character. Console: elf help",
+  "sts_version": "${sts.version}",
+  "mts_version": "${mts.version}",
+  "dependencies": [
+    "basemod"
+  ]
+}

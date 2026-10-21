@@ -1,0 +1,37 @@
+[
+  {
+    "PROPER_NAME": "侵蚀",
+    "NAMES": [
+      "侵蚀"
+    ],
+    "DESCRIPTION": "将光面牌翻成蚀面。蚀面更强，打出后自动 #y封印 并回到手牌；回合结束仍在手中会 #y反噬 。"
+  },
+  {
+    "PROPER_NAME": "封印",
+    "NAMES": [
+      "封印"
+    ],
+    "DESCRIPTION": "将蚀面牌翻回光面。"
+  },
+  {
+    "PROPER_NAME": "翻面",
+    "NAMES": [
+      "翻面"
+    ],
+    "DESCRIPTION": "#y侵蚀 或 #y封印 一张牌。每次翻面使本回合 #y咒鸣 +1。"
+  },
+  {
+    "PROPER_NAME": "咒鸣",
+    "NAMES": [
+      "咒鸣"
+    ],
+    "DESCRIPTION": "本回合翻面的次数。精灵卡牌每段伤害和获得的 #y格挡 加上 咒鸣 。"
+  },
+  {
+    "PROPER_NAME": "反噬",
+    "NAMES": [
+      "反噬"
+    ],
+    "DESCRIPTION": "回合结束时，手中每张蚀面牌使你失去 #b2 点生命。"
+  }
+]

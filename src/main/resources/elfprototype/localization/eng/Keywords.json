@@ -1,0 +1,40 @@
+[
+  {
+    "PROPER_NAME": "Erode",
+    "NAMES": [
+      "erode",
+      "eroded"
+    ],
+    "DESCRIPTION": "Flip a light card to its cursed face. Cursed faces are stronger, #ySeal themselves after being played and return to hand, and #yBacklash if still in hand at end of turn."
+  },
+  {
+    "PROPER_NAME": "Seal",
+    "NAMES": [
+      "seal",
+      "sealed"
+    ],
+    "DESCRIPTION": "Flip a cursed card back to its light face."
+  },
+  {
+    "PROPER_NAME": "Flip",
+    "NAMES": [
+      "flip",
+      "flipped"
+    ],
+    "DESCRIPTION": "#yErode or #ySeal a card. Each flip adds 1 #yChime this turn."
+  },
+  {
+    "PROPER_NAME": "Chime",
+    "NAMES": [
+      "chime"
+    ],
+    "DESCRIPTION": "Flips this turn. Elf cards deal + Chime damage per hit and gain + Chime #yBlock."
+  },
+  {
+    "PROPER_NAME": "Backlash",
+    "NAMES": [
+      "backlash"
+    ],
+    "DESCRIPTION": "At end of turn, lose #b2 HP for each cursed card in your hand."
+  }
+]

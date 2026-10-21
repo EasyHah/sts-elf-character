@@ -1,0 +1,252 @@
+{
+  "batch": "B1",
+  "design": "cards-relics-design.md v4",
+  "plan": "art-production-plan.md",
+  "workflow": {
+    "based_on": "sts1-art-pipeline/production-tools/elf_production.py highres() graph",
+    "unet": "qwen_image_2.1_int8_convrot.safetensors",
+    "clip": [
+      "qwen3vl_8b_int8_convrot.safetensors",
+      "qwen_image"
+    ],
+    "vae": "qwen_image_2.1_vae_bf16.safetensors",
+    "encoder": "TextEncodeQwenImage21",
+    "resolution": 0,
+    "negative_prompt": "",
+    "sampler": {
+      "steps": 25,
+      "cfg": 3.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    },
+    "latent": "encoder output #2 (size of image1)",
+    "comfy": "http://127.0.0.1:8188 (engine ComfyUI of WalkingwithAI-Studio)"
+  },
+  "rounds": {
+    "1": "light faces, demo-card cursed faces (edit check), relic, icon",
+    "2": "cursed faces of the four starter cards from the chosen round-1 light faces"
+  },
+  "jobs": [
+    {
+      "id": "ChargedShot_cursed__A_ref",
+      "round": 9,
+      "kind": "card",
+      "card_type": "attack",
+      "face": "dark",
+      "candidates": 4,
+      "seeds": [
+        30001000,
+        30001001,
+        30001002,
+        30001003
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/ChargedShot_cursed",
+      "runtime": [
+        "cards/attack/ChargedShot_cursed_p.png (500x380)",
+        "cards/attack/ChargedShot_cursed.png (250x190)"
+      ],
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/sts1-art-pipeline/elf-production-v1/ChargedShot_opaque_source.png",
+          "prepare": "as is (1024x768)"
+        },
+        "image_2": {
+          "path": "/workspace/character-pipeline-h3/character_studio/runs/qwen_final/designs/dark/clean/ready_qwen.png",
+          "prepare": "as is (768x768)"
+        }
+      },
+      "prompt": "Edit <image1>. Keep EXACTLY the same camera, framing, composition, pose, body position and background layout of <image1>. Same crop and scale as <image1>: her head, shoulders and hands stay at the same position and size in the frame; do NOT zoom out, do NOT show more of her body than <image1> shows. Use <image2> only as the costume and weapon design. Turn the elf into her cursed dark side: violet hood, dark leather and steel armor, purple cloak, braid with a violet sheen, TWIN curved silver blades, one in each hand; her face, cheek marking, ears and braid stay recognisably the same person. Replace any bow or arrows with the twin blades. Shift the palette to deep violet, black, cold silver and a magenta curse glow, darken the background toward dusk, add thin dark curse smoke. The bow is gone: in the same stance she holds the twin curved blades drawn back ready to strike, a crescent moon behind her, three violet arcs trailing the blades. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. No text, labels, logos, watermark, frame, card border or interface. Only one character."
+    },
+    {
+      "id": "ChargedShot_cursed__B_text",
+      "round": 9,
+      "kind": "card",
+      "card_type": "attack",
+      "face": "dark",
+      "candidates": 4,
+      "seeds": [
+        30001100,
+        30001101,
+        30001102,
+        30001103
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/ChargedShot_cursed",
+      "runtime": [
+        "cards/attack/ChargedShot_cursed_p.png (500x380)",
+        "cards/attack/ChargedShot_cursed.png (250x190)"
+      ],
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/sts1-art-pipeline/elf-production-v1/ChargedShot_opaque_source.png",
+          "prepare": "as is (1024x768)"
+        }
+      },
+      "prompt": "Edit <image1>. Keep EXACTLY the same camera, framing, composition, pose, body position and background layout of <image1>. Same crop and scale as <image1>: her head, shoulders and hands stay at the same position and size in the frame; do NOT zoom out, do NOT show more of her body than <image1> shows. Turn the elf into her cursed dark side: violet hood, dark leather and steel armor, purple cloak, braid with a violet sheen, TWIN curved silver blades, one in each hand; her face, cheek marking, ears and braid stay recognisably the same person. Replace any bow or arrows with the twin blades. Shift the palette to deep violet, black, cold silver and a magenta curse glow, darken the background toward dusk, add thin dark curse smoke. The bow is gone: in the same stance she holds the twin curved blades drawn back ready to strike, a crescent moon behind her, three violet arcs trailing the blades. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. No text, labels, logos, watermark, frame, card border or interface. Only one character."
+    },
+    {
+      "id": "LeafWard_cursed__A_ref",
+      "round": 9,
+      "kind": "card",
+      "card_type": "skill",
+      "face": "dark",
+      "candidates": 4,
+      "seeds": [
+        30001200,
+        30001201,
+        30001202,
+        30001203
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/LeafWard_cursed",
+      "runtime": [
+        "cards/skill/LeafWard_cursed_p.png (500x380)",
+        "cards/skill/LeafWard_cursed.png (250x190)"
+      ],
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/sts1-art-pipeline/elf-production-v1/LeafWard_opaque_source.png",
+          "prepare": "crop content to 4:3, resize 1024x768"
+        },
+        "image_2": {
+          "path": "/workspace/character-pipeline-h3/character_studio/runs/qwen_final/designs/dark/clean/ready_qwen.png",
+          "prepare": "as is (768x768)"
+        }
+      },
+      "prompt": "Edit <image1>. Keep EXACTLY the same camera, framing, composition, pose, body position and background layout of <image1>. Same crop and scale as <image1>: her head, shoulders and hands stay at the same position and size in the frame; do NOT zoom out, do NOT show more of her body than <image1> shows. Use <image2> only as the costume and weapon design. Turn the elf into her cursed dark side: violet hood, dark leather and steel armor, purple cloak, braid with a violet sheen, TWIN curved silver blades, one in each hand; her face, cheek marking, ears and braid stay recognisably the same person. Replace any bow or arrows with the twin blades. Shift the palette to deep violet, black, cold silver and a magenta curse glow, darken the background toward dusk, add thin dark curse smoke. In the same pose with one hand raised, the glowing leaves in her palm have turned into violet-black thorn shards that lock together into a plate of armor on her forearm. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. No text, labels, logos, watermark, frame, card border or interface. Only one character."
+    },
+    {
+      "id": "LeafWard_cursed__B_text",
+      "round": 9,
+      "kind": "card",
+      "card_type": "skill",
+      "face": "dark",
+      "candidates": 4,
+      "seeds": [
+        30001300,
+        30001301,
+        30001302,
+        30001303
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/LeafWard_cursed",
+      "runtime": [
+        "cards/skill/LeafWard_cursed_p.png (500x380)",
+        "cards/skill/LeafWard_cursed.png (250x190)"
+      ],
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/sts1-art-pipeline/elf-production-v1/LeafWard_opaque_source.png",
+          "prepare": "crop content to 4:3, resize 1024x768"
+        }
+      },
+      "prompt": "Edit <image1>. Keep EXACTLY the same camera, framing, composition, pose, body position and background layout of <image1>. Same crop and scale as <image1>: her head, shoulders and hands stay at the same position and size in the frame; do NOT zoom out, do NOT show more of her body than <image1> shows. Turn the elf into her cursed dark side: violet hood, dark leather and steel armor, purple cloak, braid with a violet sheen, TWIN curved silver blades, one in each hand; her face, cheek marking, ears and braid stay recognisably the same person. Replace any bow or arrows with the twin blades. Shift the palette to deep violet, black, cold silver and a magenta curse glow, darken the background toward dusk, add thin dark curse smoke. In the same pose with one hand raised, the glowing leaves in her palm have turned into violet-black thorn shards that lock together into a plate of armor on her forearm. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. No text, labels, logos, watermark, frame, card border or interface. Only one character."
+    },
+    {
+      "id": "Defend_Elf__bg",
+      "round": 9,
+      "kind": "card",
+      "card_type": "skill",
+      "face": "light",
+      "candidates": 4,
+      "seeds": [
+        30002400,
+        30002401,
+        30002402,
+        30002403
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/Defend_Elf",
+      "runtime": [
+        "cards/skill/Defend_Elf_p.png (500x380)",
+        "cards/skill/Defend_Elf.png (250x190)"
+      ],
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/character-pipeline-h3/character_studio/runs/qwen_final/designs/elf/clean/ready_qwen.png",
+          "prepare": "contain in 1024x768 white canvas"
+        }
+      },
+      "prompt": "Preserve the SAME adult female light elf from <image1>: recognizable face and cheek marking, blue eyes, pointed ears, long black braid, ivory hood, forest green cape and fully covered fitted tunic, gold segmented armor, ONE elegant gold longbow. Coherent pale ivory / forest green / warm gold palette. No additional person, no sword, no duplicated bow. Horizontal card illustration, low guarded stance, bow held low in one hand, the other forearm raised; a translucent emerald barrier of overlapping leaves blooms in front of her, falling leaves. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. The painted environment background fills the entire frame edge to edge; no white, black or empty background. No text, labels, logos, watermark, frame, card border or interface. Only one character."
+    },
+    {
+      "id": "SingleEdge__bg",
+      "round": 9,
+      "kind": "card",
+      "card_type": "attack",
+      "face": "intermediate",
+      "candidates": 4,
+      "seeds": [
+        30002500,
+        30002501,
+        30002502,
+        30002503
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/SingleEdge",
+      "runtime": [
+        "cards/attack/SingleEdge_p.png (500x380)",
+        "cards/attack/SingleEdge.png (250x190)"
+      ],
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/character-pipeline-h3/character_studio/runs/qwen_final/designs/intermediate/clean/ready_qwen.png",
+          "prepare": "contain in 1024x768 white canvas"
+        }
+      },
+      "prompt": "Preserve the SAME adult female elf from <image1> in her half-cursed form: recognizable face and cheek marking, pointed ears, long braid, white hood with violet edges, pale ivory armor, ONE single curved saber. Coherent ivory / pale violet / steel palette. No bow, no second blade, no additional person. Horizontal card illustration, a precise forward thrust of the single curved saber toward screen RIGHT, long lunge, a pale violet glint at the blade tip, misty grove. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. The painted environment background fills the entire frame edge to edge; no white, black or empty background. No text, labels, logos, watermark, frame, card border or interface. Only one character."
+    },
+    {
+      "id": "Chime__leaf",
+      "round": 9,
+      "kind": "power_icon",
+      "card_type": null,
+      "face": null,
+      "candidates": 4,
+      "seeds": [
+        30003000,
+        30003001,
+        30003002,
+        30003003
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/Chime",
+      "runtime": [
+        "powers/large/Chime.png (84)",
+        "powers/Chime.png (32, local)"
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/character-pipeline-h3/character_studio/runs/qwen_final/designs/dark/clean/ready_qwen.png",
+          "prepare": "contain in 1024x1024 white canvas"
+        }
+      },
+      "prompt": "Use <image1> only as a palette and material reference. Draw ONE isolated painterly 2D fantasy roguelike inventory icon, readable at 64 pixels: broad simple shapes, strong dark warm-brown contour, restrained shading, crisp silhouette, object within the central 72 percent. PURE WHITE background, no shadow, no platform, no frame, no text, letters, runes, numbers, hands, people or duplicate object. Subject: a small cracked gold seal stamped with a simple leaf at the center surrounded by THREE bold concentric violet ripple rings, like a struck bell made of light. Must read clearly at 32 pixels; very few shapes, high contrast.",
+      "post": "BiRefNet matting (models/background_removal/birefnet.safetensors) -> transparent PNG"
+    }
+  ],
+  "note": "round-1 fix experiments; originals untouched"
+}

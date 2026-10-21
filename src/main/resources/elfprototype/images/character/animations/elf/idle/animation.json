@@ -1,0 +1,2026 @@
+{
+  "asset_id": "AN01",
+  "form": "elf",
+  "action": "idle",
+  "canvas": [
+    512,
+    512
+  ],
+  "fps": 24,
+  "frame_index_base": 0,
+  "frame_count": 48,
+  "duration_seconds": 2.0,
+  "loop": true,
+  "pivot": {
+    "origin": "top_left",
+    "xy": [
+      256,
+      448
+    ]
+  },
+  "events": [],
+  "end_action": "idle",
+  "alpha": "straight",
+  "color_space": "sRGB",
+  "source_frame_indices": [
+    0,
+    3,
+    5,
+    8,
+    10,
+    13,
+    16,
+    18,
+    21,
+    23,
+    26,
+    29,
+    31,
+    34,
+    36,
+    39,
+    42,
+    44,
+    47,
+    49,
+    52,
+    55,
+    57,
+    60,
+    62,
+    65,
+    67,
+    70,
+    73,
+    75,
+    78,
+    80,
+    83,
+    86,
+    88,
+    91,
+    93,
+    96,
+    99,
+    101,
+    104,
+    106,
+    109,
+    112,
+    114,
+    117,
+    119,
+    122
+  ],
+  "source_layout": {
+    "kind": "canonical",
+    "canvas": [
+      512,
+      512
+    ],
+    "pivot": [
+      256,
+      448
+    ]
+  },
+  "detached_projectiles": [],
+  "frames": [
+    {
+      "file": "frames/idle_000.png",
+      "source_index": 0,
+      "index": 0,
+      "page": 0,
+      "rect": [
+        3,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_001.png",
+      "source_index": 3,
+      "index": 1,
+      "page": 0,
+      "rect": [
+        258,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_002.png",
+      "source_index": 5,
+      "index": 2,
+      "page": 0,
+      "rect": [
+        513,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_003.png",
+      "source_index": 8,
+      "index": 3,
+      "page": 0,
+      "rect": [
+        768,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_004.png",
+      "source_index": 10,
+      "index": 4,
+      "page": 0,
+      "rect": [
+        1023,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_005.png",
+      "source_index": 13,
+      "index": 5,
+      "page": 0,
+      "rect": [
+        1278,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_006.png",
+      "source_index": 16,
+      "index": 6,
+      "page": 0,
+      "rect": [
+        1533,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_007.png",
+      "source_index": 18,
+      "index": 7,
+      "page": 0,
+      "rect": [
+        1788,
+        3,
+        252,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        163,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_008.png",
+      "source_index": 21,
+      "index": 8,
+      "page": 0,
+      "rect": [
+        3,
+        328,
+        253,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        162,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_009.png",
+      "source_index": 23,
+      "index": 9,
+      "page": 0,
+      "rect": [
+        260,
+        328,
+        255,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        160,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_010.png",
+      "source_index": 26,
+      "index": 10,
+      "page": 0,
+      "rect": [
+        519,
+        328,
+        257,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        158,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_011.png",
+      "source_index": 29,
+      "index": 11,
+      "page": 0,
+      "rect": [
+        780,
+        328,
+        257,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        158,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_012.png",
+      "source_index": 31,
+      "index": 12,
+      "page": 0,
+      "rect": [
+        1041,
+        328,
+        256,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        159,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_013.png",
+      "source_index": 34,
+      "index": 13,
+      "page": 0,
+      "rect": [
+        1301,
+        328,
+        255,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        160,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_014.png",
+      "source_index": 36,
+      "index": 14,
+      "page": 0,
+      "rect": [
+        1560,
+        328,
+        253,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        162,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_015.png",
+      "source_index": 39,
+      "index": 15,
+      "page": 0,
+      "rect": [
+        3,
+        653,
+        250,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        165,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_016.png",
+      "source_index": 42,
+      "index": 16,
+      "page": 0,
+      "rect": [
+        257,
+        653,
+        248,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        167,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_017.png",
+      "source_index": 44,
+      "index": 17,
+      "page": 0,
+      "rect": [
+        509,
+        653,
+        247,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        168,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_018.png",
+      "source_index": 47,
+      "index": 18,
+      "page": 0,
+      "rect": [
+        760,
+        653,
+        247,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        168,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_019.png",
+      "source_index": 49,
+      "index": 19,
+      "page": 0,
+      "rect": [
+        1011,
+        653,
+        247,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        168,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_020.png",
+      "source_index": 52,
+      "index": 20,
+      "page": 0,
+      "rect": [
+        1262,
+        653,
+        250,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        165,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_021.png",
+      "source_index": 55,
+      "index": 21,
+      "page": 0,
+      "rect": [
+        1516,
+        653,
+        253,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        162,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_022.png",
+      "source_index": 57,
+      "index": 22,
+      "page": 0,
+      "rect": [
+        1773,
+        653,
+        255,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        160,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_023.png",
+      "source_index": 60,
+      "index": 23,
+      "page": 0,
+      "rect": [
+        3,
+        978,
+        257,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        158,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_024.png",
+      "source_index": 62,
+      "index": 24,
+      "page": 0,
+      "rect": [
+        264,
+        978,
+        257,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        158,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_025.png",
+      "source_index": 65,
+      "index": 25,
+      "page": 0,
+      "rect": [
+        525,
+        978,
+        256,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        159,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_026.png",
+      "source_index": 67,
+      "index": 26,
+      "page": 0,
+      "rect": [
+        785,
+        978,
+        255,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        160,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_027.png",
+      "source_index": 70,
+      "index": 27,
+      "page": 0,
+      "rect": [
+        1044,
+        978,
+        252,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        163,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_028.png",
+      "source_index": 73,
+      "index": 28,
+      "page": 0,
+      "rect": [
+        1300,
+        978,
+        248,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        167,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_029.png",
+      "source_index": 75,
+      "index": 29,
+      "page": 0,
+      "rect": [
+        1552,
+        978,
+        248,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        167,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_030.png",
+      "source_index": 78,
+      "index": 30,
+      "page": 0,
+      "rect": [
+        3,
+        1303,
+        247,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        168,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_031.png",
+      "source_index": 80,
+      "index": 31,
+      "page": 0,
+      "rect": [
+        254,
+        1303,
+        248,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        167,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_032.png",
+      "source_index": 83,
+      "index": 32,
+      "page": 0,
+      "rect": [
+        506,
+        1303,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_033.png",
+      "source_index": 86,
+      "index": 33,
+      "page": 0,
+      "rect": [
+        761,
+        1303,
+        253,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        162,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_034.png",
+      "source_index": 88,
+      "index": 34,
+      "page": 0,
+      "rect": [
+        1018,
+        1303,
+        253,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        162,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_035.png",
+      "source_index": 91,
+      "index": 35,
+      "page": 0,
+      "rect": [
+        1275,
+        1303,
+        253,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        162,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_036.png",
+      "source_index": 93,
+      "index": 36,
+      "page": 0,
+      "rect": [
+        1532,
+        1303,
+        253,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        162,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_037.png",
+      "source_index": 96,
+      "index": 37,
+      "page": 0,
+      "rect": [
+        1789,
+        1303,
+        252,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        163,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_038.png",
+      "source_index": 99,
+      "index": 38,
+      "page": 0,
+      "rect": [
+        3,
+        1628,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_039.png",
+      "source_index": 101,
+      "index": 39,
+      "page": 0,
+      "rect": [
+        258,
+        1628,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_040.png",
+      "source_index": 104,
+      "index": 40,
+      "page": 0,
+      "rect": [
+        513,
+        1628,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_041.png",
+      "source_index": 106,
+      "index": 41,
+      "page": 0,
+      "rect": [
+        768,
+        1628,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_042.png",
+      "source_index": 109,
+      "index": 42,
+      "page": 0,
+      "rect": [
+        1023,
+        1628,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_043.png",
+      "source_index": 112,
+      "index": 43,
+      "page": 0,
+      "rect": [
+        1278,
+        1628,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_044.png",
+      "source_index": 114,
+      "index": 44,
+      "page": 0,
+      "rect": [
+        1533,
+        1628,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_045.png",
+      "source_index": 117,
+      "index": 45,
+      "page": 0,
+      "rect": [
+        1788,
+        1628,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_046.png",
+      "source_index": 119,
+      "index": 46,
+      "page": 1,
+      "rect": [
+        3,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/idle_047.png",
+      "source_index": 122,
+      "index": 47,
+      "page": 1,
+      "rect": [
+        258,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    }
+  ],
+  "atlas": {
+    "pages": [
+      "atlas/page_00.png",
+      "atlas/page_01.png"
+    ],
+    "regions": [
+      {
+        "index": 0,
+        "page": 0,
+        "rect": [
+          3,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 1,
+        "page": 0,
+        "rect": [
+          258,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 2,
+        "page": 0,
+        "rect": [
+          513,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 3,
+        "page": 0,
+        "rect": [
+          768,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 4,
+        "page": 0,
+        "rect": [
+          1023,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 5,
+        "page": 0,
+        "rect": [
+          1278,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 6,
+        "page": 0,
+        "rect": [
+          1533,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 7,
+        "page": 0,
+        "rect": [
+          1788,
+          3,
+          252,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          163,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 8,
+        "page": 0,
+        "rect": [
+          3,
+          328,
+          253,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          162,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 9,
+        "page": 0,
+        "rect": [
+          260,
+          328,
+          255,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          160,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 10,
+        "page": 0,
+        "rect": [
+          519,
+          328,
+          257,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          158,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 11,
+        "page": 0,
+        "rect": [
+          780,
+          328,
+          257,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          158,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 12,
+        "page": 0,
+        "rect": [
+          1041,
+          328,
+          256,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          159,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 13,
+        "page": 0,
+        "rect": [
+          1301,
+          328,
+          255,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          160,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 14,
+        "page": 0,
+        "rect": [
+          1560,
+          328,
+          253,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          162,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 15,
+        "page": 0,
+        "rect": [
+          3,
+          653,
+          250,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          165,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 16,
+        "page": 0,
+        "rect": [
+          257,
+          653,
+          248,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          167,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 17,
+        "page": 0,
+        "rect": [
+          509,
+          653,
+          247,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          168,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 18,
+        "page": 0,
+        "rect": [
+          760,
+          653,
+          247,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          168,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 19,
+        "page": 0,
+        "rect": [
+          1011,
+          653,
+          247,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          168,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 20,
+        "page": 0,
+        "rect": [
+          1262,
+          653,
+          250,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          165,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 21,
+        "page": 0,
+        "rect": [
+          1516,
+          653,
+          253,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          162,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 22,
+        "page": 0,
+        "rect": [
+          1773,
+          653,
+          255,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          160,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 23,
+        "page": 0,
+        "rect": [
+          3,
+          978,
+          257,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          158,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 24,
+        "page": 0,
+        "rect": [
+          264,
+          978,
+          257,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          158,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 25,
+        "page": 0,
+        "rect": [
+          525,
+          978,
+          256,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          159,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 26,
+        "page": 0,
+        "rect": [
+          785,
+          978,
+          255,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          160,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 27,
+        "page": 0,
+        "rect": [
+          1044,
+          978,
+          252,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          163,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 28,
+        "page": 0,
+        "rect": [
+          1300,
+          978,
+          248,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          167,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 29,
+        "page": 0,
+        "rect": [
+          1552,
+          978,
+          248,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          167,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 30,
+        "page": 0,
+        "rect": [
+          3,
+          1303,
+          247,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          168,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 31,
+        "page": 0,
+        "rect": [
+          254,
+          1303,
+          248,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          167,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 32,
+        "page": 0,
+        "rect": [
+          506,
+          1303,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 33,
+        "page": 0,
+        "rect": [
+          761,
+          1303,
+          253,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          162,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 34,
+        "page": 0,
+        "rect": [
+          1018,
+          1303,
+          253,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          162,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 35,
+        "page": 0,
+        "rect": [
+          1275,
+          1303,
+          253,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          162,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 36,
+        "page": 0,
+        "rect": [
+          1532,
+          1303,
+          253,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          162,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 37,
+        "page": 0,
+        "rect": [
+          1789,
+          1303,
+          252,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          163,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 38,
+        "page": 0,
+        "rect": [
+          3,
+          1628,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 39,
+        "page": 0,
+        "rect": [
+          258,
+          1628,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 40,
+        "page": 0,
+        "rect": [
+          513,
+          1628,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 41,
+        "page": 0,
+        "rect": [
+          768,
+          1628,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 42,
+        "page": 0,
+        "rect": [
+          1023,
+          1628,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 43,
+        "page": 0,
+        "rect": [
+          1278,
+          1628,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 44,
+        "page": 0,
+        "rect": [
+          1533,
+          1628,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 45,
+        "page": 0,
+        "rect": [
+          1788,
+          1628,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 46,
+        "page": 1,
+        "rect": [
+          3,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 47,
+        "page": 1,
+        "rect": [
+          258,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      }
+    ],
+    "page_size": [
+      2048,
+      2048
+    ],
+    "spacing": 2,
+    "extrude": 1,
+    "alpha": "straight",
+    "texture_bytes": 33554432
+  },
+  "untrimmed_rgba_bytes": 50331648
+}

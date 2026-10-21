@@ -1,0 +1,63 @@
+{
+  "batch": "B1",
+  "design": "cards-relics-design.md v4",
+  "plan": "art-production-plan.md",
+  "workflow": {
+    "based_on": "sts1-art-pipeline/production-tools/elf_production.py highres() graph",
+    "unet": "qwen_image_2.1_int8_convrot.safetensors",
+    "clip": [
+      "qwen3vl_8b_int8_convrot.safetensors",
+      "qwen_image"
+    ],
+    "vae": "qwen_image_2.1_vae_bf16.safetensors",
+    "encoder": "TextEncodeQwenImage21",
+    "resolution": 0,
+    "negative_prompt": "",
+    "sampler": {
+      "steps": 25,
+      "cfg": 3.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    },
+    "latent": "encoder output #2 (size of image1)",
+    "comfy": "http://127.0.0.1:8188 (engine ComfyUI of WalkingwithAI-Studio)"
+  },
+  "rounds": {
+    "1": "light faces, demo-card cursed faces (edit check), relic, icon",
+    "2": "cursed faces of the four starter cards from the chosen round-1 light faces"
+  },
+  "jobs": [
+    {
+      "id": "Defend_Elf__scene",
+      "round": 9,
+      "kind": "card",
+      "card_type": "skill",
+      "face": "light",
+      "candidates": 4,
+      "seeds": [
+        30004000,
+        30004001,
+        30004002,
+        30004003
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/Defend_Elf",
+      "runtime": [
+        "cards/skill/Defend_Elf_p.png (500x380)",
+        "cards/skill/Defend_Elf.png (250x190)"
+      ],
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/character-pipeline-h3/character_studio/runs/qwen_final/designs/elf/clean/ready_qwen.png",
+          "prepare": "contain in 1024x768 white canvas"
+        }
+      },
+      "prompt": "Preserve the SAME adult female light elf from <image1>: recognizable face and cheek marking, blue eyes, pointed ears, long black braid, ivory hood, forest green cape and fully covered fitted tunic, gold segmented armor, ONE elegant gold longbow. Coherent pale ivory / forest green / warm gold palette. No additional person, no sword, no duplicated bow. Horizontal card illustration, low guarded stance, bow held low in one hand, the other forearm raised; a translucent emerald barrier of overlapping leaves blooms in front of her, falling leaves, standing in a sunlit forest glade with tall trees, mossy ground and soft morning haze behind her. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. The painted environment background fills the entire frame edge to edge; no white, black or empty background. No text, labels, logos, watermark, frame, card border or interface. Only one character."
+    }
+  ],
+  "note": "round-1 fix experiments; originals untouched"
+}

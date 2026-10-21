@@ -1,0 +1,536 @@
+{
+  "elfprototype:Strike_Elf": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·打击",
+      "造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:Defend_Elf": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·防御",
+      "获得 !B! 点 格挡 。 NL 对所有敌人造成 !D! 点伤害。"
+    ]
+  },
+  "elfprototype:CurseWhisper": {
+    "NAME": "咒之低语",
+    "DESCRIPTION": "侵蚀 !M! 张其他手牌。 NL 抽 {M2} 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·咒之低语",
+      "侵蚀 !M! 张其他手牌。",
+      "侵蚀 !M! 张其他手牌。 NL 抽 {M2} 张牌。"
+    ]
+  },
+  "elfprototype:SingleEdge": {
+    "NAME": "单刃斩",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若本回合已 翻面 ，抽 1 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·单刃斩",
+      "造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:ThicketArrow": {
+    "NAME": "穿林箭",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "影刺",
+      "造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:QuickArrow": {
+    "NAME": "快箭",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽 1 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "疾刃",
+      "造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:ScatterShot": {
+    "NAME": "散射",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "旋刃",
+      "对所有敌人造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:SnareShot": {
+    "NAME": "绊索箭",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 {M2} 层 虚弱 。",
+    "EXTENDED_DESCRIPTION": [
+      "断筋",
+      "造成 !D! 点伤害 !M! 次。 NL 给予 {M2} 层 易伤 。"
+    ]
+  },
+  "elfprototype:ChargedShot": {
+    "NAME": "蓄力射击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 本牌的 咒鸣 加成翻倍。",
+    "EXTENDED_DESCRIPTION": [
+      "暗月斩",
+      "造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:CorruptingEdge": {
+    "NAME": "侵蚀之刃",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 侵蚀 1 张其他手牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·侵蚀之刃",
+      "造成 !D! 点伤害 !M! 次。 NL 侵蚀 1 张其他手牌。"
+    ]
+  },
+  "elfprototype:GladeThrust": {
+    "NAME": "林间突刺",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "影突",
+      "造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:Riposte": {
+    "NAME": "反手刺",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 封印 1 张手牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·反手刺",
+      "造成 !D! 点伤害 !M! 次。 NL 封印 1 张其他手牌。"
+    ]
+  },
+  "elfprototype:EmberShot": {
+    "NAME": "余烬箭",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 本牌的 咒鸣 加成 ×3 。",
+    "EXTENDED_DESCRIPTION": [
+      "余烬刃",
+      "造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:Recoil": {
+    "NAME": "弓弦回拉",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若手中有蚀面牌，抽 1 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "回旋刃",
+      "造成 !D! 点伤害 !M! 次。 NL 抽 1 张牌。"
+    ]
+  },
+  "elfprototype:LeafWard": {
+    "NAME": "林叶护持",
+    "DESCRIPTION": "获得 !B! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "影甲",
+      "获得 !B! 点 格挡 。 NL 侵蚀 1 张其他手牌。"
+    ]
+  },
+  "elfprototype:HoldBreath": {
+    "NAME": "屏息",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 1 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·屏息",
+      "抽 !M! 张牌。"
+    ]
+  },
+  "elfprototype:SealingRite": {
+    "NAME": "封印术",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 封印 2 张手牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·封印术",
+      "封印 !M! 张其他手牌。 NL 抽 2 张牌。"
+    ]
+  },
+  "elfprototype:Invite": {
+    "NAME": "引咒",
+    "DESCRIPTION": "侵蚀 2 张其他手牌。 NL 抽 1 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·引咒",
+      "侵蚀 2 张其他手牌。 NL 抽 2 张牌。"
+    ]
+  },
+  "elfprototype:Moonstep": {
+    "NAME": "月光步",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 若本回合已 翻面 ，抽 1 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "夜步",
+      "获得 !B! 点 格挡 。 NL 抽 1 张牌。"
+    ]
+  },
+  "elfprototype:PurifyingLight": {
+    "NAME": "净化之光",
+    "DESCRIPTION": "封印 手中所有蚀面牌，每张获得 !M! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·净化之光",
+      "封印 手中其他所有蚀面牌，每张抽 1 张牌。"
+    ]
+  },
+  "elfprototype:CurseWard": {
+    "NAME": "诅咒之盾",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 手中每有 1 张蚀面牌，多 !M! 点。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·诅咒之盾",
+      "手中每有 1 张其他蚀面牌，获得 !M! 点 格挡 。 NL （共 !B! 点）"
+    ]
+  },
+  "elfprototype:Premonition": {
+    "NAME": "预感",
+    "DESCRIPTION": "查看抽牌堆顶 !M! 张牌，将其中 1 张放入手牌。",
+    "EXTENDED_DESCRIPTION": [
+      "窥视",
+      "查看抽牌堆顶 !M! 张牌，将其中 1 张放入手牌并 侵蚀 它。"
+    ]
+  },
+  "elfprototype:Nock": {
+    "NAME": "张弓",
+    "DESCRIPTION": "本回合下一张光面攻击牌伤害 +!M! 。",
+    "EXTENDED_DESCRIPTION": [
+      "蓄势",
+      "本回合下一张蚀面攻击牌每段伤害 +!M! 。"
+    ]
+  },
+  "elfprototype:Unbind": {
+    "NAME": "解咒",
+    "DESCRIPTION": "封印 !M! 张手牌。 NL 抽 {M2} 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·解咒",
+      "封印 !M! 张其他手牌。",
+      "封印 !M! 张其他手牌。 NL 抽 {M2} 张牌。"
+    ]
+  },
+  "elfprototype:TwinMoon": {
+    "NAME": "双月斩",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·双月斩",
+      "造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:Skim": {
+    "NAME": "掠影",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 侵蚀 1 张其他手牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·掠影",
+      "造成 !D! 点伤害 !M! 次。 NL 侵蚀 1 张其他手牌。"
+    ]
+  },
+  "elfprototype:Heartseeker": {
+    "NAME": "穿心箭",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若目标有 虚弱 ，多造成 !M! 点。",
+    "EXTENDED_DESCRIPTION": [
+      "裂心",
+      "造成 !D! 点伤害 !M! 次。 NL 给予 {M2} 层 易伤 。"
+    ]
+  },
+  "elfprototype:Harvest": {
+    "NAME": "收割",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若击杀，获得 [E] 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·收割",
+      "造成 !D! 点伤害 !M! 次。 NL 每段击杀抽 1 张牌。"
+    ]
+  },
+  "elfprototype:Volley": {
+    "NAME": "箭雨",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "刃舞",
+      "对所有敌人造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:MirrorEdge": {
+    "NAME": "镜刃",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 封印 1 张手牌，获得 !B! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·镜刃",
+      "造成 !D! 点伤害 !M! 次。 NL 封印 2 张其他手牌。"
+    ]
+  },
+  "elfprototype:Leech": {
+    "NAME": "噬血刃",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·噬血刃",
+      "造成 !D! 点伤害 !M! 次。 NL 每段造成伤害时回复 1 点生命。"
+    ]
+  },
+  "elfprototype:Chain": {
+    "NAME": "连珠",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 本回合打出过蚀面牌时多 1 次。",
+    "EXTENDED_DESCRIPTION": [
+      "连斩",
+      "造成 !D! 点伤害 !M! 次。 NL 本回合打出过光面牌时多 2 次。"
+    ]
+  },
+  "elfprototype:Sunder": {
+    "NAME": "破甲箭",
+    "DESCRIPTION": "移除目标所有 格挡 ，造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "碎甲",
+      "造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:Shatter": {
+    "NAME": "碎咒",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害（ 咒鸣 ×2 ）。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·碎咒",
+      "对所有敌人造成 !D! 点伤害 !M! 次。"
+    ],
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害（ 咒鸣 ×3 ）。"
+  },
+  "elfprototype:Pursuit": {
+    "NAME": "追影",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合 咒鸣 达到 4 时费用为 0 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·追影",
+      "造成 !D! 点伤害 !M! 次。 NL 本回合 咒鸣 达到 4 时费用为 0 。"
+    ]
+  },
+  "elfprototype:Release": {
+    "NAME": "解放",
+    "DESCRIPTION": "封印 手中所有蚀面牌，每张对所有敌人造成 !M! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·解放",
+      "封印 手中其他所有蚀面牌，每张对所有敌人造成 !M! 点伤害。"
+    ]
+  },
+  "elfprototype:DarkPact": {
+    "NAME": "暗契",
+    "DESCRIPTION": "失去 !M! 点生命，获得 [E] 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·暗契",
+      "失去 !M! 点生命，获得 [E] [E] 。 NL 消耗 。"
+    ]
+  },
+  "elfprototype:Spread": {
+    "NAME": "蔓延",
+    "DESCRIPTION": "侵蚀 手中所有其他牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·蔓延",
+      "侵蚀 手中所有其他牌。 NL 抽 2 张牌。"
+    ]
+  },
+  "elfprototype:Mirror": {
+    "NAME": "镜像",
+    "DESCRIPTION": "复制 1 张手牌放入手牌，复制品是光面并带有 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·镜像",
+      "复制 1 张手牌放入手牌，复制品带有 消耗 ，并 侵蚀 它。"
+    ]
+  },
+  "elfprototype:CurseBarrier": {
+    "NAME": "咒之屏障",
+    "DESCRIPTION": "获得 !B! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·咒之屏障",
+      "获得 !B! 点 格挡 。 NL 侵蚀 2 张其他手牌。"
+    ]
+  },
+  "elfprototype:Rewind": {
+    "NAME": "回溯",
+    "DESCRIPTION": "将弃牌堆中 1 张牌放入手牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·回溯",
+      "将弃牌堆中 1 张牌放入手牌并 侵蚀 它。"
+    ]
+  },
+  "elfprototype:ForestBreath": {
+    "NAME": "林间呼吸",
+    "DESCRIPTION": "抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·林间呼吸",
+      "抽 !M! 张牌，并 侵蚀 抽到的牌。"
+    ]
+  },
+  "elfprototype:Turnabout": {
+    "NAME": "转念",
+    "DESCRIPTION": "侵蚀 1 张其他手牌，再 封印 1 张手牌（可以是同一张）。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·转念",
+      "侵蚀 2 张其他手牌，再 封印 2 张手牌。"
+    ],
+    "UPGRADE_DESCRIPTION": "侵蚀 1 张其他手牌，再 封印 1 张手牌（可以是同一张）。 NL 抽 {M2} 张牌。"
+  },
+  "elfprototype:Insight": {
+    "NAME": "灵视",
+    "DESCRIPTION": "获得 !B! 点 格挡 （ 咒鸣 ×2 ）。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·灵视",
+      "抽 咒鸣 的一半（向下取整）张牌。"
+    ],
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 （ 咒鸣 ×3 ）。"
+  },
+  "elfprototype:Offering": {
+    "NAME": "献咒",
+    "DESCRIPTION": "消耗 1 张手牌，获得 [E] ；若是诅咒牌，改为获得 [E] [E] 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·献咒",
+      "消耗 1 张手牌，抽 2 张牌。"
+    ]
+  },
+  "elfprototype:BowGuard": {
+    "NAME": "弓之守",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下回合获得 4 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·弓之守",
+      "获得 !B! 点 格挡 ，抽 1 张牌。 NL 下回合获得 4 点 格挡 。"
+    ]
+  },
+  "elfprototype:Bind": {
+    "NAME": "咒缚",
+    "DESCRIPTION": "给予 !M! 层 虚弱 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·咒缚",
+      "给予 !M! 层 易伤 。 NL 侵蚀 1 张其他手牌。"
+    ]
+  },
+  "elfprototype:Steady": {
+    "NAME": "定神",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 本回合结束时不触发 反噬 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·定神",
+      "抽 !M! 张牌。 NL 本回合结束时不触发 反噬 。"
+    ]
+  },
+  "elfprototype:ThousandBlades": {
+    "NAME": "千刃",
+    "DESCRIPTION": "造成 !D! 点伤害（ 咒鸣 ×3 ）。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·千刃",
+      "造成 !D! 点伤害 !M! 次（次数等于 咒鸣 ）。"
+    ],
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害（ 咒鸣 ×4 ）。"
+  },
+  "elfprototype:Starfall": {
+    "NAME": "星落之箭",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合 咒鸣 达到 5 时费用 -2 。",
+    "EXTENDED_DESCRIPTION": [
+      "坠星",
+      "造成 !D! 点伤害 !M! 次。 NL 本回合 咒鸣 达到 5 时费用 -2 。"
+    ]
+  },
+  "elfprototype:Devour": {
+    "NAME": "噬咒",
+    "DESCRIPTION": "封印 手中所有蚀面牌，每张使本牌伤害 +6 ，然后造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·噬咒",
+      "侵蚀 手中所有其他牌，每张使本牌多 1 段，然后造成 !D! 点伤害 !M! 次。"
+    ]
+  },
+  "elfprototype:Echo": {
+    "NAME": "回响",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合下一张蚀面牌打出两次。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·回响",
+      "造成 !D! 点伤害 !M! 次。 NL 本回合下一张光面牌打出两次。"
+    ]
+  },
+  "elfprototype:Execution": {
+    "NAME": "处刑",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若击杀，本回合 咒鸣 翻倍。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·处刑",
+      "造成 !D! 点伤害 !M! 次。 NL 若击杀，获得 [E] [E] 。"
+    ]
+  },
+  "elfprototype:TwinSoul": {
+    "NAME": "双生",
+    "DESCRIPTION": "本回合，你的光面牌打出后自动 侵蚀 并回到手牌。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·双生",
+      "本回合，你的光面牌打出后自动 侵蚀 并回到手牌。 NL 抽 2 张牌。 NL 消耗 。"
+    ]
+  },
+  "elfprototype:Overflow": {
+    "NAME": "咒满",
+    "DESCRIPTION": "获得 !B! 点 格挡 （ 咒鸣 ×4 ）。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·咒满",
+      "咒鸣 翻倍。 NL 消耗 。"
+    ],
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 （ 咒鸣 ×5 ）。"
+  },
+  "elfprototype:TimeCurse": {
+    "NAME": "时之咒",
+    "DESCRIPTION": "抽 5 张牌。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·时之咒",
+      "抽 5 张牌，并 侵蚀 抽到的牌。 NL 消耗 。"
+    ]
+  },
+  "elfprototype:GreatSeal": {
+    "NAME": "大封印",
+    "DESCRIPTION": "获得 !B! 点 格挡 ， 封印 手中所有蚀面牌。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·大封印",
+      "获得 !B! 点 格挡 ， 封印 手中其他所有蚀面牌，每张获得 [E] （最多 3 点）。"
+    ]
+  },
+  "elfprototype:Avatar": {
+    "NAME": "化身",
+    "DESCRIPTION": "本回合 咒鸣 +!M! 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·化身",
+      "失去 5 点生命，本回合 咒鸣 +!M! 。 NL 消耗 。"
+    ]
+  },
+  "elfprototype:WorldtreeVow": {
+    "NAME": "世界树之誓",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下回合获得 [E] 。",
+    "EXTENDED_DESCRIPTION": [
+      "蚀·世界树之誓",
+      "获得 !B! 点 格挡 。 NL 下回合获得 [E] [E] 并多抽 2 张牌。"
+    ]
+  },
+  "elfprototype:Resonance": {
+    "NAME": "共鸣",
+    "DESCRIPTION": "每回合 咒鸣 第一次达到 4 时，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 每回合 咒鸣 第一次达到 4 时，获得 [E] 。"
+  },
+  "elfprototype:Recollection": {
+    "NAME": "回忆",
+    "DESCRIPTION": "每回合前 !M! 次 封印 （包括自动封印），各抽 1 张牌。"
+  },
+  "elfprototype:Bloodblades": {
+    "NAME": "暗血",
+    "DESCRIPTION": "你的蚀面攻击每段伤害 +!M! 。"
+  },
+  "elfprototype:Radiance": {
+    "NAME": "光辉",
+    "DESCRIPTION": "光面牌获得 格挡 时， 咒鸣 加成翻倍。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 光面牌获得 格挡 时， 咒鸣 加成翻倍。"
+  },
+  "elfprototype:BacklashEcho": {
+    "NAME": "血之回响",
+    "DESCRIPTION": "反噬 失去生命时，对所有敌人造成失去生命 ×!M! 的伤害。"
+  },
+  "elfprototype:Composure": {
+    "NAME": "静心",
+    "DESCRIPTION": "回合结束时，手中每张光面牌给你 !M! 点 格挡 。"
+  },
+  "elfprototype:CreepingCurse": {
+    "NAME": "蔓延之咒",
+    "DESCRIPTION": "每回合抽牌后， 侵蚀 手中最左边 !M! 张光面牌。"
+  },
+  "elfprototype:Vigil": {
+    "NAME": "守望",
+    "DESCRIPTION": "每次手动 封印 1 张牌，获得 !M! 点 格挡 。"
+  },
+  "elfprototype:MoonAwakening": {
+    "NAME": "月辉觉醒",
+    "DESCRIPTION": "每次 封印 （包括自动封印），抽 1 张牌并获得 [E] 。"
+  },
+  "elfprototype:Afterglow": {
+    "NAME": "余韵",
+    "DESCRIPTION": "回合结束时， 咒鸣 只清除一半（向下取整）。"
+  },
+  "elfprototype:Evernight": {
+    "NAME": "永夜",
+    "DESCRIPTION": "你的蚀面攻击多造成 1 段。"
+  },
+  "elfprototype:CursedHeart": {
+    "NAME": "咒之心",
+    "DESCRIPTION": "每次 反噬 ，获得 1 点 力量 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 每次 反噬 ，获得 1 点 力量 。"
+  },
+  "elfprototype:LightOath": {
+    "NAME": "光之誓",
+    "DESCRIPTION": "光面牌的伤害和 格挡 ， 咒鸣 加成翻倍。"
+  }
+}

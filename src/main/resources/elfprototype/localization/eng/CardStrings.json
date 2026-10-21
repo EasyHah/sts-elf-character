@@ -1,0 +1,536 @@
+{
+  "elfprototype:Strike_Elf": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Strike",
+      "Deal !D! damage !M! times."
+    ]
+  },
+  "elfprototype:Defend_Elf": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Defend",
+      "Gain !B! Block. NL Deal !D! damage to ALL enemies."
+    ]
+  },
+  "elfprototype:CurseWhisper": {
+    "NAME": "Curse Whisper",
+    "DESCRIPTION": "Erode !M! other card. NL Draw {M2} card(s).",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Whisper",
+      "Erode !M! other cards.",
+      "Erode !M! other cards. NL Draw {M2} card."
+    ]
+  },
+  "elfprototype:SingleEdge": {
+    "NAME": "Single Edge",
+    "DESCRIPTION": "Deal !D! damage. NL If you flipped a card this turn, draw 1 card.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Edge",
+      "Deal !D! damage !M! times."
+    ]
+  },
+  "elfprototype:ThicketArrow": {
+    "NAME": "Thicket Arrow",
+    "DESCRIPTION": "Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      "Shadow Stab",
+      "Deal !D! damage !M! times."
+    ]
+  },
+  "elfprototype:QuickArrow": {
+    "NAME": "Quick Arrow",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card.",
+    "EXTENDED_DESCRIPTION": [
+      "Quick Blades",
+      "Deal !D! damage !M! times."
+    ]
+  },
+  "elfprototype:ScatterShot": {
+    "NAME": "Scatter Shot",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies.",
+    "EXTENDED_DESCRIPTION": [
+      "Whirling Blades",
+      "Deal !D! damage to ALL enemies !M! times."
+    ]
+  },
+  "elfprototype:SnareShot": {
+    "NAME": "Snare Shot",
+    "DESCRIPTION": "Deal !D! damage. NL Apply {M2} Weak.",
+    "EXTENDED_DESCRIPTION": [
+      "Hamstring",
+      "Deal !D! damage !M! times. NL Apply {M2} Vulnerable."
+    ]
+  },
+  "elfprototype:ChargedShot": {
+    "NAME": "Charged Shot",
+    "DESCRIPTION": "Deal !D! damage. NL Chime bonus is doubled on this card.",
+    "EXTENDED_DESCRIPTION": [
+      "Dark Moon Slash",
+      "Deal !D! damage !M! times."
+    ]
+  },
+  "elfprototype:CorruptingEdge": {
+    "NAME": "Corrupting Edge",
+    "DESCRIPTION": "Deal !D! damage. NL Erode 1 other card.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Corrupting Edge",
+      "Deal !D! damage !M! times. NL Erode 1 other card."
+    ]
+  },
+  "elfprototype:GladeThrust": {
+    "NAME": "Glade Thrust",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "Shadow Thrust",
+      "Deal !D! damage !M! times."
+    ]
+  },
+  "elfprototype:Riposte": {
+    "NAME": "Riposte",
+    "DESCRIPTION": "Deal !D! damage. NL Seal 1 card.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Riposte",
+      "Deal !D! damage !M! times. NL Seal 1 other card."
+    ]
+  },
+  "elfprototype:EmberShot": {
+    "NAME": "Ember Shot",
+    "DESCRIPTION": "Deal !D! damage. NL Chime bonus x3 on this card.",
+    "EXTENDED_DESCRIPTION": [
+      "Ember Blades",
+      "Deal !D! damage !M! times."
+    ]
+  },
+  "elfprototype:Recoil": {
+    "NAME": "Recoil",
+    "DESCRIPTION": "Deal !D! damage. NL If a cursed card is in your hand, draw 1 card.",
+    "EXTENDED_DESCRIPTION": [
+      "Boomerang Blades",
+      "Deal !D! damage !M! times. NL Draw 1 card."
+    ]
+  },
+  "elfprototype:LeafWard": {
+    "NAME": "Leaf Ward",
+    "DESCRIPTION": "Gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "Shadow Plate",
+      "Gain !B! Block. NL Erode 1 other card."
+    ]
+  },
+  "elfprototype:HoldBreath": {
+    "NAME": "Hold Breath",
+    "DESCRIPTION": "Gain !B! Block. NL Draw 1 card.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Breath",
+      "Draw !M! cards."
+    ]
+  },
+  "elfprototype:SealingRite": {
+    "NAME": "Sealing Rite",
+    "DESCRIPTION": "Gain !B! Block. NL Seal 2 cards.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Rite",
+      "Seal !M! other cards. NL Draw 2 cards."
+    ]
+  },
+  "elfprototype:Invite": {
+    "NAME": "Invite",
+    "DESCRIPTION": "Erode 2 other cards. NL Draw 1 card.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Invite",
+      "Erode 2 other cards. NL Draw 2 cards."
+    ]
+  },
+  "elfprototype:Moonstep": {
+    "NAME": "Moonstep",
+    "DESCRIPTION": "Gain !B! Block. NL If you flipped a card this turn, draw 1 card.",
+    "EXTENDED_DESCRIPTION": [
+      "Nightstep",
+      "Gain !B! Block. NL Draw 1 card."
+    ]
+  },
+  "elfprototype:PurifyingLight": {
+    "NAME": "Purifying Light",
+    "DESCRIPTION": "Seal every cursed card in your hand. Gain !M! Block for each.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Light",
+      "Seal every other cursed card in your hand. Draw 1 card for each."
+    ]
+  },
+  "elfprototype:CurseWard": {
+    "NAME": "Curse Ward",
+    "DESCRIPTION": "Gain !B! Block. NL +!M! for each cursed card in your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Ward",
+      "Gain !M! Block for each other cursed card in your hand. NL (Total !B!)"
+    ]
+  },
+  "elfprototype:Premonition": {
+    "NAME": "Premonition",
+    "DESCRIPTION": "Look at the top !M! cards of your draw pile. Put 1 into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "Glimpse",
+      "Look at the top !M! cards of your draw pile. Put 1 into your hand and Erode it."
+    ]
+  },
+  "elfprototype:Nock": {
+    "NAME": "Nock",
+    "DESCRIPTION": "Your next light attack this turn deals !M! more damage.",
+    "EXTENDED_DESCRIPTION": [
+      "Bide",
+      "Your next cursed attack this turn deals !M! more damage per hit."
+    ]
+  },
+  "elfprototype:Unbind": {
+    "NAME": "Unbind",
+    "DESCRIPTION": "Seal !M! card(s). NL Draw {M2} card(s).",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Unbind",
+      "Seal !M! other cards.",
+      "Seal !M! other cards. NL Draw {M2} card."
+    ]
+  },
+  "elfprototype:TwinMoon": {
+    "NAME": "Twin Moon",
+    "DESCRIPTION": "Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Twin Moon",
+      "Deal !D! damage !M! times."
+    ]
+  },
+  "elfprototype:Skim": {
+    "NAME": "Skim",
+    "DESCRIPTION": "Deal !D! damage. NL Erode 1 other card.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Skim",
+      "Deal !D! damage !M! times. NL Erode 1 other card."
+    ]
+  },
+  "elfprototype:Heartseeker": {
+    "NAME": "Heartseeker",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! more damage to a Weak enemy.",
+    "EXTENDED_DESCRIPTION": [
+      "Heartsplit",
+      "Deal !D! damage !M! times. NL Apply {M2} Vulnerable."
+    ]
+  },
+  "elfprototype:Harvest": {
+    "NAME": "Harvest",
+    "DESCRIPTION": "Deal !D! damage. NL If this kills, gain [E] .",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Harvest",
+      "Deal !D! damage !M! times. NL Draw 1 card for each killing hit."
+    ]
+  },
+  "elfprototype:Volley": {
+    "NAME": "Volley",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies.",
+    "EXTENDED_DESCRIPTION": [
+      "Blade Dance",
+      "Deal !D! damage to ALL enemies !M! times."
+    ]
+  },
+  "elfprototype:MirrorEdge": {
+    "NAME": "Mirror Edge",
+    "DESCRIPTION": "Deal !D! damage. NL Seal 1 card. Gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Mirror Edge",
+      "Deal !D! damage !M! times. NL Seal 2 other cards."
+    ]
+  },
+  "elfprototype:Leech": {
+    "NAME": "Leech",
+    "DESCRIPTION": "Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Leech",
+      "Deal !D! damage !M! times. NL Heal 1 HP for each hit that deals damage."
+    ]
+  },
+  "elfprototype:Chain": {
+    "NAME": "Chain Shot",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL +1 hit if you played a cursed card this turn.",
+    "EXTENDED_DESCRIPTION": [
+      "Chain Slash",
+      "Deal !D! damage !M! times. NL +2 hits if you played a light card this turn."
+    ]
+  },
+  "elfprototype:Sunder": {
+    "NAME": "Sunder",
+    "DESCRIPTION": "Remove all Block from the enemy. Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      "Shatter Armor",
+      "Deal !D! damage !M! times."
+    ]
+  },
+  "elfprototype:Shatter": {
+    "NAME": "Shatter",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies (Chime x2).",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Shatter",
+      "Deal !D! damage to ALL enemies !M! times."
+    ],
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies (Chime x3)."
+  },
+  "elfprototype:Pursuit": {
+    "NAME": "Pursuit",
+    "DESCRIPTION": "Deal !D! damage. NL Costs 0 once Chime is 4 or more.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Pursuit",
+      "Deal !D! damage !M! times. NL Costs 0 once Chime is 4 or more."
+    ]
+  },
+  "elfprototype:Release": {
+    "NAME": "Release",
+    "DESCRIPTION": "Seal every cursed card in your hand. Deal !M! damage to ALL enemies for each.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Release",
+      "Seal every other cursed card in your hand. Deal !M! damage to ALL enemies for each."
+    ]
+  },
+  "elfprototype:DarkPact": {
+    "NAME": "Dark Pact",
+    "DESCRIPTION": "Lose !M! HP. Gain [E] . NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Pact",
+      "Lose !M! HP. Gain [E] [E] . NL Exhaust."
+    ]
+  },
+  "elfprototype:Spread": {
+    "NAME": "Spread",
+    "DESCRIPTION": "Erode every other card in your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Spread",
+      "Erode every other card in your hand. NL Draw 2 cards."
+    ]
+  },
+  "elfprototype:Mirror": {
+    "NAME": "Mirror",
+    "DESCRIPTION": "Add a copy of a card in your hand to your hand. The copy is light and has Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Mirror",
+      "Add a copy of a card in your hand to your hand. The copy has Exhaust and is Eroded."
+    ]
+  },
+  "elfprototype:CurseBarrier": {
+    "NAME": "Curse Barrier",
+    "DESCRIPTION": "Gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Barrier",
+      "Gain !B! Block. NL Erode 2 other cards."
+    ]
+  },
+  "elfprototype:Rewind": {
+    "NAME": "Rewind",
+    "DESCRIPTION": "Put a card from your discard pile into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Rewind",
+      "Put a card from your discard pile into your hand and Erode it."
+    ]
+  },
+  "elfprototype:ForestBreath": {
+    "NAME": "Forest Breath",
+    "DESCRIPTION": "Draw !M! cards.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Breath of the Forest",
+      "Draw !M! cards and Erode them."
+    ]
+  },
+  "elfprototype:Turnabout": {
+    "NAME": "Turnabout",
+    "DESCRIPTION": "Erode 1 other card, then Seal 1 card (it may be the same one).",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Turnabout",
+      "Erode 2 other cards, then Seal 2 cards."
+    ],
+    "UPGRADE_DESCRIPTION": "Erode 1 other card, then Seal 1 card (it may be the same one). NL Draw {M2} card."
+  },
+  "elfprototype:Insight": {
+    "NAME": "Insight",
+    "DESCRIPTION": "Gain !B! Block (Chime x2).",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Insight",
+      "Draw cards equal to half your Chime."
+    ],
+    "UPGRADE_DESCRIPTION": "Gain !B! Block (Chime x3)."
+  },
+  "elfprototype:Offering": {
+    "NAME": "Offering",
+    "DESCRIPTION": "Exhaust a card in your hand. Gain [E] , or [E] [E] if it was a Curse.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Offering",
+      "Exhaust a card in your hand. Draw 2 cards."
+    ]
+  },
+  "elfprototype:BowGuard": {
+    "NAME": "Bow Guard",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain 4 Block.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Guard",
+      "Gain !B! Block. Draw 1 card. NL Next turn, gain 4 Block."
+    ]
+  },
+  "elfprototype:Bind": {
+    "NAME": "Bind",
+    "DESCRIPTION": "Apply !M! Weak.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Bind",
+      "Apply !M! Vulnerable. NL Erode 1 other card."
+    ]
+  },
+  "elfprototype:Steady": {
+    "NAME": "Steady",
+    "DESCRIPTION": "Gain !B! Block. NL No Backlash at the end of this turn.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Steady",
+      "Draw !M! cards. NL No Backlash at the end of this turn."
+    ]
+  },
+  "elfprototype:ThousandBlades": {
+    "NAME": "Thousand Blades",
+    "DESCRIPTION": "Deal !D! damage (Chime x3).",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Thousand Blades",
+      "Deal !D! damage !M! times (hits = Chime)."
+    ],
+    "UPGRADE_DESCRIPTION": "Deal !D! damage (Chime x4)."
+  },
+  "elfprototype:Starfall": {
+    "NAME": "Starfall",
+    "DESCRIPTION": "Deal !D! damage. NL Costs 2 less once Chime is 5 or more.",
+    "EXTENDED_DESCRIPTION": [
+      "Falling Star",
+      "Deal !D! damage !M! times. NL Costs 2 less once Chime is 5 or more."
+    ]
+  },
+  "elfprototype:Devour": {
+    "NAME": "Devour",
+    "DESCRIPTION": "Seal every cursed card in your hand, +6 damage for each, then deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Devour",
+      "Erode every other card in your hand, +1 hit for each, then deal !D! damage !M! times."
+    ]
+  },
+  "elfprototype:Echo": {
+    "NAME": "Echo",
+    "DESCRIPTION": "Deal !D! damage. NL This turn, your next cursed card is played twice.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Echo",
+      "Deal !D! damage !M! times. NL This turn, your next light card is played twice."
+    ]
+  },
+  "elfprototype:Execution": {
+    "NAME": "Execution",
+    "DESCRIPTION": "Deal !D! damage. NL If this kills, double your Chime.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Execution",
+      "Deal !D! damage !M! times. NL If this kills, gain [E] [E] ."
+    ]
+  },
+  "elfprototype:TwinSoul": {
+    "NAME": "Twin Soul",
+    "DESCRIPTION": "This turn, light cards Erode themselves after being played and return to your hand. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Twin Soul",
+      "This turn, light cards Erode themselves after being played and return to your hand. NL Draw 2 cards. NL Exhaust."
+    ]
+  },
+  "elfprototype:Overflow": {
+    "NAME": "Overflow",
+    "DESCRIPTION": "Gain !B! Block (Chime x4).",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Overflow",
+      "Double your Chime. NL Exhaust."
+    ],
+    "UPGRADE_DESCRIPTION": "Gain !B! Block (Chime x5)."
+  },
+  "elfprototype:TimeCurse": {
+    "NAME": "Time Curse",
+    "DESCRIPTION": "Draw 5 cards. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Time",
+      "Draw 5 cards and Erode them. NL Exhaust."
+    ]
+  },
+  "elfprototype:GreatSeal": {
+    "NAME": "Great Seal",
+    "DESCRIPTION": "Gain !B! Block. Seal every cursed card in your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Seal",
+      "Gain !B! Block. Seal every other cursed card in your hand, gain [E] for each (max 3)."
+    ]
+  },
+  "elfprototype:Avatar": {
+    "NAME": "Avatar",
+    "DESCRIPTION": "Gain !M! Chime. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Avatar",
+      "Lose 5 HP. Gain !M! Chime. NL Exhaust."
+    ]
+  },
+  "elfprototype:WorldtreeVow": {
+    "NAME": "Worldtree Vow",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain [E] .",
+    "EXTENDED_DESCRIPTION": [
+      "Cursed Vow",
+      "Gain !B! Block. NL Next turn, gain [E] [E] and draw 2 more cards."
+    ]
+  },
+  "elfprototype:Resonance": {
+    "NAME": "Resonance",
+    "DESCRIPTION": "The first time Chime reaches 4 each turn, gain [E] .",
+    "UPGRADE_DESCRIPTION": "Innate. NL The first time Chime reaches 4 each turn, gain [E] ."
+  },
+  "elfprototype:Recollection": {
+    "NAME": "Recollection",
+    "DESCRIPTION": "The first !M! times you Seal a card each turn, draw 1 card."
+  },
+  "elfprototype:Bloodblades": {
+    "NAME": "Bloodblades",
+    "DESCRIPTION": "Your cursed attacks deal !M! more damage per hit."
+  },
+  "elfprototype:Radiance": {
+    "NAME": "Radiance",
+    "DESCRIPTION": "Light cards get double Chime on Block.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Light cards get double Chime on Block."
+  },
+  "elfprototype:BacklashEcho": {
+    "NAME": "Backlash Echo",
+    "DESCRIPTION": "When Backlash costs HP, deal HP lost x!M! damage to ALL enemies."
+  },
+  "elfprototype:Composure": {
+    "NAME": "Composure",
+    "DESCRIPTION": "At the end of your turn, gain !M! Block for each light card in your hand."
+  },
+  "elfprototype:CreepingCurse": {
+    "NAME": "Creeping Curse",
+    "DESCRIPTION": "After drawing each turn, Erode the leftmost !M! light card(s) in your hand."
+  },
+  "elfprototype:Vigil": {
+    "NAME": "Vigil",
+    "DESCRIPTION": "Whenever you Seal a card yourself, gain !M! Block."
+  },
+  "elfprototype:MoonAwakening": {
+    "NAME": "Moon Awakening",
+    "DESCRIPTION": "Whenever you Seal a card (including automatically), draw 1 card and gain [E] ."
+  },
+  "elfprototype:Afterglow": {
+    "NAME": "Afterglow",
+    "DESCRIPTION": "At the end of your turn, Chime is only halved."
+  },
+  "elfprototype:Evernight": {
+    "NAME": "Evernight",
+    "DESCRIPTION": "Your cursed attacks hit 1 more time."
+  },
+  "elfprototype:CursedHeart": {
+    "NAME": "Cursed Heart",
+    "DESCRIPTION": "Whenever you Backlash, gain 1 Strength.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you Backlash, gain 1 Strength."
+  },
+  "elfprototype:LightOath": {
+    "NAME": "Light Oath",
+    "DESCRIPTION": "Light cards get double Chime on damage and Block."
+  }
+}

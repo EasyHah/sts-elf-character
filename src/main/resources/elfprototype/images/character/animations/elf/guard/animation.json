@@ -1,0 +1,549 @@
+{
+  "asset_id": "AN05",
+  "form": "elf",
+  "action": "guard",
+  "canvas": [
+    512,
+    512
+  ],
+  "fps": 24,
+  "frame_index_base": 0,
+  "frame_count": 12,
+  "duration_seconds": 0.5,
+  "loop": false,
+  "pivot": {
+    "origin": "top_left",
+    "xy": [
+      256,
+      448
+    ]
+  },
+  "events": [],
+  "end_action": "idle",
+  "alpha": "straight",
+  "color_space": "sRGB",
+  "source_frame_indices": [
+    0,
+    11,
+    22,
+    34,
+    45,
+    56,
+    67,
+    78,
+    89,
+    101,
+    112,
+    123
+  ],
+  "source_layout": {
+    "kind": "canonical",
+    "canvas": [
+      512,
+      512
+    ],
+    "pivot": [
+      256,
+      448
+    ]
+  },
+  "detached_projectiles": [],
+  "frames": [
+    {
+      "file": "frames/guard_000.png",
+      "source_index": 0,
+      "index": 0,
+      "page": 0,
+      "rect": [
+        3,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/guard_001.png",
+      "source_index": 11,
+      "index": 1,
+      "page": 0,
+      "rect": [
+        258,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/guard_002.png",
+      "source_index": 22,
+      "index": 2,
+      "page": 0,
+      "rect": [
+        513,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/guard_003.png",
+      "source_index": 34,
+      "index": 3,
+      "page": 0,
+      "rect": [
+        768,
+        3,
+        265,
+        308
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        151,
+        141
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/guard_004.png",
+      "source_index": 45,
+      "index": 4,
+      "page": 0,
+      "rect": [
+        1037,
+        3,
+        298,
+        276
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        124,
+        173
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/guard_005.png",
+      "source_index": 56,
+      "index": 5,
+      "page": 0,
+      "rect": [
+        1339,
+        3,
+        275,
+        276
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        147,
+        173
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/guard_006.png",
+      "source_index": 67,
+      "index": 6,
+      "page": 0,
+      "rect": [
+        1618,
+        3,
+        270,
+        278
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        148,
+        171
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/guard_007.png",
+      "source_index": 78,
+      "index": 7,
+      "page": 0,
+      "rect": [
+        3,
+        328,
+        258,
+        318
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        152,
+        131
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/guard_008.png",
+      "source_index": 89,
+      "index": 8,
+      "page": 0,
+      "rect": [
+        265,
+        328,
+        255,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        160,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/guard_009.png",
+      "source_index": 101,
+      "index": 9,
+      "page": 0,
+      "rect": [
+        524,
+        328,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/guard_010.png",
+      "source_index": 112,
+      "index": 10,
+      "page": 0,
+      "rect": [
+        779,
+        328,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/guard_011.png",
+      "source_index": 123,
+      "index": 11,
+      "page": 0,
+      "rect": [
+        1034,
+        328,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    }
+  ],
+  "atlas": {
+    "pages": [
+      "atlas/page_00.png"
+    ],
+    "regions": [
+      {
+        "index": 0,
+        "page": 0,
+        "rect": [
+          3,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 1,
+        "page": 0,
+        "rect": [
+          258,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 2,
+        "page": 0,
+        "rect": [
+          513,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 3,
+        "page": 0,
+        "rect": [
+          768,
+          3,
+          265,
+          308
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          151,
+          141
+        ],
+        "rotated": false
+      },
+      {
+        "index": 4,
+        "page": 0,
+        "rect": [
+          1037,
+          3,
+          298,
+          276
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          124,
+          173
+        ],
+        "rotated": false
+      },
+      {
+        "index": 5,
+        "page": 0,
+        "rect": [
+          1339,
+          3,
+          275,
+          276
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          147,
+          173
+        ],
+        "rotated": false
+      },
+      {
+        "index": 6,
+        "page": 0,
+        "rect": [
+          1618,
+          3,
+          270,
+          278
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          148,
+          171
+        ],
+        "rotated": false
+      },
+      {
+        "index": 7,
+        "page": 0,
+        "rect": [
+          3,
+          328,
+          258,
+          318
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          152,
+          131
+        ],
+        "rotated": false
+      },
+      {
+        "index": 8,
+        "page": 0,
+        "rect": [
+          265,
+          328,
+          255,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          160,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 9,
+        "page": 0,
+        "rect": [
+          524,
+          328,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 10,
+        "page": 0,
+        "rect": [
+          779,
+          328,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 11,
+        "page": 0,
+        "rect": [
+          1034,
+          328,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      }
+    ],
+    "page_size": [
+      2048,
+      2048
+    ],
+    "spacing": 2,
+    "extrude": 1,
+    "alpha": "straight",
+    "texture_bytes": 16777216
+  },
+  "untrimmed_rgba_bytes": 12582912
+}

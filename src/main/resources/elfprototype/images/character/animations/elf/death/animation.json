@@ -1,0 +1,1041 @@
+{
+  "asset_id": "AN06",
+  "form": "elf",
+  "action": "death",
+  "canvas": [
+    512,
+    512
+  ],
+  "fps": 24,
+  "frame_index_base": 0,
+  "frame_count": 24,
+  "duration_seconds": 1.0,
+  "loop": false,
+  "pivot": {
+    "origin": "top_left",
+    "xy": [
+      256,
+      448
+    ]
+  },
+  "events": [],
+  "end_action": "hold",
+  "alpha": "straight",
+  "color_space": "sRGB",
+  "source_frame_indices": [
+    0,
+    5,
+    11,
+    16,
+    21,
+    27,
+    32,
+    37,
+    43,
+    48,
+    53,
+    59,
+    64,
+    70,
+    75,
+    80,
+    86,
+    91,
+    96,
+    102,
+    107,
+    112,
+    118,
+    123
+  ],
+  "source_layout": {
+    "kind": "canonical",
+    "canvas": [
+      512,
+      512
+    ],
+    "pivot": [
+      256,
+      448
+    ]
+  },
+  "detached_projectiles": [],
+  "frames": [
+    {
+      "file": "frames/death_000.png",
+      "source_index": 0,
+      "index": 0,
+      "page": 0,
+      "rect": [
+        3,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_001.png",
+      "source_index": 5,
+      "index": 1,
+      "page": 0,
+      "rect": [
+        258,
+        3,
+        250,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        165,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_002.png",
+      "source_index": 11,
+      "index": 2,
+      "page": 0,
+      "rect": [
+        512,
+        3,
+        249,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        166,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_003.png",
+      "source_index": 16,
+      "index": 3,
+      "page": 0,
+      "rect": [
+        765,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_004.png",
+      "source_index": 21,
+      "index": 4,
+      "page": 0,
+      "rect": [
+        1020,
+        3,
+        252,
+        320
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        163,
+        129
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_005.png",
+      "source_index": 27,
+      "index": 5,
+      "page": 0,
+      "rect": [
+        1276,
+        3,
+        255,
+        318
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        161,
+        131
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_006.png",
+      "source_index": 32,
+      "index": 6,
+      "page": 0,
+      "rect": [
+        1535,
+        3,
+        256,
+        314
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        161,
+        135
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_007.png",
+      "source_index": 37,
+      "index": 7,
+      "page": 0,
+      "rect": [
+        3,
+        328,
+        261,
+        307
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        156,
+        142
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_008.png",
+      "source_index": 43,
+      "index": 8,
+      "page": 0,
+      "rect": [
+        268,
+        328,
+        272,
+        293
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        146,
+        156
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_009.png",
+      "source_index": 48,
+      "index": 9,
+      "page": 0,
+      "rect": [
+        544,
+        328,
+        285,
+        277
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        135,
+        172
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_010.png",
+      "source_index": 53,
+      "index": 10,
+      "page": 0,
+      "rect": [
+        833,
+        328,
+        302,
+        248
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        120,
+        201
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_011.png",
+      "source_index": 59,
+      "index": 11,
+      "page": 0,
+      "rect": [
+        1139,
+        328,
+        314,
+        224
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        112,
+        233
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_012.png",
+      "source_index": 64,
+      "index": 12,
+      "page": 0,
+      "rect": [
+        1457,
+        328,
+        322,
+        210
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        116,
+        247
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_013.png",
+      "source_index": 70,
+      "index": 13,
+      "page": 0,
+      "rect": [
+        3,
+        639,
+        313,
+        188
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        128,
+        269
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_014.png",
+      "source_index": 75,
+      "index": 14,
+      "page": 0,
+      "rect": [
+        320,
+        639,
+        312,
+        175
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        130,
+        283
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_015.png",
+      "source_index": 80,
+      "index": 15,
+      "page": 0,
+      "rect": [
+        636,
+        639,
+        310,
+        172
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        130,
+        286
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_016.png",
+      "source_index": 86,
+      "index": 16,
+      "page": 0,
+      "rect": [
+        950,
+        639,
+        310,
+        170
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        129,
+        287
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_017.png",
+      "source_index": 91,
+      "index": 17,
+      "page": 0,
+      "rect": [
+        1264,
+        639,
+        310,
+        170
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        128,
+        287
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_018.png",
+      "source_index": 96,
+      "index": 18,
+      "page": 0,
+      "rect": [
+        1578,
+        639,
+        311,
+        170
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        128,
+        287
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_019.png",
+      "source_index": 102,
+      "index": 19,
+      "page": 0,
+      "rect": [
+        3,
+        831,
+        310,
+        169
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        129,
+        288
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_020.png",
+      "source_index": 107,
+      "index": 20,
+      "page": 0,
+      "rect": [
+        317,
+        831,
+        309,
+        169
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        129,
+        288
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_021.png",
+      "source_index": 112,
+      "index": 21,
+      "page": 0,
+      "rect": [
+        630,
+        831,
+        311,
+        169
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        128,
+        288
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_022.png",
+      "source_index": 118,
+      "index": 22,
+      "page": 0,
+      "rect": [
+        945,
+        831,
+        310,
+        169
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        128,
+        288
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/death_023.png",
+      "source_index": 123,
+      "index": 23,
+      "page": 0,
+      "rect": [
+        1259,
+        831,
+        311,
+        169
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        128,
+        288
+      ],
+      "rotated": false
+    }
+  ],
+  "atlas": {
+    "pages": [
+      "atlas/page_00.png"
+    ],
+    "regions": [
+      {
+        "index": 0,
+        "page": 0,
+        "rect": [
+          3,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 1,
+        "page": 0,
+        "rect": [
+          258,
+          3,
+          250,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          165,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 2,
+        "page": 0,
+        "rect": [
+          512,
+          3,
+          249,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          166,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 3,
+        "page": 0,
+        "rect": [
+          765,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 4,
+        "page": 0,
+        "rect": [
+          1020,
+          3,
+          252,
+          320
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          163,
+          129
+        ],
+        "rotated": false
+      },
+      {
+        "index": 5,
+        "page": 0,
+        "rect": [
+          1276,
+          3,
+          255,
+          318
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          161,
+          131
+        ],
+        "rotated": false
+      },
+      {
+        "index": 6,
+        "page": 0,
+        "rect": [
+          1535,
+          3,
+          256,
+          314
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          161,
+          135
+        ],
+        "rotated": false
+      },
+      {
+        "index": 7,
+        "page": 0,
+        "rect": [
+          3,
+          328,
+          261,
+          307
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          156,
+          142
+        ],
+        "rotated": false
+      },
+      {
+        "index": 8,
+        "page": 0,
+        "rect": [
+          268,
+          328,
+          272,
+          293
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          146,
+          156
+        ],
+        "rotated": false
+      },
+      {
+        "index": 9,
+        "page": 0,
+        "rect": [
+          544,
+          328,
+          285,
+          277
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          135,
+          172
+        ],
+        "rotated": false
+      },
+      {
+        "index": 10,
+        "page": 0,
+        "rect": [
+          833,
+          328,
+          302,
+          248
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          120,
+          201
+        ],
+        "rotated": false
+      },
+      {
+        "index": 11,
+        "page": 0,
+        "rect": [
+          1139,
+          328,
+          314,
+          224
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          112,
+          233
+        ],
+        "rotated": false
+      },
+      {
+        "index": 12,
+        "page": 0,
+        "rect": [
+          1457,
+          328,
+          322,
+          210
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          116,
+          247
+        ],
+        "rotated": false
+      },
+      {
+        "index": 13,
+        "page": 0,
+        "rect": [
+          3,
+          639,
+          313,
+          188
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          128,
+          269
+        ],
+        "rotated": false
+      },
+      {
+        "index": 14,
+        "page": 0,
+        "rect": [
+          320,
+          639,
+          312,
+          175
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          130,
+          283
+        ],
+        "rotated": false
+      },
+      {
+        "index": 15,
+        "page": 0,
+        "rect": [
+          636,
+          639,
+          310,
+          172
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          130,
+          286
+        ],
+        "rotated": false
+      },
+      {
+        "index": 16,
+        "page": 0,
+        "rect": [
+          950,
+          639,
+          310,
+          170
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          129,
+          287
+        ],
+        "rotated": false
+      },
+      {
+        "index": 17,
+        "page": 0,
+        "rect": [
+          1264,
+          639,
+          310,
+          170
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          128,
+          287
+        ],
+        "rotated": false
+      },
+      {
+        "index": 18,
+        "page": 0,
+        "rect": [
+          1578,
+          639,
+          311,
+          170
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          128,
+          287
+        ],
+        "rotated": false
+      },
+      {
+        "index": 19,
+        "page": 0,
+        "rect": [
+          3,
+          831,
+          310,
+          169
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          129,
+          288
+        ],
+        "rotated": false
+      },
+      {
+        "index": 20,
+        "page": 0,
+        "rect": [
+          317,
+          831,
+          309,
+          169
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          129,
+          288
+        ],
+        "rotated": false
+      },
+      {
+        "index": 21,
+        "page": 0,
+        "rect": [
+          630,
+          831,
+          311,
+          169
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          128,
+          288
+        ],
+        "rotated": false
+      },
+      {
+        "index": 22,
+        "page": 0,
+        "rect": [
+          945,
+          831,
+          310,
+          169
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          128,
+          288
+        ],
+        "rotated": false
+      },
+      {
+        "index": 23,
+        "page": 0,
+        "rect": [
+          1259,
+          831,
+          311,
+          169
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          128,
+          288
+        ],
+        "rotated": false
+      }
+    ],
+    "page_size": [
+      2048,
+      2048
+    ],
+    "spacing": 2,
+    "extrude": 1,
+    "alpha": "straight",
+    "texture_bytes": 16777216
+  },
+  "untrimmed_rgba_bytes": 25165824
+}

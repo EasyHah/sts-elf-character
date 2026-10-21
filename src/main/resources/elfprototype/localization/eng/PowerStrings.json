@@ -1,0 +1,124 @@
+{
+  "elfprototype:Chime": {
+    "NAME": "Chime",
+    "DESCRIPTIONS": [
+      "Flipped #b",
+      " time(s) this turn. Elf cards deal + #b",
+      " damage per hit and gain that much more #yBlock. Resets at end of turn."
+    ]
+  },
+  "elfprototype:Resonance": {
+    "NAME": "Resonance",
+    "DESCRIPTIONS": [
+      "The first time #yChime reaches #b4 each turn, gain #b{N} energy."
+    ]
+  },
+  "elfprototype:Recollection": {
+    "NAME": "Recollection",
+    "DESCRIPTIONS": [
+      "The first #b{N} Seals each turn draw #b1 card each."
+    ]
+  },
+  "elfprototype:Bloodblades": {
+    "NAME": "Bloodblades",
+    "DESCRIPTIONS": [
+      "Cursed attacks deal #b{N} more damage per hit."
+    ]
+  },
+  "elfprototype:Radiance": {
+    "NAME": "Radiance",
+    "DESCRIPTIONS": [
+      "Light cards get double #yChime on #yBlock."
+    ]
+  },
+  "elfprototype:BacklashEcho": {
+    "NAME": "Backlash Echo",
+    "DESCRIPTIONS": [
+      "When #yBacklash costs HP, deal HP lost x#b{N} damage to ALL enemies."
+    ]
+  },
+  "elfprototype:Composure": {
+    "NAME": "Composure",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b{N} #yBlock for each light card in your hand."
+    ]
+  },
+  "elfprototype:CreepingCurse": {
+    "NAME": "Creeping Curse",
+    "DESCRIPTIONS": [
+      "After drawing each turn, #yErode the leftmost #b{N} light card(s) in your hand."
+    ]
+  },
+  "elfprototype:Vigil": {
+    "NAME": "Vigil",
+    "DESCRIPTIONS": [
+      "Whenever you #ySeal a card yourself, gain #b{N} #yBlock."
+    ]
+  },
+  "elfprototype:MoonAwakening": {
+    "NAME": "Moon Awakening",
+    "DESCRIPTIONS": [
+      "Whenever you #ySeal a card, draw #b{N} card(s) and gain #b{N} energy."
+    ]
+  },
+  "elfprototype:Afterglow": {
+    "NAME": "Afterglow",
+    "DESCRIPTIONS": [
+      "At the end of your turn, #yChime is only halved."
+    ]
+  },
+  "elfprototype:Evernight": {
+    "NAME": "Evernight",
+    "DESCRIPTIONS": [
+      "Cursed attacks hit #b{N} more time(s)."
+    ]
+  },
+  "elfprototype:CursedHeart": {
+    "NAME": "Cursed Heart",
+    "DESCRIPTIONS": [
+      "Whenever you #yBacklash, gain #b{N} #yStrength."
+    ]
+  },
+  "elfprototype:LightOath": {
+    "NAME": "Light Oath",
+    "DESCRIPTIONS": [
+      "Light cards get double #yChime on damage and #yBlock."
+    ]
+  },
+  "elfprototype:TwinSoul": {
+    "NAME": "Twin Soul",
+    "DESCRIPTIONS": [
+      "This turn, light cards #yErode themselves after being played and return to your hand."
+    ]
+  },
+  "elfprototype:NoBacklash": {
+    "NAME": "Steady",
+    "DESCRIPTIONS": [
+      "No #yBacklash at the end of this turn."
+    ]
+  },
+  "elfprototype:NockLight": {
+    "NAME": "Nock",
+    "DESCRIPTIONS": [
+      "Your next light attack this turn deals #b{N} more damage."
+    ]
+  },
+  "elfprototype:NockCursed": {
+    "NAME": "Bide",
+    "DESCRIPTIONS": [
+      "Your next cursed attack this turn deals #b{N} more damage per hit."
+    ]
+  },
+  "elfprototype:EchoLight": {
+    "NAME": "Echo (light)",
+    "DESCRIPTIONS": [
+      "This turn, your next #b{N} light card(s) are played twice."
+    ]
+  },
+  "elfprototype:EchoCursed": {
+    "NAME": "Echo (cursed)",
+    "DESCRIPTIONS": [
+      "This turn, your next #b{N} cursed card(s) are played twice."
+    ]
+  }
+}

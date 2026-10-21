@@ -1,0 +1,257 @@
+{
+  "asset_id": "AN-I01",
+  "form": "intermediate",
+  "action": "idle_cursed",
+  "canvas": [
+    512,
+    512
+  ],
+  "fps": 12,
+  "loop": true,
+  "end_action": "idle_cursed",
+  "events": [],
+  "source_layout": {
+    "kind": "duality_h3_translated",
+    "ping_pong": true,
+    "source_canvas": [
+      512,
+      512
+    ],
+    "offset": [
+      53,
+      10
+    ]
+  },
+  "frame_index_base": 0,
+  "frame_count": 36,
+  "duration_seconds": 3.0,
+  "pivot": {
+    "origin": "top_left",
+    "xy": [
+      256,
+      448
+    ]
+  },
+  "alpha": "straight",
+  "color_space": "sRGB",
+  "source_frame_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    34,
+    32,
+    30,
+    28,
+    26,
+    24,
+    22,
+    20,
+    18,
+    16,
+    14,
+    12,
+    10,
+    8,
+    6,
+    4,
+    2
+  ],
+  "frames": [
+    {
+      "file": "frames/idle_000.png",
+      "source_index": 0,
+      "index": 0
+    },
+    {
+      "file": "frames/idle_001.png",
+      "source_index": 2,
+      "index": 1
+    },
+    {
+      "file": "frames/idle_002.png",
+      "source_index": 4,
+      "index": 2
+    },
+    {
+      "file": "frames/idle_003.png",
+      "source_index": 6,
+      "index": 3
+    },
+    {
+      "file": "frames/idle_004.png",
+      "source_index": 8,
+      "index": 4
+    },
+    {
+      "file": "frames/idle_005.png",
+      "source_index": 10,
+      "index": 5
+    },
+    {
+      "file": "frames/idle_006.png",
+      "source_index": 12,
+      "index": 6
+    },
+    {
+      "file": "frames/idle_007.png",
+      "source_index": 14,
+      "index": 7
+    },
+    {
+      "file": "frames/idle_008.png",
+      "source_index": 16,
+      "index": 8
+    },
+    {
+      "file": "frames/idle_009.png",
+      "source_index": 18,
+      "index": 9
+    },
+    {
+      "file": "frames/idle_010.png",
+      "source_index": 20,
+      "index": 10
+    },
+    {
+      "file": "frames/idle_011.png",
+      "source_index": 22,
+      "index": 11
+    },
+    {
+      "file": "frames/idle_012.png",
+      "source_index": 24,
+      "index": 12
+    },
+    {
+      "file": "frames/idle_013.png",
+      "source_index": 26,
+      "index": 13
+    },
+    {
+      "file": "frames/idle_014.png",
+      "source_index": 28,
+      "index": 14
+    },
+    {
+      "file": "frames/idle_015.png",
+      "source_index": 30,
+      "index": 15
+    },
+    {
+      "file": "frames/idle_016.png",
+      "source_index": 32,
+      "index": 16
+    },
+    {
+      "file": "frames/idle_017.png",
+      "source_index": 34,
+      "index": 17
+    },
+    {
+      "file": "frames/idle_018.png",
+      "source_index": 36,
+      "index": 18
+    },
+    {
+      "file": "frames/idle_019.png",
+      "source_index": 34,
+      "index": 19
+    },
+    {
+      "file": "frames/idle_020.png",
+      "source_index": 32,
+      "index": 20
+    },
+    {
+      "file": "frames/idle_021.png",
+      "source_index": 30,
+      "index": 21
+    },
+    {
+      "file": "frames/idle_022.png",
+      "source_index": 28,
+      "index": 22
+    },
+    {
+      "file": "frames/idle_023.png",
+      "source_index": 26,
+      "index": 23
+    },
+    {
+      "file": "frames/idle_024.png",
+      "source_index": 24,
+      "index": 24
+    },
+    {
+      "file": "frames/idle_025.png",
+      "source_index": 22,
+      "index": 25
+    },
+    {
+      "file": "frames/idle_026.png",
+      "source_index": 20,
+      "index": 26
+    },
+    {
+      "file": "frames/idle_027.png",
+      "source_index": 18,
+      "index": 27
+    },
+    {
+      "file": "frames/idle_028.png",
+      "source_index": 16,
+      "index": 28
+    },
+    {
+      "file": "frames/idle_029.png",
+      "source_index": 14,
+      "index": 29
+    },
+    {
+      "file": "frames/idle_030.png",
+      "source_index": 12,
+      "index": 30
+    },
+    {
+      "file": "frames/idle_031.png",
+      "source_index": 10,
+      "index": 31
+    },
+    {
+      "file": "frames/idle_032.png",
+      "source_index": 8,
+      "index": 32
+    },
+    {
+      "file": "frames/idle_033.png",
+      "source_index": 6,
+      "index": 33
+    },
+    {
+      "file": "frames/idle_034.png",
+      "source_index": 4,
+      "index": 34
+    },
+    {
+      "file": "frames/idle_035.png",
+      "source_index": 2,
+      "index": 35
+    }
+  ]
+}

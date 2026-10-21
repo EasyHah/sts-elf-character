@@ -1,0 +1,124 @@
+{
+  "elfprototype:Chime": {
+    "NAME": "咒鸣",
+    "DESCRIPTIONS": [
+      "本回合已翻面 #b",
+      " 次。精灵卡牌每段伤害和获得的 #y格挡 +#b",
+      " 。回合结束时清空。"
+    ]
+  },
+  "elfprototype:Resonance": {
+    "NAME": "共鸣",
+    "DESCRIPTIONS": [
+      "每回合 #y咒鸣 第一次达到 #b4 时，获得 #b{N} 点能量。"
+    ]
+  },
+  "elfprototype:Recollection": {
+    "NAME": "回忆",
+    "DESCRIPTIONS": [
+      "每回合前 #b{N} 次 #y封印 各抽 #b1 张牌。"
+    ]
+  },
+  "elfprototype:Bloodblades": {
+    "NAME": "暗血",
+    "DESCRIPTIONS": [
+      "蚀面攻击每段伤害 +#b{N} 。"
+    ]
+  },
+  "elfprototype:Radiance": {
+    "NAME": "光辉",
+    "DESCRIPTIONS": [
+      "光面牌获得 #y格挡 时， #y咒鸣 加成翻倍。"
+    ]
+  },
+  "elfprototype:BacklashEcho": {
+    "NAME": "血之回响",
+    "DESCRIPTIONS": [
+      "#y反噬 失去生命时，对所有敌人造成失去生命 ×#b{N} 的伤害。"
+    ]
+  },
+  "elfprototype:Composure": {
+    "NAME": "静心",
+    "DESCRIPTIONS": [
+      "回合结束时，手中每张光面牌给你 #b{N} 点 #y格挡 。"
+    ]
+  },
+  "elfprototype:CreepingCurse": {
+    "NAME": "蔓延之咒",
+    "DESCRIPTIONS": [
+      "每回合抽牌后， #y侵蚀 手中最左边 #b{N} 张光面牌。"
+    ]
+  },
+  "elfprototype:Vigil": {
+    "NAME": "守望",
+    "DESCRIPTIONS": [
+      "每次手动 #y封印 1 张牌，获得 #b{N} 点 #y格挡 。"
+    ]
+  },
+  "elfprototype:MoonAwakening": {
+    "NAME": "月辉觉醒",
+    "DESCRIPTIONS": [
+      "每次 #y封印 ，抽 #b{N} 张牌并获得 #b{N} 点能量。"
+    ]
+  },
+  "elfprototype:Afterglow": {
+    "NAME": "余韵",
+    "DESCRIPTIONS": [
+      "回合结束时， #y咒鸣 只清除一半。"
+    ]
+  },
+  "elfprototype:Evernight": {
+    "NAME": "永夜",
+    "DESCRIPTIONS": [
+      "蚀面攻击多造成 #b{N} 段。"
+    ]
+  },
+  "elfprototype:CursedHeart": {
+    "NAME": "咒之心",
+    "DESCRIPTIONS": [
+      "每次 #y反噬 ，获得 #b{N} 点 #y力量 。"
+    ]
+  },
+  "elfprototype:LightOath": {
+    "NAME": "光之誓",
+    "DESCRIPTIONS": [
+      "光面牌的伤害和 #y格挡 ， #y咒鸣 加成翻倍。"
+    ]
+  },
+  "elfprototype:TwinSoul": {
+    "NAME": "双生",
+    "DESCRIPTIONS": [
+      "本回合，光面牌打出后自动 #y侵蚀 并回到手牌。"
+    ]
+  },
+  "elfprototype:NoBacklash": {
+    "NAME": "定神",
+    "DESCRIPTIONS": [
+      "本回合结束时不触发 #y反噬 。"
+    ]
+  },
+  "elfprototype:NockLight": {
+    "NAME": "张弓",
+    "DESCRIPTIONS": [
+      "本回合下一张光面攻击牌伤害 +#b{N} 。"
+    ]
+  },
+  "elfprototype:NockCursed": {
+    "NAME": "蓄势",
+    "DESCRIPTIONS": [
+      "本回合下一张蚀面攻击牌每段伤害 +#b{N} 。"
+    ]
+  },
+  "elfprototype:EchoLight": {
+    "NAME": "回响·光",
+    "DESCRIPTIONS": [
+      "本回合接下来 #b{N} 张光面牌打出两次。"
+    ]
+  },
+  "elfprototype:EchoCursed": {
+    "NAME": "回响·蚀",
+    "DESCRIPTIONS": [
+      "本回合接下来 #b{N} 张蚀面牌打出两次。"
+    ]
+  }
+}

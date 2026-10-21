@@ -1,0 +1,72 @@
+{
+  "elfprototype:CrackedSeal": {
+    "NAME": "裂纹封印",
+    "FLAVOR": "封印还在，只是已经裂开了。",
+    "DESCRIPTIONS": [
+      "每回合第一次 #y封印 牌时，抽 #b1 张牌。"
+    ]
+  },
+  "elfprototype:WholeSeal": {
+    "NAME": "完整封印",
+    "FLAVOR": "裂纹被金线缝合，比原来更牢。",
+    "DESCRIPTIONS": [
+      "替换 #y裂纹封印 。每回合前 #b2 次 #y封印 牌时，各抽 #b1 张牌。"
+    ]
+  },
+  "elfprototype:DuskGauntlet": {
+    "NAME": "暗纹护手",
+    "FLAVOR": "护手上的纹路在黑暗里会自己发光。",
+    "DESCRIPTIONS": [
+      "每场战斗第一回合抽牌后， #y侵蚀 手中最左边的 #b1 张牌。"
+    ]
+  },
+  "elfprototype:SilverleafBrooch": {
+    "NAME": "银叶胸针",
+    "FLAVOR": "一片永不凋零的叶子。",
+    "DESCRIPTIONS": [
+      "每回合第一次手动 #y封印 牌时，获得 #b4 点 #y格挡 。"
+    ]
+  },
+  "elfprototype:MirrorEarring": {
+    "NAME": "镜之耳坠",
+    "FLAVOR": "镜子里的她，总是先动手。",
+    "DESCRIPTIONS": [
+      "每回合打出的第一张蚀面牌，每段伤害 +#b3 。"
+    ]
+  },
+  "elfprototype:MossCharm": {
+    "NAME": "苔藓护符",
+    "FLAVOR": "安静、潮湿、可靠。",
+    "DESCRIPTIONS": [
+      "回合结束时，若手中没有蚀面牌，获得 #b4 点 #y格挡 。"
+    ]
+  },
+  "elfprototype:WorldtreeBlessing": {
+    "NAME": "世界树的祝福",
+    "FLAVOR": "你不是独自在抵御风暴。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得 #b6 点 #y格挡 。每场战斗第一次主动使用药水后，恢复 #b3 点生命。"
+    ]
+  },
+  "elfprototype:EclipseStone": {
+    "NAME": "月蚀石",
+    "FLAVOR": "光与暗重叠的一瞬间。",
+    "DESCRIPTIONS": [
+      "每回合 #y咒鸣 第一次达到 #b6 时，获得 #b1 点能量并抽 #b1 张牌。"
+    ]
+  },
+  "elfprototype:Whetstone_Elf": {
+    "NAME": "磨刃石",
+    "FLAVOR": "刀越磨越亮，诅咒也是。",
+    "DESCRIPTIONS": [
+      "蚀面攻击每段伤害 +#b1 。"
+    ]
+  },
+  "elfprototype:CursedCrown": {
+    "NAME": "诅咒王冠",
+    "FLAVOR": "戴上它，力量与诅咒一同涌来。",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 #b1 点能量。每回合抽牌后， #y侵蚀 手中最左边的 #b1 张牌。"
+    ]
+  }
+}

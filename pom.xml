@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>elfprototype</groupId>
+    <artifactId>ElfPrototypeMod</artifactId>
+    <version>0.1.0</version>
+    <packaging>jar</packaging>
+
+    <name>Elf Prototype (Test Skin)</name>
+    <description>Test-only, toggleable PNG frame-animation skin for one vanilla character. Not a full character.</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Compile with any JDK >= 9; bytecode/API target stays Java 8 for the game's bundled JRE 1.8. -->
+        <maven.compiler.release>8</maven.compiler.release>
+
+        <modID>elfprototype</modID>
+        <author>ElfPrototype</author>
+        <sts.version>12-18-2022</sts.version>
+        <mts.version>3.30.0</mts.version>
+        <basemod.version>5.56.0</basemod.version>
+
+        <!--
+          Local paths are NOT hard-coded here. Set them in .mvn/maven.config
+          (copy .mvn/maven.config.example) or pass -Dsts.home=... -Dsts.workshop=... on the command line.
+        -->
+        <sts.home>SET_sts.home_IN_.mvn/maven.config</sts.home>
+        <sts.workshop>SET_sts.workshop_IN_.mvn/maven.config</sts.workshop>
+    </properties>
+
+    <dependencies>
+        <!-- Local compile-only dependencies from the user's own legal install. Never bundled into the JAR. -->
+        <dependency>
+            <groupId>com.megacrit.cardcrawl</groupId>
+            <artifactId>slaythespire</artifactId>
+            <version>${sts.version}</version>
+            <scope>system</scope>
+            <systemPath>${sts.home}/desktop-1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl</groupId>
+            <artifactId>modthespire</artifactId>
+            <version>3.30.3</version>
+            <scope>system</scope>
+            <systemPath>${sts.workshop}/1605060445/ModTheSpire.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl</groupId>
+            <artifactId>basemod</artifactId>
+            <version>${basemod.version}</version>
+            <scope>system</scope>
+            <systemPath>${sts.workshop}/1605833019/BaseMod.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <resources>
+            <!-- Binary assets: copied verbatim, never filtered. -->
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>ModTheSpire.json</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>ModTheSpire.json</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+            </plugin>
+            <!-- Intentionally no copy-to-mods step: deployment is explicit via deploy.ps1. -->
+        </plugins>
+    </build>
+</project>

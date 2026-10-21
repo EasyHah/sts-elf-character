@@ -1,0 +1,62 @@
+{
+  "batch": "B2-B5",
+  "design": "cards-relics-design.md v4",
+  "plan": "art-production-plan.md",
+  "workflow": {
+    "based_on": "sts1-art-pipeline/production-tools/elf_production.py highres() graph",
+    "unet": "qwen_image_2.1_int8_convrot.safetensors",
+    "clip": [
+      "qwen3vl_8b_int8_convrot.safetensors",
+      "qwen_image"
+    ],
+    "vae": "qwen_image_2.1_vae_bf16.safetensors",
+    "encoder": "TextEncodeQwenImage21",
+    "resolution": 0,
+    "negative_prompt": "",
+    "sampler": {
+      "steps": 25,
+      "cfg": 3.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    },
+    "latent": "encoder output #2 (size of image1)",
+    "comfy": "http://127.0.0.1:8188 (engine ComfyUI of WalkingwithAI-Studio)"
+  },
+  "counts": {
+    "1": 360,
+    "2": 159
+  },
+  "jobs": [
+    {
+      "id": "Spread__v2",
+      "round": 3,
+      "kind": "card",
+      "card_type": "skill",
+      "face": "intermediate",
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/character-pipeline-h3/character_studio/runs/qwen_final/designs/intermediate/clean/ready_qwen.png",
+          "prepare": "contain in 1024x768 white canvas"
+        }
+      },
+      "prompt": "Preserve the SAME adult female elf from <image1> in her half-cursed form: recognizable face and cheek marking, pointed ears, long braid, white hood with violet edges, pale ivory armor, ONE single curved saber. Coherent ivory / pale violet / steel palette. No bow, no second blade, no additional person. Horizontal card illustration, violet veins of curse light creep outward across the ground from her feet, withering the grass, her saber lowered, standing in a withered forest of grey dead trees and fallen leaves under a heavy dusk sky, the forest filling the whole background. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. The painted environment background fills the entire frame edge to edge; no white, black or empty background. No text, labels, logos, watermark, frame, card border or interface. Only one character.",
+      "runtime": [
+        "cards/skill/Spread_p.png (500x380)",
+        "cards/skill/Spread.png (250x190)"
+      ],
+      "seeds": [
+        40900000,
+        40900001,
+        40900002,
+        40900003
+      ],
+      "candidates": 4,
+      "out_dir": "/workspace/sts1-art-pipeline/elf-art/Spread__v2"
+    }
+  ]
+}

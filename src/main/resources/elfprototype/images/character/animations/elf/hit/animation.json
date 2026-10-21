@@ -1,0 +1,303 @@
+{
+  "asset_id": "AN04",
+  "form": "elf",
+  "action": "hit",
+  "canvas": [
+    512,
+    512
+  ],
+  "fps": 24,
+  "frame_index_base": 0,
+  "frame_count": 6,
+  "duration_seconds": 0.25,
+  "loop": false,
+  "pivot": {
+    "origin": "top_left",
+    "xy": [
+      256,
+      448
+    ]
+  },
+  "events": [],
+  "end_action": "idle",
+  "alpha": "straight",
+  "color_space": "sRGB",
+  "source_frame_indices": [
+    0,
+    25,
+    49,
+    74,
+    98,
+    123
+  ],
+  "source_layout": {
+    "kind": "canonical",
+    "canvas": [
+      512,
+      512
+    ],
+    "pivot": [
+      256,
+      448
+    ]
+  },
+  "detached_projectiles": [],
+  "frames": [
+    {
+      "file": "frames/hit_000.png",
+      "source_index": 0,
+      "index": 0,
+      "page": 0,
+      "rect": [
+        3,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/hit_001.png",
+      "source_index": 25,
+      "index": 1,
+      "page": 0,
+      "rect": [
+        258,
+        3,
+        261,
+        313
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        123,
+        136
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/hit_002.png",
+      "source_index": 49,
+      "index": 2,
+      "page": 0,
+      "rect": [
+        523,
+        3,
+        262,
+        314
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        122,
+        135
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/hit_003.png",
+      "source_index": 74,
+      "index": 3,
+      "page": 0,
+      "rect": [
+        789,
+        3,
+        259,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        159,
+        126
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/hit_004.png",
+      "source_index": 98,
+      "index": 4,
+      "page": 0,
+      "rect": [
+        1052,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    },
+    {
+      "file": "frames/hit_005.png",
+      "source_index": 123,
+      "index": 5,
+      "page": 0,
+      "rect": [
+        1307,
+        3,
+        251,
+        321
+      ],
+      "source_size": [
+        512,
+        512
+      ],
+      "trim_offset": [
+        164,
+        128
+      ],
+      "rotated": false
+    }
+  ],
+  "atlas": {
+    "pages": [
+      "atlas/page_00.png"
+    ],
+    "regions": [
+      {
+        "index": 0,
+        "page": 0,
+        "rect": [
+          3,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 1,
+        "page": 0,
+        "rect": [
+          258,
+          3,
+          261,
+          313
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          123,
+          136
+        ],
+        "rotated": false
+      },
+      {
+        "index": 2,
+        "page": 0,
+        "rect": [
+          523,
+          3,
+          262,
+          314
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          122,
+          135
+        ],
+        "rotated": false
+      },
+      {
+        "index": 3,
+        "page": 0,
+        "rect": [
+          789,
+          3,
+          259,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          159,
+          126
+        ],
+        "rotated": false
+      },
+      {
+        "index": 4,
+        "page": 0,
+        "rect": [
+          1052,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      },
+      {
+        "index": 5,
+        "page": 0,
+        "rect": [
+          1307,
+          3,
+          251,
+          321
+        ],
+        "source_size": [
+          512,
+          512
+        ],
+        "trim_offset": [
+          164,
+          128
+        ],
+        "rotated": false
+      }
+    ],
+    "page_size": [
+      2048,
+      2048
+    ],
+    "spacing": 2,
+    "extrude": 1,
+    "alpha": "straight",
+    "texture_bytes": 16777216
+  },
+  "untrimmed_rgba_bytes": 6291456
+}

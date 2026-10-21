@@ -1,0 +1,72 @@
+{
+  "elfprototype:CrackedSeal": {
+    "NAME": "Cracked Seal",
+    "FLAVOR": "Still sealed. Just cracked.",
+    "DESCRIPTIONS": [
+      "The first time you #ySeal a card each turn, draw #b1 card."
+    ]
+  },
+  "elfprototype:WholeSeal": {
+    "NAME": "Whole Seal",
+    "FLAVOR": "The crack is mended with gold.",
+    "DESCRIPTIONS": [
+      "Replaces #yCracked #ySeal. The first #b2 times you #ySeal a card each turn, draw #b1 card."
+    ]
+  },
+  "elfprototype:DuskGauntlet": {
+    "NAME": "Dusk Gauntlet",
+    "FLAVOR": "Its veins glow on their own in the dark.",
+    "DESCRIPTIONS": [
+      "After your first draw each combat, #yErode the leftmost card in your hand."
+    ]
+  },
+  "elfprototype:SilverleafBrooch": {
+    "NAME": "Silverleaf Brooch",
+    "FLAVOR": "A leaf that never withers.",
+    "DESCRIPTIONS": [
+      "The first time you #ySeal a card yourself each turn, gain #b4 #yBlock."
+    ]
+  },
+  "elfprototype:MirrorEarring": {
+    "NAME": "Mirror Earring",
+    "FLAVOR": "Her reflection always strikes first.",
+    "DESCRIPTIONS": [
+      "The first cursed card you play each turn deals #b3 more damage per hit."
+    ]
+  },
+  "elfprototype:MossCharm": {
+    "NAME": "Moss Charm",
+    "FLAVOR": "Quiet, damp, dependable.",
+    "DESCRIPTIONS": [
+      "At the end of your turn, if no cursed card is in your hand, gain #b4 #yBlock."
+    ]
+  },
+  "elfprototype:WorldtreeBlessing": {
+    "NAME": "Worldtree Blessing",
+    "FLAVOR": "You do not face the storm alone.",
+    "DESCRIPTIONS": [
+      "At the start of combat, gain #b6 #yBlock. The first time you use a potion each combat, heal #b3 HP."
+    ]
+  },
+  "elfprototype:EclipseStone": {
+    "NAME": "Eclipse Stone",
+    "FLAVOR": "The moment light and dark overlap.",
+    "DESCRIPTIONS": [
+      "The first time #yChime reaches #b6 each turn, gain #b1 energy and draw #b1 card."
+    ]
+  },
+  "elfprototype:Whetstone_Elf": {
+    "NAME": "Whetstone",
+    "FLAVOR": "The sharper the blade, the brighter the curse.",
+    "DESCRIPTIONS": [
+      "Cursed attacks deal #b1 more damage per hit."
+    ]
+  },
+  "elfprototype:CursedCrown": {
+    "NAME": "Cursed Crown",
+    "FLAVOR": "Power and curse arrive together.",
+    "DESCRIPTIONS": [
+      "Gain #b1 energy at the start of each turn. After drawing each turn, #yErode the leftmost card in your hand."
+    ]
+  }
+}

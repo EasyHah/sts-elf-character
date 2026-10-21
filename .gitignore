@@ -1,0 +1,18 @@
+# build output
+target/
+dist/
+
+# local-only: machine paths, game logs, patched game jars (contain game code, never commit)
+.mvn/maven.config
+logs/
+*-patched*.jar
+
+# local art review sheets, candidates and backups (large, regenerable)
+art-review/
+
+# IDE / Python
+*.iml
+.idea/
+.vscode/
+__pycache__/
+*.pyc

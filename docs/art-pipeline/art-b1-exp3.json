@@ -1,0 +1,157 @@
+{
+  "batch": "B1",
+  "design": "cards-relics-design.md v4",
+  "plan": "art-production-plan.md",
+  "workflow": {
+    "based_on": "sts1-art-pipeline/production-tools/elf_production.py highres() graph",
+    "unet": "qwen_image_2.1_int8_convrot.safetensors",
+    "clip": [
+      "qwen3vl_8b_int8_convrot.safetensors",
+      "qwen_image"
+    ],
+    "vae": "qwen_image_2.1_vae_bf16.safetensors",
+    "encoder": "TextEncodeQwenImage21",
+    "resolution": 0,
+    "negative_prompt": "",
+    "sampler": {
+      "steps": 25,
+      "cfg": 3.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    },
+    "latent": "encoder output #2 (size of image1)",
+    "comfy": "http://127.0.0.1:8188 (engine ComfyUI of WalkingwithAI-Studio)"
+  },
+  "rounds": {
+    "1": "light faces, demo-card cursed faces (edit check), relic, icon",
+    "2": "cursed faces of the four starter cards from the chosen round-1 light faces"
+  },
+  "jobs": [
+    {
+      "id": "SingleEdge_cursed__fixA",
+      "round": 9,
+      "kind": "card",
+      "card_type": "attack",
+      "face": "dark",
+      "candidates": 4,
+      "seeds": [
+        30005000,
+        30005001,
+        30005002,
+        30005003
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/SingleEdge_cursed",
+      "runtime": [
+        "cards/attack/SingleEdge_cursed_p.png (500x380)",
+        "cards/attack/SingleEdge_cursed.png (250x190)"
+      ],
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/sts1-art-pipeline/elf-b1/SingleEdge/chosen.png",
+          "prepare": "as is (1024x768)"
+        }
+      },
+      "prompt": "Edit <image1>. Keep EXACTLY the same camera, framing, composition, pose, body position and background layout of <image1>. Same crop and scale as <image1>: her head, shoulders and hands stay at the same position and size in the frame; do NOT zoom out, do NOT show more of her body than <image1> shows. Turn the elf into her cursed dark side: violet hood, dark leather and steel armor, purple cloak, braid with a violet sheen; her face, cheek marking, ears and braid stay recognisably the same person. Remove the bow and arrows completely; do not turn them into anything. She holds exactly TWO curved silver blades in total, one gripped in each hand; there are no other blades anywhere in the image, none floating, none on her back or belt. Shift the palette to deep violet, black, cold silver and a magenta curse glow, darken the background toward dusk, add thin dark curse smoke. The single saber is replaced by the two blades, one in each hand, in the same lunge toward screen RIGHT; one violet streak of light trails the forward blade (light only, not another blade), sparks at the tip. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. The painted environment background fills the entire frame edge to edge; no white, black or empty background. No text, labels, logos, watermark, frame, card border or interface. Only one character.",
+      "negative": ""
+    },
+    {
+      "id": "SingleEdge_cursed__fixB",
+      "round": 9,
+      "kind": "card",
+      "card_type": "attack",
+      "face": "dark",
+      "candidates": 4,
+      "seeds": [
+        30005000,
+        30005001,
+        30005002,
+        30005003
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/SingleEdge_cursed",
+      "runtime": [
+        "cards/attack/SingleEdge_cursed_p.png (500x380)",
+        "cards/attack/SingleEdge_cursed.png (250x190)"
+      ],
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/sts1-art-pipeline/elf-b1/SingleEdge/chosen.png",
+          "prepare": "as is (1024x768)"
+        }
+      },
+      "prompt": "Edit <image1>. Keep EXACTLY the same camera, framing, composition, pose, body position and background layout of <image1>. Same crop and scale as <image1>: her head, shoulders and hands stay at the same position and size in the frame; do NOT zoom out, do NOT show more of her body than <image1> shows. Turn the elf into her cursed dark side: violet hood, dark leather and steel armor, purple cloak, braid with a violet sheen; her face, cheek marking, ears and braid stay recognisably the same person. Remove the bow and arrows completely; do not turn them into anything. She holds exactly TWO curved silver blades in total, one gripped in each hand; there are no other blades anywhere in the image, none floating, none on her back or belt. Shift the palette to deep violet, black, cold silver and a magenta curse glow, darken the background toward dusk, add thin dark curse smoke. The single saber is replaced by the two blades, one in each hand, in the same lunge toward screen RIGHT; one violet streak of light trails the forward blade (light only, not another blade), sparks at the tip. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. The painted environment background fills the entire frame edge to edge; no white, black or empty background. No text, labels, logos, watermark, frame, card border or interface. Only one character.",
+      "negative": "extra blades, third blade, more than two blades, floating weapons, duplicated weapons, weapon afterimages, extra hands, extra arms, bow, arrows"
+    },
+    {
+      "id": "CurseWhisper_cursed__fixA",
+      "round": 9,
+      "kind": "card",
+      "card_type": "skill",
+      "face": "dark",
+      "candidates": 4,
+      "seeds": [
+        30006000,
+        30006001,
+        30006002,
+        30006003
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/CurseWhisper_cursed",
+      "runtime": [
+        "cards/skill/CurseWhisper_cursed_p.png (500x380)",
+        "cards/skill/CurseWhisper_cursed.png (250x190)"
+      ],
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/sts1-art-pipeline/elf-b1/CurseWhisper/chosen.png",
+          "prepare": "as is (1024x768)"
+        }
+      },
+      "prompt": "Edit <image1>. Keep EXACTLY the same camera, framing, composition, pose, body position and background layout of <image1>. Same crop and scale as <image1>: her head, shoulders and hands stay at the same position and size in the frame; do NOT zoom out, do NOT show more of her body than <image1> shows. Turn the elf into her cursed dark side: violet hood, dark leather and steel armor, purple cloak, braid with a violet sheen; her face, cheek marking, ears and braid stay recognisably the same person. Remove the bow and arrows completely; do not turn them into anything. She holds exactly TWO curved silver blades in total, one gripped in each hand; there are no other blades anywhere in the image, none floating, none on her back or belt. Shift the palette to deep violet, black, cold silver and a magenta curse glow, darken the background toward dusk, add thin dark curse smoke. Her eyes are open and glowing violet; the smoke now pours freely from her chest and coils up her arm, the moonlight turned magenta. Her hands stay where they are in <image1>; one blade rests in each hand. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. The painted environment background fills the entire frame edge to edge; no white, black or empty background. No text, labels, logos, watermark, frame, card border or interface. Only one character.",
+      "negative": ""
+    },
+    {
+      "id": "CurseWhisper_cursed__fixB",
+      "round": 9,
+      "kind": "card",
+      "card_type": "skill",
+      "face": "dark",
+      "candidates": 4,
+      "seeds": [
+        30006000,
+        30006001,
+        30006002,
+        30006003
+      ],
+      "out_dir": "/workspace/sts1-art-pipeline/elf-b1/CurseWhisper_cursed",
+      "runtime": [
+        "cards/skill/CurseWhisper_cursed_p.png (500x380)",
+        "cards/skill/CurseWhisper_cursed.png (250x190)"
+      ],
+      "size": [
+        1024,
+        768
+      ],
+      "images": {
+        "image_1": {
+          "path": "/workspace/sts1-art-pipeline/elf-b1/CurseWhisper/chosen.png",
+          "prepare": "as is (1024x768)"
+        }
+      },
+      "prompt": "Edit <image1>. Keep EXACTLY the same camera, framing, composition, pose, body position and background layout of <image1>. Same crop and scale as <image1>: her head, shoulders and hands stay at the same position and size in the frame; do NOT zoom out, do NOT show more of her body than <image1> shows. Turn the elf into her cursed dark side: violet hood, dark leather and steel armor, purple cloak, braid with a violet sheen; her face, cheek marking, ears and braid stay recognisably the same person. Remove the bow and arrows completely; do not turn them into anything. She holds exactly TWO curved silver blades in total, one gripped in each hand; there are no other blades anywhere in the image, none floating, none on her back or belt. Shift the palette to deep violet, black, cold silver and a magenta curse glow, darken the background toward dusk, add thin dark curse smoke. Her eyes are open and glowing violet; the smoke now pours freely from her chest and coils up her arm, the moonlight turned magenta. Her hands stay where they are in <image1>; one blade rests in each hand. Painterly 2D fantasy game card illustration, horizontal composition, soft brush texture, strong readable silhouette, ONE clear focal action that stays readable when shrunk to 250x190, face and hands inside the central 75 percent, uncluttered background. The painted environment background fills the entire frame edge to edge; no white, black or empty background. No text, labels, logos, watermark, frame, card border or interface. Only one character.",
+      "negative": "extra blades, third blade, more than two blades, floating weapons, duplicated weapons, weapon afterimages, extra hands, extra arms, bow, arrows"
+    }
+  ],
+  "note": "blade-count fix: A = prompt fix only, B = prompt fix + negative prompt; same seeds"
+}
