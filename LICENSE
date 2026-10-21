@@ -2,10 +2,6 @@ MIT License
 
 Copyright (c) 2026 EasyHah
 
-This license covers the source code of this repository: src/main/java, src/test, tools/,
-pom.xml, .mvn/ and the build / deploy scripts. It does NOT cover the art and written content
-under src/main/resources/elfprototype/ or docs/images/; see ASSETS-LICENSE.md.
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
