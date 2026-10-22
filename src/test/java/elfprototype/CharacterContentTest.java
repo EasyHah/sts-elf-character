@@ -113,6 +113,15 @@ public class CharacterContentTest {
         assertEquals(0, FaceStats.of().cost(0, -1).upgraded().cost); // never negative
     }
 
+    /** Cursed faces return to hand, so a 0-cost cursed face would let two eroding cards loop for free. */
+    @Test
+    public void cursedFacesCostAtLeastOne() {
+        assertEquals(1, FaceStats.faceCost(0, true));
+        assertEquals(2, FaceStats.faceCost(2, true));
+        assertEquals(0, FaceStats.faceCost(0, false)); // light faces may cost 0
+        assertEquals(-1, FaceStats.faceCost(-1, true)); // X cost untouched
+    }
+
     @Test
     public void allCardsAreRegisteredAndMatchTheDesign() throws Exception {
         Map<String, String> cards = cards();

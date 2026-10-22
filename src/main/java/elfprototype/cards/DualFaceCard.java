@@ -108,7 +108,7 @@ public abstract class DualFaceCard extends CustomCard {
         baseMagicNumber = magicNumber = f.magic;
         isMultiDamage = f.aoe;
         exhaust = f.exhaust || alwaysExhaust;
-        int newCost = f.cost >= 0 ? f.cost : cardCost;
+        int newCost = FaceStats.faceCost(f.cost >= 0 ? f.cost : cardCost, cursedFace);
         if (cost != newCost) {
             cost = newCost;
             costForTurn = newCost;
@@ -213,6 +213,7 @@ public abstract class DualFaceCard extends CustomCard {
             isMagicNumberModified = magicNumber != baseMagicNumber;
         }
         int c = conditionalCost();
+        if (c >= 0) c = FaceStats.faceCost(c, cursedFace);
         if (c >= 0 && costForTurn > c) setCostForTurn(c);
     }
 

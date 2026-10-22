@@ -5,7 +5,7 @@
       "erode",
       "eroded"
     ],
-    "DESCRIPTION": "Flip a light card to its cursed face. Cursed faces are stronger, #ySeal themselves after being played and return to hand, and #yBacklash if still in hand at end of turn."
+    "DESCRIPTION": "Flip a light card to its cursed face. Cursed faces are stronger, cost at least #b1, #ySeal themselves after being played and return to hand, and #yBacklash if still in hand at end of turn."
   },
   {
     "PROPER_NAME": "Seal",

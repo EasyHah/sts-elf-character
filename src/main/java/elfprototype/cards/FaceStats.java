@@ -95,6 +95,18 @@ public final class FaceStats {
         return magic >= 0 && magicUp != 0;
     }
 
+    /**
+     * Rule: a cursed face costs at least 1. A cursed face returns to hand after it is played, so with 0-cost cursed
+     * faces two cards that erode each other loop forever for free (two Skims, Curse Whisper + Mirror, ...).
+     * With the floor every loop spends energy, and an infinite needs energy-back pieces (Moon Awakening, ...).
+     */
+    public static final int MIN_CURSED_COST = 1;
+
+    /** Cost actually charged for a face; X-costs (negative) are left alone. */
+    public static int faceCost(int cost, boolean cursed) {
+        return cursed && cost >= 0 ? Math.max(MIN_CURSED_COST, cost) : cost;
+    }
+
     private static int bump(int base, int up) {
         return base < 0 ? base : base + up;
     }
