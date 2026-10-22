@@ -30,7 +30,7 @@ import java.util.ArrayList;
  */
 public class ElfCharacter extends CustomPlayer {
     public static final String ID = ElfPrototypeMod.makeID("Elf");
-    public static final Color CARD_COLOR = new Color(0.36f, 0.62f, 0.38f, 1f);
+    public static final Color CARD_COLOR = ElfColor.CARD;
     public static final int MAX_HP = 70;
     private static final String CHAR = ElfPrototypeMod.MOD_ID + "/images/character/";
     private static final String ORB = CHAR + "energyorb/";

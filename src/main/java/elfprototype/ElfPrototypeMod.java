@@ -28,6 +28,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import elfprototype.cards.ElfCards;
 import elfprototype.character.ElfCharacter;
+import elfprototype.character.ElfColor;
 import elfprototype.character.ElfEnums;
 import elfprototype.mechanics.ChimePower;
 import elfprototype.relics.CrackedSeal;
@@ -57,7 +58,7 @@ public class ElfPrototypeMod implements PostInitializeSubscriber, OnStartBattleS
     public ElfPrototypeMod() {
         BaseMod.subscribe(this);
         ElfConfig.load();
-        BaseMod.addColor(ElfEnums.ELF_GREEN, ElfCharacter.CARD_COLOR,
+        BaseMod.addColor(ElfEnums.ELF_GREEN, ElfColor.CARD,
                 CARDBACK + "bg_attack.png", CARDBACK + "bg_skill.png", CARDBACK + "bg_power.png",
                 CARDBACK + "energy_orb.png",
                 CARDBACK + "bg_attack_p.png", CARDBACK + "bg_skill_p.png", CARDBACK + "bg_power_p.png",

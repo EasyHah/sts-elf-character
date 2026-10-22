@@ -190,6 +190,24 @@ public class CharacterContentTest {
         }
     }
 
+    /**
+     * The mod constructor runs before the game is initialized. Touching a class that extends a game creature
+     * (ElfCharacter -> AbstractPlayer -> AbstractCreature) there crashes the launch with a NullPointerException
+     * in AbstractCreature's static initializer, so the constructor may only use the safe classes listed here.
+     */
+    @Test
+    public void modConstructorTouchesNoGameCreatureClass() throws Exception {
+        String src = source("ElfPrototypeMod.java");
+        int start = src.indexOf("public ElfPrototypeMod() {");
+        assertTrue(start >= 0);
+        String body = src.substring(start, src.indexOf("\n    }\n", start));
+        for (String forbidden : new String[]{"ElfCharacter", "ElfCards", "ElfRelics", "CrackedSeal", "ChimePower",
+                "DualFaceCard", "ElfSkin"}) {
+            assertFalse("mod constructor must not touch " + forbidden + " (game not initialized yet)",
+                    body.contains(forbidden));
+        }
+    }
+
     @Test
     public void uiCharacterAndKeywordText() throws Exception {
         for (String lang : LANGS) {
