@@ -309,10 +309,10 @@ CHAR = {
 
 UI = {
     "zhs": ["侵蚀", "封印", "蚀面",
-            "费用至少为 #b1 。打出后自动 #y封印 并回到手牌。回合结束时若仍在手牌中，失去 #b2 点生命（ #y反噬 ）。",
+            "打出后自动 #y封印 （翻回光面），再进入弃牌堆。回合结束时若仍在手牌中，失去 #b2 点生命（ #y反噬 ）。",
             "选择一张牌放入手牌", "复制", "消耗"],
     "eng": ["to Erode", "to Seal", "Cursed face",
-            "Costs at least #b1. After it is played it #ySeals itself and returns to your hand. If it is still in your hand at end of turn, lose #b2 HP ( #yBacklash ).",
+            "After it is played it #ySeals itself (turns light) and goes to the discard pile. If it is still in your hand at end of turn, lose #b2 HP ( #yBacklash ).",
             "Choose a card to put into your hand", "to copy", "to Exhaust"],
 }
 
@@ -323,13 +323,13 @@ CHIME = {
 
 KEYWORDS = {
     "zhs": [
-        {"PROPER_NAME": "侵蚀", "NAMES": ["侵蚀"], "DESCRIPTION": "将光面牌翻成蚀面。蚀面更强、费用至少为 #b1 ，打出后自动 #y封印 并回到手牌；回合结束仍在手中会 #y反噬 。"},
+        {"PROPER_NAME": "侵蚀", "NAMES": ["侵蚀"], "DESCRIPTION": "将光面牌翻成蚀面。蚀面更强，打出后自动 #y封印 （翻回光面）再进入弃牌堆；回合结束仍在手中会 #y反噬 。"},
         {"PROPER_NAME": "封印", "NAMES": ["封印"], "DESCRIPTION": "将蚀面牌翻回光面。"},
         {"PROPER_NAME": "翻面", "NAMES": ["翻面"], "DESCRIPTION": "#y侵蚀 或 #y封印 一张牌。每次翻面使本回合 #y咒鸣 +1。"},
         {"PROPER_NAME": "咒鸣", "NAMES": ["咒鸣"], "DESCRIPTION": "本回合翻面的次数。精灵卡牌每段伤害和获得的 #y格挡 加上 咒鸣 。"},
         {"PROPER_NAME": "反噬", "NAMES": ["反噬"], "DESCRIPTION": "回合结束时，手中每张蚀面牌使你失去 #b2 点生命。"}],
     "eng": [
-        {"PROPER_NAME": "Erode", "NAMES": ["erode", "eroded"], "DESCRIPTION": "Flip a light card to its cursed face. Cursed faces are stronger, cost at least #b1, #ySeal themselves after being played and return to hand, and #yBacklash if still in hand at end of turn."},
+        {"PROPER_NAME": "Erode", "NAMES": ["erode", "eroded"], "DESCRIPTION": "Flip a light card to its cursed face. Cursed faces are stronger, #ySeal themselves after being played (then go to the discard pile), and #yBacklash if still in hand at end of turn."},
         {"PROPER_NAME": "Seal", "NAMES": ["seal", "sealed"], "DESCRIPTION": "Flip a cursed card back to its light face."},
         {"PROPER_NAME": "Flip", "NAMES": ["flip", "flipped"], "DESCRIPTION": "#yErode or #ySeal a card. Each flip adds 1 #yChime this turn."},
         {"PROPER_NAME": "Chime", "NAMES": ["chime"], "DESCRIPTION": "Flips this turn. Elf cards deal + Chime damage per hit and gain + Chime #yBlock."},

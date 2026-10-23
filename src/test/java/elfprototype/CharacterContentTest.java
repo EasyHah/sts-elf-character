@@ -113,13 +113,17 @@ public class CharacterContentTest {
         assertEquals(0, FaceStats.of().cost(0, -1).upgraded().cost); // never negative
     }
 
-    /** Cursed faces return to hand, so a 0-cost cursed face would let two eroding cards loop for free. */
+    /**
+     * Rule (2026-10-23): a played cursed face seals itself and goes to the discard pile. Returning it to hand let
+     * two cards that erode each other loop forever for free.
+     */
     @Test
-    public void cursedFacesCostAtLeastOne() {
-        assertEquals(1, FaceStats.faceCost(0, true));
-        assertEquals(2, FaceStats.faceCost(2, true));
-        assertEquals(0, FaceStats.faceCost(0, false)); // light faces may cost 0
-        assertEquals(-1, FaceStats.faceCost(-1, true)); // X cost untouched
+    public void autoSealDoesNotReturnTheCardToHand() throws Exception {
+        String src = source("mechanics", "Lumen.java");
+        int start = src.indexOf("public static void queueAutoSeal");
+        assertTrue(start >= 0);
+        String body = src.substring(start, src.indexOf("\n    }\n", start));
+        assertFalse("auto seal must not return the card to hand", body.contains("returnToHand"));
     }
 
     @Test

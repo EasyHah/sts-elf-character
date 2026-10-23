@@ -449,12 +449,12 @@ public final class UncommonCards {
         }
     }
 
-    /** Block = chime x2 (x3) / draw chime / 2. */
+    /** Block = chime x2 (x3) / draw chime / 2; cursed face costs 0 when upgraded. */
     public static class Insight extends DualFaceCard {
         public Insight() {
             super("Insight", 1, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of().block(0, 0),
-                    CardTarget.SELF, FaceStats.of());
+                    CardTarget.SELF, FaceStats.of().cost(1, -1));
         }
 
         @Override

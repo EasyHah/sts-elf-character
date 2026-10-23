@@ -1,6 +1,5 @@
 package elfprototype.mechanics;
 
-import basemod.BaseMod;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
@@ -123,12 +122,11 @@ public final class Lumen {
     }
 
     /**
-     * Called from DualFaceCard.use() for a cursed face: the card returns to hand (UseCardAction reads
-     * AbstractCard.returnToHand) and turns light again before it gets there. Full hand: it is discarded instead.
+     * Called from DualFaceCard.use() for a cursed face: it turns light again after it resolves and then goes to the
+     * discard pile like any other card (rule changed 2026-10-23: it used to return to hand, which let two cards that
+     * erode each other loop for free).
      */
     public static void queueAutoSeal(DualFaceCard c) {
-        AbstractPlayer p = AbstractDungeon.player;
-        c.returnToHand = p.hand.size() < BaseMod.MAX_HAND_SIZE;
         AbstractDungeon.actionManager.addToBottom(new SealSelfAction(c));
     }
 

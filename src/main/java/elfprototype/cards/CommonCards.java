@@ -323,12 +323,12 @@ public final class CommonCards {
         }
     }
 
-    /** Seal all cursed in hand, 3 (4) block each / seal all others, draw 1 each. */
+    /** Seal all cursed in hand, 3 (4) block each / seal all others, draw 1 each; cursed face costs 0 when upgraded. */
     public static class PurifyingLight extends DualFaceCard {
         public PurifyingLight() {
             super("PurifyingLight", 1, CardType.SKILL, CardRarity.COMMON,
                     CardTarget.SELF, FaceStats.of().magic(3, 1),
-                    CardTarget.SELF, FaceStats.of());
+                    CardTarget.SELF, FaceStats.of().cost(1, -1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
