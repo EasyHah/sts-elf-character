@@ -4,10 +4,34 @@
       "to Erode",
       "to Seal",
       "Cursed face",
-      "After it is played it #ySeals itself (turns light) and goes to the discard pile. If it is still in your hand at end of turn, lose #b2 HP ( #yBacklash ).",
+      "Stays cursed after being played and goes to the discard pile. Only a #ySeal turns it light again and triggers its Seal effect. If it is still in your hand at end of turn, lose #b2 HP ( #yBacklash ).",
       "Choose a card to put into your hand",
       "to copy",
       "to Exhaust"
+    ]
+  },
+  "elfprototype:Seal": {
+    "TEXT": [
+      "",
+      "Seal : deal {S} damage to a random enemy.",
+      "Seal : deal {S} damage to ALL enemies.",
+      "Seal : gain {S} Block.",
+      "Seal : draw {S} card(s).",
+      "Seal : gain {S} Chime.",
+      "Seal : gain {S} energy.",
+      "Seal : apply {S} Weak to a random enemy.",
+      "Seal : apply {S} Vulnerable to a random enemy.",
+      "Seal : your next attack this turn deals {S} more damage.",
+      "Seal : your next light attack this turn deals {S} more damage.",
+      "Seal : heal {S} HP.",
+      "Seal : next turn, gain {S} Block.",
+      "Seal : next turn, gain {S} energy.",
+      "Seal : a random enemy loses {S} Block.",
+      "Seal : Erode {S} card(s) in your hand.",
+      "Seal : deal {S} damage to a random enemy twice.",
+      "Seal : deal damage equal to Chime to a random enemy.",
+      "Seal : deal damage equal to Chime to ALL enemies.",
+      "Seal : gain Block equal to Chime."
     ]
   }
 }

@@ -45,7 +45,7 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 抽 1 张牌。",
     "EXTENDED_DESCRIPTION": [
       "疾刃",
-      "造成 !D! 点伤害 !M! 次。"
+      "造成 !D! 点伤害 !M! 次。 NL 抽 1 张牌。"
     ]
   },
   "elfprototype:ScatterShot": {
@@ -219,10 +219,10 @@
   },
   "elfprototype:Harvest": {
     "NAME": "收割",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若击杀，获得 [E] 。",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 手中每有 1 张其他蚀面牌，伤害 +3 。",
     "EXTENDED_DESCRIPTION": [
       "蚀·收割",
-      "造成 !D! 点伤害 !M! 次。 NL 每段击杀抽 1 张牌。"
+      "造成 !D! 点伤害 !M! 次。 NL 弃牌堆中每有 2 张蚀面牌，多 1 次。"
     ]
   },
   "elfprototype:Volley": {
@@ -295,7 +295,7 @@
     "DESCRIPTION": "失去 !M! 点生命，获得 [E] 。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "蚀·暗契",
-      "失去 !M! 点生命，获得 [E] [E] 。 NL 消耗 。"
+      "失去 !M! 点生命，获得 [E] [E] [E] 。 NL 消耗 。"
     ]
   },
   "elfprototype:Spread": {
@@ -361,7 +361,7 @@
     "DESCRIPTION": "消耗 1 张手牌，获得 [E] ；若是诅咒牌，改为获得 [E] [E] 。",
     "EXTENDED_DESCRIPTION": [
       "蚀·献咒",
-      "消耗 1 张手牌，抽 2 张牌。"
+      "消耗 1 张手牌，抽 2 张牌；若是诅咒牌，改为抽 3 张牌并获得 [E] 。"
     ]
   },
   "elfprototype:BowGuard": {
@@ -399,7 +399,7 @@
   },
   "elfprototype:Starfall": {
     "NAME": "星落之箭",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合 咒鸣 达到 5 时费用 -2 。",
+    "DESCRIPTION": "造成 !D! 点伤害（ 咒鸣 ×5 ）。 NL 本回合 咒鸣 达到 5 时费用 -2 。",
     "EXTENDED_DESCRIPTION": [
       "坠星",
       "造成 !D! 点伤害 !M! 次。 NL 本回合 咒鸣 达到 5 时费用 -2 。"
@@ -423,10 +423,10 @@
   },
   "elfprototype:Execution": {
     "NAME": "处刑",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若击杀，本回合 咒鸣 翻倍。",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若击杀，获得 [E] [E] [E] 。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "蚀·处刑",
-      "造成 !D! 点伤害 !M! 次。 NL 若击杀，获得 [E] [E] 。"
+      "造成 !D! 点伤害 !M! 次。 NL 首次击杀时， 咒鸣 翻倍并抽 3 张牌。 NL 消耗 。"
     ]
   },
   "elfprototype:TwinSoul": {
@@ -456,10 +456,10 @@
   },
   "elfprototype:GreatSeal": {
     "NAME": "大封印",
-    "DESCRIPTION": "获得 !B! 点 格挡 ， 封印 手中所有蚀面牌。",
+    "DESCRIPTION": "封印 手中所有蚀面牌，每张的封印效果触发 2 次。",
     "EXTENDED_DESCRIPTION": [
       "蚀·大封印",
-      "获得 !B! 点 格挡 ， 封印 手中其他所有蚀面牌，每张获得 [E] （最多 3 点）。"
+      "获得 !B! 点 格挡 。 NL 将弃牌堆中至多 !M! 张蚀面牌翻回光面（不触发封印效果）。"
     ]
   },
   "elfprototype:Avatar": {
@@ -472,7 +472,7 @@
   },
   "elfprototype:WorldtreeVow": {
     "NAME": "世界树之誓",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下回合获得 [E] 。",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下回合获得 [E] [E] 。",
     "EXTENDED_DESCRIPTION": [
       "蚀·世界树之誓",
       "获得 !B! 点 格挡 。 NL 下回合获得 [E] [E] 并多抽 2 张牌。"
@@ -480,12 +480,12 @@
   },
   "elfprototype:Resonance": {
     "NAME": "共鸣",
-    "DESCRIPTION": "每回合 咒鸣 第一次达到 4 时，获得 [E] 。",
-    "UPGRADE_DESCRIPTION": "固有 。 NL 每回合 咒鸣 第一次达到 4 时，获得 [E] 。"
+    "DESCRIPTION": "咒鸣 每达到 3 的倍数，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 咒鸣 每达到 3 的倍数，获得 [E] 。"
   },
   "elfprototype:Recollection": {
     "NAME": "回忆",
-    "DESCRIPTION": "每回合前 !M! 次 封印 （包括自动封印），各抽 1 张牌。"
+    "DESCRIPTION": "每回合前 !M! 次 封印 ，各抽 1 张牌。"
   },
   "elfprototype:Bloodblades": {
     "NAME": "暗血",
@@ -510,11 +510,16 @@
   },
   "elfprototype:Vigil": {
     "NAME": "守望",
-    "DESCRIPTION": "每次手动 封印 1 张牌，获得 !M! 点 格挡 。"
+    "DESCRIPTION": "每次 封印 1 张牌，获得 !M! 点 格挡 。"
+  },
+  "elfprototype:Penance": {
+    "NAME": "清修",
+    "DESCRIPTION": "每回合第一次 封印 时，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 每回合第一次 封印 时，获得 [E] 。"
   },
   "elfprototype:MoonAwakening": {
     "NAME": "月辉觉醒",
-    "DESCRIPTION": "每次 封印 （包括自动封印），抽 1 张牌并获得 [E] 。"
+    "DESCRIPTION": "每次 侵蚀 ，抽 1 张牌。 NL 每次 封印 ，获得 [E] 。"
   },
   "elfprototype:Afterglow": {
     "NAME": "余韵",

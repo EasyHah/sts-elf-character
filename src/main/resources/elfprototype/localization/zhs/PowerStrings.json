@@ -10,7 +10,7 @@
   "elfprototype:Resonance": {
     "NAME": "共鸣",
     "DESCRIPTIONS": [
-      "每回合 #y咒鸣 第一次达到 #b4 时，获得 #b{N} 点能量。"
+      "#y咒鸣 每达到 #b3 的倍数，获得 #b{N} 点能量。"
     ]
   },
   "elfprototype:Recollection": {
@@ -52,13 +52,31 @@
   "elfprototype:Vigil": {
     "NAME": "守望",
     "DESCRIPTIONS": [
-      "每次手动 #y封印 1 张牌，获得 #b{N} 点 #y格挡 。"
+      "每次 #y封印 1 张牌，获得 #b{N} 点 #y格挡 。"
+    ]
+  },
+  "elfprototype:Penance": {
+    "NAME": "清修",
+    "DESCRIPTIONS": [
+      "每回合第一次 #y封印 时，获得 #b{N} 点能量。"
     ]
   },
   "elfprototype:MoonAwakening": {
     "NAME": "月辉觉醒",
     "DESCRIPTIONS": [
-      "每次 #y封印 ，抽 #b{N} 张牌并获得 #b{N} 点能量。"
+      "每次 #y侵蚀 ，抽 #b{N} 张牌；每次 #y封印 ，获得 #b{N} 点能量。"
+    ]
+  },
+  "elfprototype:NextAttack": {
+    "NAME": "蓄锋",
+    "DESCRIPTIONS": [
+      "本回合下一张攻击牌伤害 +#b{N} 。"
+    ]
+  },
+  "elfprototype:NextLightAttack": {
+    "NAME": "凝光",
+    "DESCRIPTIONS": [
+      "本回合下一张光面攻击牌伤害 +#b{N} 。"
     ]
   },
   "elfprototype:Afterglow": {

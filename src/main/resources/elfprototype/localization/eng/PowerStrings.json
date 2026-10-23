@@ -10,7 +10,7 @@
   "elfprototype:Resonance": {
     "NAME": "Resonance",
     "DESCRIPTIONS": [
-      "The first time #yChime reaches #b4 each turn, gain #b{N} energy."
+      "Whenever #yChime reaches a multiple of #b3, gain #b{N} energy."
     ]
   },
   "elfprototype:Recollection": {
@@ -52,13 +52,31 @@
   "elfprototype:Vigil": {
     "NAME": "Vigil",
     "DESCRIPTIONS": [
-      "Whenever you #ySeal a card yourself, gain #b{N} #yBlock."
+      "Whenever you #ySeal a card, gain #b{N} #yBlock."
+    ]
+  },
+  "elfprototype:Penance": {
+    "NAME": "Penance",
+    "DESCRIPTIONS": [
+      "The first time you #ySeal a card each turn, gain #b{N} energy."
     ]
   },
   "elfprototype:MoonAwakening": {
     "NAME": "Moon Awakening",
     "DESCRIPTIONS": [
-      "Whenever you #ySeal a card, draw #b{N} card(s) and gain #b{N} energy."
+      "Whenever you #yErode a card, draw #b{N} card(s). Whenever you #ySeal a card, gain #b{N} energy."
+    ]
+  },
+  "elfprototype:NextAttack": {
+    "NAME": "Honed",
+    "DESCRIPTIONS": [
+      "Your next attack this turn deals #b{N} more damage."
+    ]
+  },
+  "elfprototype:NextLightAttack": {
+    "NAME": "Gathered Light",
+    "DESCRIPTIONS": [
+      "Your next light attack this turn deals #b{N} more damage."
     ]
   },
   "elfprototype:Afterglow": {

@@ -58,7 +58,7 @@ public class CharacterContentTest {
 
     private static List<String[]> powers() throws IOException {
         List<String[]> out = new ArrayList<>();
-        Matcher m = Pattern.compile("super\\((?:cursed \\? \"(\\w+)\" : \"(\\w+)\"|\"(\\w+)\"), \"(\\w+)\"")
+        Matcher m = Pattern.compile("super\\((?:\\w+ \\? \"(\\w+)\" : \"(\\w+)\"|\"(\\w+)\"), \"(\\w+)\"")
                 .matcher(allSources("powers"));
         while (m.find()) {
             if (m.group(3) != null) out.add(new String[]{m.group(3), m.group(4)});
@@ -114,24 +114,48 @@ public class CharacterContentTest {
     }
 
     /**
-     * Rule (2026-10-23): a played cursed face seals itself and goes to the discard pile. Returning it to hand let
-     * two cards that erode each other loop forever for free.
+     * Rule v5 (2026-10-23): a played cursed face stays cursed and goes to the discard pile; only a seal turns it light
+     * again. Returning it to hand, or sealing it for free, let two cards that erode each other loop forever.
      */
     @Test
-    public void autoSealDoesNotReturnTheCardToHand() throws Exception {
-        String src = source("mechanics", "Lumen.java");
-        int start = src.indexOf("public static void queueAutoSeal");
+    public void playedCursedFaceStaysCursed() throws Exception {
+        String src = source("cards", "DualFaceCard.java").replace("\r\n", "\n");
+        int start = src.indexOf("public final void use(");
         assertTrue(start >= 0);
         String body = src.substring(start, src.indexOf("\n    }\n", start));
-        assertFalse("auto seal must not return the card to hand", body.contains("returnToHand"));
+        assertFalse("use() must not seal the card", body.contains("Lumen.seal") || body.contains("SealSelfAction"));
+        assertFalse("use() must not return the card to hand", body.contains("returnToHand"));
+        assertFalse(source("mechanics", "Lumen.java").contains("returnToHand"));
+    }
+
+    /** v5: every dual card has its own seal effect, and every Seal.Kind has a text template in both languages. */
+    @Test
+    public void everyDualCardHasASealEffect() throws Exception {
+        long dual = cards().values().stream().filter(t -> !t.equals("power")).count();
+        Matcher m = Pattern.compile("setSeal\\(Seal\\.of\\(Seal\\.Kind\\.(\\w+)").matcher(allSources("cards"));
+        int n = 0;
+        while (m.find()) {
+            assertNotEquals("NONE", m.group(1));
+            n++;
+        }
+        assertEquals(dual, n);
+        String seal = source("cards", "Seal.java");
+        String kinds = seal.substring(seal.indexOf("enum Kind {") + 11, seal.indexOf("}", seal.indexOf("enum Kind {")));
+        int kindCount = kinds.split(",").length;
+        for (String lang : LANGS) {
+            JsonArray t = json("localization/" + lang + "/UIStrings.json").getAsJsonObject()
+                    .getAsJsonObject("elfprototype:Seal").getAsJsonArray("TEXT");
+            assertEquals(lang, kindCount, t.size());
+            for (int i = 1; i < t.size(); i++) assertFalse(lang + " seal text " + i, t.get(i).getAsString().isEmpty());
+        }
     }
 
     @Test
     public void allCardsAreRegisteredAndMatchTheDesign() throws Exception {
         Map<String, String> cards = cards();
-        assertEquals("starter 4 + pool 68", 72, cards.size());
+        assertEquals("starter 4 + pool 69", 73, cards.size());
         long powers = cards.values().stream().filter("power"::equals).count();
-        assertEquals(13, powers);
+        assertEquals(14, powers);
         String registry = source("cards", "ElfCards.java");
         for (String id : cards.keySet()) {
             String cls = id.equals("Strike_Elf") ? "StrikeElf" : id.equals("Defend_Elf") ? "DefendElf" : id;
@@ -171,7 +195,7 @@ public class CharacterContentTest {
     @Test
     public void everyPowerHasTextAndIcon() throws Exception {
         List<String[]> powers = powers();
-        assertEquals("15 simple + Nock / Echo light and cursed", 19, powers.size());
+        assertEquals("16 simple + Nock / Echo / NextAttack two each", 22, powers.size());
         for (String lang : LANGS) {
             JsonObject strings = json("localization/" + lang + "/PowerStrings.json").getAsJsonObject();
             assertEquals(3, strings.getAsJsonObject("elfprototype:Chime").getAsJsonArray("DESCRIPTIONS").size());

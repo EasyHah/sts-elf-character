@@ -13,6 +13,7 @@ public class CurseWhisper extends DualFaceCard {
         super(SIMPLE_ID, 0, CardType.SKILL, CardRarity.BASIC,
                 CardTarget.SELF, FaceStats.of().magic(1, 0).magic2(1, 1),
                 CardTarget.SELF, FaceStats.of().magic(2, 0).magic2(0, 1));
+        setSeal(Seal.of(Seal.Kind.BLOCK, 2, 1));
     }
 
     @Override

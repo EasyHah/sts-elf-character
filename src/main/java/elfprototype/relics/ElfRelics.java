@@ -17,6 +17,7 @@ import elfprototype.ElfPrototypeMod;
 import elfprototype.mechanics.Do;
 import elfprototype.mechanics.Lumen;
 import elfprototype.mechanics.SealListener;
+import elfprototype.mechanics.SealSelfAction;
 
 /** Elf relics other than the starter (design v4 §5). Images: relics/<id>.png, <id>Outline.png, large/<id>.png. */
 public final class ElfRelics {
@@ -57,8 +58,8 @@ public final class ElfRelics {
         }
     }
 
-    /** Boss, replaces Cracked Seal: the first 2 seals each turn draw 1 card each. */
-    public static class WholeSeal extends ElfRelic implements SealListener {
+    /** Boss, replaces Cracked Seal: the first 2 cursed faces played each turn seal themselves (with their seal effect). */
+    public static class WholeSeal extends ElfRelic {
         public static final String ID = ElfPrototypeMod.makeID("WholeSeal");
 
         public WholeSeal() {
@@ -88,11 +89,11 @@ public final class ElfRelics {
         }
 
         @Override
-        public void onSeal(AbstractCard card, boolean auto) {
-            if (counter >= 2) return;
+        public void onUseCard(AbstractCard card, UseCardAction action) {
+            if (counter >= 2 || card.purgeOnUse || !Lumen.isCursed(card)) return;
             counter++;
             show();
-            bot(new DrawCardAction(p(), 1));
+            bot(new SealSelfAction(card));
         }
 
         @Override
@@ -123,7 +124,7 @@ public final class ElfRelics {
         }
     }
 
-    /** Common: the first manual seal each turn gives 4 Block. */
+    /** Common: the first seal each turn (any kind) gives 4 Block. */
     public static class SilverleafBrooch extends ElfRelic implements SealListener {
         public SilverleafBrooch() {
             super("SilverleafBrooch", RelicTier.COMMON, LandingSound.CLINK);
@@ -136,7 +137,7 @@ public final class ElfRelics {
 
         @Override
         public void onSeal(AbstractCard card, boolean auto) {
-            if (auto || grayscale) return;
+            if (grayscale) return;
             grayscale = true;
             show();
             bot(new GainBlockAction(p(), p(), 4));

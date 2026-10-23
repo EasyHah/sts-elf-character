@@ -3,14 +3,14 @@
     "NAME": "裂纹封印",
     "FLAVOR": "封印还在，只是已经裂开了。",
     "DESCRIPTIONS": [
-      "每回合第一次 #y封印 牌时，抽 #b1 张牌。"
+      "每回合打出的第一张蚀面牌会自动 #y封印 ，并触发它的封印效果。"
     ]
   },
   "elfprototype:WholeSeal": {
     "NAME": "完整封印",
     "FLAVOR": "裂纹被金线缝合，比原来更牢。",
     "DESCRIPTIONS": [
-      "替换 #y裂纹封印 。每回合前 #b2 次 #y封印 牌时，各抽 #b1 张牌。"
+      "替换 #y裂纹封印 。每回合打出的前 #b2 张蚀面牌会自动 #y封印 ，并触发它们的封印效果。"
     ]
   },
   "elfprototype:DuskGauntlet": {
@@ -24,7 +24,7 @@
     "NAME": "银叶胸针",
     "FLAVOR": "一片永不凋零的叶子。",
     "DESCRIPTIONS": [
-      "每回合第一次手动 #y封印 牌时，获得 #b4 点 #y格挡 。"
+      "每回合第一次 #y封印 牌时，获得 #b4 点 #y格挡 。"
     ]
   },
   "elfprototype:MirrorEarring": {

@@ -45,7 +45,7 @@
     "DESCRIPTION": "Deal !D! damage. NL Draw 1 card.",
     "EXTENDED_DESCRIPTION": [
       "Quick Blades",
-      "Deal !D! damage !M! times."
+      "Deal !D! damage !M! times. NL Draw 1 card."
     ]
   },
   "elfprototype:ScatterShot": {
@@ -219,10 +219,10 @@
   },
   "elfprototype:Harvest": {
     "NAME": "Harvest",
-    "DESCRIPTION": "Deal !D! damage. NL If this kills, gain [E] .",
+    "DESCRIPTION": "Deal !D! damage. NL +3 damage for each other cursed card in your hand.",
     "EXTENDED_DESCRIPTION": [
       "Cursed Harvest",
-      "Deal !D! damage !M! times. NL Draw 1 card for each killing hit."
+      "Deal !D! damage !M! times. NL +1 hit for every 2 cursed cards in your discard pile."
     ]
   },
   "elfprototype:Volley": {
@@ -295,7 +295,7 @@
     "DESCRIPTION": "Lose !M! HP. Gain [E] . NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "Cursed Pact",
-      "Lose !M! HP. Gain [E] [E] . NL Exhaust."
+      "Lose !M! HP. Gain [E] [E] [E] . NL Exhaust."
     ]
   },
   "elfprototype:Spread": {
@@ -361,7 +361,7 @@
     "DESCRIPTION": "Exhaust a card in your hand. Gain [E] , or [E] [E] if it was a Curse.",
     "EXTENDED_DESCRIPTION": [
       "Cursed Offering",
-      "Exhaust a card in your hand. Draw 2 cards."
+      "Exhaust a card in your hand. Draw 2 cards, or draw 3 cards and gain [E] if it was a Curse."
     ]
   },
   "elfprototype:BowGuard": {
@@ -399,7 +399,7 @@
   },
   "elfprototype:Starfall": {
     "NAME": "Starfall",
-    "DESCRIPTION": "Deal !D! damage. NL Costs 2 less once Chime is 5 or more.",
+    "DESCRIPTION": "Deal !D! damage (Chime x5). NL Costs 2 less once Chime is 5 or more.",
     "EXTENDED_DESCRIPTION": [
       "Falling Star",
       "Deal !D! damage !M! times. NL Costs 2 less once Chime is 5 or more."
@@ -423,10 +423,10 @@
   },
   "elfprototype:Execution": {
     "NAME": "Execution",
-    "DESCRIPTION": "Deal !D! damage. NL If this kills, double your Chime.",
+    "DESCRIPTION": "Deal !D! damage. NL If this kills, gain [E] [E] [E] . NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "Cursed Execution",
-      "Deal !D! damage !M! times. NL If this kills, gain [E] [E] ."
+      "Deal !D! damage !M! times. NL The first killing hit doubles your Chime and draws 3 cards. NL Exhaust."
     ]
   },
   "elfprototype:TwinSoul": {
@@ -456,10 +456,10 @@
   },
   "elfprototype:GreatSeal": {
     "NAME": "Great Seal",
-    "DESCRIPTION": "Gain !B! Block. Seal every cursed card in your hand.",
+    "DESCRIPTION": "Seal every cursed card in your hand. Their Seal effects trigger twice.",
     "EXTENDED_DESCRIPTION": [
       "Cursed Seal",
-      "Gain !B! Block. Seal every other cursed card in your hand, gain [E] for each (max 3)."
+      "Gain !B! Block. NL Turn up to !M! cursed cards in your discard pile light (no Seal effect)."
     ]
   },
   "elfprototype:Avatar": {
@@ -472,7 +472,7 @@
   },
   "elfprototype:WorldtreeVow": {
     "NAME": "Worldtree Vow",
-    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain [E] .",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain [E] [E] .",
     "EXTENDED_DESCRIPTION": [
       "Cursed Vow",
       "Gain !B! Block. NL Next turn, gain [E] [E] and draw 2 more cards."
@@ -480,8 +480,8 @@
   },
   "elfprototype:Resonance": {
     "NAME": "Resonance",
-    "DESCRIPTION": "The first time Chime reaches 4 each turn, gain [E] .",
-    "UPGRADE_DESCRIPTION": "Innate. NL The first time Chime reaches 4 each turn, gain [E] ."
+    "DESCRIPTION": "Whenever Chime reaches a multiple of 3, gain [E] .",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever Chime reaches a multiple of 3, gain [E] ."
   },
   "elfprototype:Recollection": {
     "NAME": "Recollection",
@@ -510,11 +510,16 @@
   },
   "elfprototype:Vigil": {
     "NAME": "Vigil",
-    "DESCRIPTION": "Whenever you Seal a card yourself, gain !M! Block."
+    "DESCRIPTION": "Whenever you Seal a card, gain !M! Block."
+  },
+  "elfprototype:Penance": {
+    "NAME": "Penance",
+    "DESCRIPTION": "The first time you Seal a card each turn, gain [E] .",
+    "UPGRADE_DESCRIPTION": "Innate. NL The first time you Seal a card each turn, gain [E] ."
   },
   "elfprototype:MoonAwakening": {
     "NAME": "Moon Awakening",
-    "DESCRIPTION": "Whenever you Seal a card (including automatically), draw 1 card and gain [E] ."
+    "DESCRIPTION": "Whenever you Erode a card, draw 1 card. NL Whenever you Seal a card, gain [E] ."
   },
   "elfprototype:Afterglow": {
     "NAME": "Afterglow",

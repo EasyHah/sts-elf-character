@@ -3,14 +3,14 @@
     "NAME": "Cracked Seal",
     "FLAVOR": "Still sealed. Just cracked.",
     "DESCRIPTIONS": [
-      "The first time you #ySeal a card each turn, draw #b1 card."
+      "The first cursed card you play each turn #ySeals itself and triggers its Seal effect."
     ]
   },
   "elfprototype:WholeSeal": {
     "NAME": "Whole Seal",
     "FLAVOR": "The crack is mended with gold.",
     "DESCRIPTIONS": [
-      "Replaces #yCracked #ySeal. The first #b2 times you #ySeal a card each turn, draw #b1 card."
+      "Replaces #yCracked #ySeal. The first #b2 cursed cards you play each turn #ySeal themselves and trigger their Seal effects."
     ]
   },
   "elfprototype:DuskGauntlet": {
@@ -24,7 +24,7 @@
     "NAME": "Silverleaf Brooch",
     "FLAVOR": "A leaf that never withers.",
     "DESCRIPTIONS": [
-      "The first time you #ySeal a card yourself each turn, gain #b4 #yBlock."
+      "The first time you #ySeal a card each turn, gain #b4 #yBlock."
     ]
   },
   "elfprototype:MirrorEarring": {

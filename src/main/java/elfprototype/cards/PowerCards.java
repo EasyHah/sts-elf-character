@@ -18,6 +18,7 @@ import elfprototype.powers.CursedHeartPower;
 import elfprototype.powers.EvernightPower;
 import elfprototype.powers.LightOathPower;
 import elfprototype.powers.MoonAwakeningPower;
+import elfprototype.powers.PenancePower;
 import elfprototype.powers.RadiancePower;
 import elfprototype.powers.RecollectionPower;
 import elfprototype.powers.ResonancePower;
@@ -78,11 +79,6 @@ public final class PowerCards {
 
     // ------------------------------------------------------------------ uncommon
 
-    public static class Resonance extends ElfPowerCard {
-        public Resonance() {
-            super("Resonance", 1, CardRarity.UNCOMMON, 1, 0, -1, true, ResonancePower::new);
-        }
-    }
 
     public static class Recollection extends ElfPowerCard {
         public Recollection() {
@@ -126,7 +122,21 @@ public final class PowerCards {
         }
     }
 
+    /** v5: an uncommon energy source. First seal each turn: +1 energy. Upgrade: Innate. */
+    public static class Penance extends ElfPowerCard {
+        public Penance() {
+            super("Penance", 1, CardRarity.UNCOMMON, 1, 0, -1, true, PenancePower::new);
+        }
+    }
+
     // ------------------------------------------------------------------ rare
+
+    /** v5: moved to rare. Every multiple of 3 chime: +1 energy. Upgrade: Innate. */
+    public static class Resonance extends ElfPowerCard {
+        public Resonance() {
+            super("Resonance", 1, CardRarity.RARE, 1, 0, -1, true, ResonancePower::new);
+        }
+    }
 
     public static class MoonAwakening extends ElfPowerCard {
         public MoonAwakening() {

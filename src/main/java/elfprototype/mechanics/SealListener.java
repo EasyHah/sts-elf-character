@@ -7,7 +7,7 @@ public interface SealListener {
     default void onErode(AbstractCard card) {
     }
 
-    /** @param auto true when a played cursed face sealed itself on the way back to hand. */
+    /** @param auto true when Cracked / Whole Seal sealed a played cursed face on its way to the discard pile. */
     default void onSeal(AbstractCard card, boolean auto) {
     }
 

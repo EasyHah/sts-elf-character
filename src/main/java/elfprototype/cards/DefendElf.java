@@ -14,6 +14,7 @@ public class DefendElf extends DualFaceCard {
         super(SIMPLE_ID, 1, CardType.SKILL, CardRarity.BASIC,
                 CardTarget.SELF, FaceStats.of().block(5, 3),
                 CardTarget.ALL_ENEMY, FaceStats.of().block(3, 2).damage(3, 1).aoe());
+        setSeal(Seal.of(Seal.Kind.BLOCK, 3, 1));
         tags.add(CardTags.STARTER_DEFEND);
     }
 

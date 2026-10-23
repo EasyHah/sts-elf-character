@@ -31,6 +31,7 @@ public final class RareCards {
             super("ThousandBlades", 2, CardType.ATTACK, CardRarity.RARE,
                     CardTarget.ENEMY, FaceStats.of().damage(0, 0),
                     CardTarget.ENEMY, FaceStats.of().damage(1, 1).hits(0, 0));
+            setSeal(Seal.of(Seal.Kind.DAMAGE_CHIME_RANDOM, 0, 0));
         }
 
         @Override
@@ -56,8 +57,15 @@ public final class RareCards {
     public static class Starfall extends DualFaceCard {
         public Starfall() {
             super("Starfall", 3, CardType.ATTACK, CardRarity.RARE,
-                    CardTarget.ENEMY, FaceStats.of().damage(30, 6),
+                    CardTarget.ENEMY, FaceStats.of().damage(25, 5),
                     CardTarget.ENEMY, FaceStats.of().damage(6, 1).hits(5, 0));
+            setSeal(Seal.of(Seal.Kind.DAMAGE_RANDOM, 10, 2));
+        }
+
+        /** Light: 25 (30) + chime x5, so the light face grows with chime too. */
+        @Override
+        public int chimeDamageMultiplier() {
+            return isCursed() ? 1 : 5;
         }
 
         @Override
@@ -83,6 +91,7 @@ public final class RareCards {
             super("Devour", 2, CardType.ATTACK, CardRarity.RARE,
                     CardTarget.ENEMY, FaceStats.of().damage(8, 4),
                     CardTarget.ENEMY, FaceStats.of().damage(3, 1).hits(2, 0));
+            setSeal(Seal.of(Seal.Kind.DAMAGE_RANDOM, 6, 2));
         }
 
         @Override
@@ -112,6 +121,7 @@ public final class RareCards {
             super("Echo", 1, CardType.ATTACK, CardRarity.RARE,
                     CardTarget.ENEMY, FaceStats.of().damage(6, 0),
                     CardTarget.ENEMY, FaceStats.of().damage(2, 0).hits(3, 0));
+            setSeal(Seal.of(Seal.Kind.NEXT_ATTACK, 5, 1));
         }
 
         @Override
@@ -134,17 +144,20 @@ public final class RareCards {
     public static class Execution extends DualFaceCard {
         public Execution() {
             super("Execution", 2, CardType.ATTACK, CardRarity.RARE,
-                    CardTarget.ENEMY, FaceStats.of().damage(20, 6),
-                    CardTarget.ENEMY, FaceStats.of().damage(5, 1).hits(4, 0));
+                    CardTarget.ENEMY, FaceStats.of().damage(20, 6).exhaust(),
+                    CardTarget.ENEMY, FaceStats.of().damage(5, 1).hits(4, 0).exhaust());
+            setSeal(Seal.of(Seal.Kind.DAMAGE_RANDOM, 8, 2));
         }
 
+        /** The only kill card (v5). Light: kill gives 3 energy. */
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
             addToBot(new DamageThenAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_HEAVY,
                     (killed, dealt) -> {
-                        if (killed) Lumen.addChime(Lumen.chime());
+                        if (killed) AbstractDungeon.actionManager.addToTop(new GainEnergyAction(3));
                     }));
         }
 
+        /** Cursed: the first killing hit draws 3 and doubles chime. */
         protected void useCursed(AbstractPlayer p, AbstractMonster m) {
             boolean[] paid = {false};
             for (int i = 0; i < magicNumber; i++) {
@@ -152,7 +165,8 @@ public final class RareCards {
                         AttackEffect.SLASH_HORIZONTAL, (killed, dealt) -> {
                             if (killed && !paid[0]) {
                                 paid[0] = true;
-                                AbstractDungeon.actionManager.addToTop(new GainEnergyAction(2));
+                                Lumen.addChime(Lumen.chime());
+                                AbstractDungeon.actionManager.addToTop(new DrawCardAction(p, 3));
                             }
                         }));
             }
@@ -166,6 +180,7 @@ public final class RareCards {
         public TwinSoul() {
             super("TwinSoul", 1, CardType.SKILL, CardRarity.RARE,
                     CardTarget.SELF, FaceStats.of().exhaust(), CardTarget.SELF, FaceStats.of().exhaust());
+            setSeal(Seal.of(Seal.Kind.DRAW, 1, 0));
         }
 
         @Override
@@ -195,6 +210,7 @@ public final class RareCards {
             super("Overflow", 2, CardType.SKILL, CardRarity.RARE,
                     CardTarget.SELF, FaceStats.of().block(0, 0),
                     CardTarget.SELF, FaceStats.of().cost(2, -1).exhaust());
+            setSeal(Seal.of(Seal.Kind.CHIME, 2, 0));
         }
 
         @Override
@@ -216,6 +232,7 @@ public final class RareCards {
         public TimeCurse() {
             super("TimeCurse", 3, CardType.SKILL, CardRarity.RARE,
                     CardTarget.SELF, FaceStats.of().exhaust(), CardTarget.SELF, FaceStats.of().exhaust());
+            setSeal(Seal.of(Seal.Kind.DRAW, 2, 0));
         }
 
         @Override
@@ -238,21 +255,26 @@ public final class RareCards {
     public static class GreatSeal extends DualFaceCard {
         public GreatSeal() {
             super("GreatSeal", 1, CardType.SKILL, CardRarity.RARE,
-                    CardTarget.SELF, FaceStats.of().block(15, 5),
-                    CardTarget.SELF, FaceStats.of().block(10, 4));
+                    CardTarget.SELF, FaceStats.of(),
+                    CardTarget.SELF, FaceStats.of().block(10, 4).magic(3, 1));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 5, 1));
         }
 
+        @Override
+        protected void onUpgrade() {
+            upgradeBothCosts(0);
+        }
+
+        /** Light: seal every cursed card in hand, each seal effect runs twice (payoff of the seal deck). */
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
-            gainBlock();
-            addToBot(new Do(Lumen::sealAllInHand));
+            addToBot(new Do(() -> Lumen.sealAllInHand(2)));
         }
 
+        /** Cursed: block, and cleanse up to 3 (4) cursed cards in the discard pile (no seal effect). */
         protected void useCursed(AbstractPlayer p, AbstractMonster m) {
             gainBlock();
-            addToBot(new Do(() -> {
-                int n = Math.min(3, Lumen.sealAllInHand());
-                if (n > 0) AbstractDungeon.actionManager.addToTop(new GainEnergyAction(n));
-            }));
+            int n = magicNumber;
+            addToBot(new Do(() -> Lumen.cleanseDiscard(n)));
         }
     }
 
@@ -262,6 +284,7 @@ public final class RareCards {
             super("Avatar", 1, CardType.SKILL, CardRarity.RARE,
                     CardTarget.SELF, FaceStats.of().magic(5, 2).exhaust(),
                     CardTarget.SELF, FaceStats.of().magic(8, 3).exhaust());
+            setSeal(Seal.of(Seal.Kind.CHIME, 2, 0));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -280,13 +303,14 @@ public final class RareCards {
     public static class WorldtreeVow extends DualFaceCard {
         public WorldtreeVow() {
             super("WorldtreeVow", 2, CardType.SKILL, CardRarity.RARE,
-                    CardTarget.SELF, FaceStats.of().block(20, 5),
+                    CardTarget.SELF, FaceStats.of().block(30, 5),
                     CardTarget.SELF, FaceStats.of().block(10, 4));
+            setSeal(Seal.of(Seal.Kind.NEXT_TURN_ENERGY, 1, 0));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
             gainBlock();
-            addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 1), 1));
+            addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 2), 2));
         }
 
         protected void useCursed(AbstractPlayer p, AbstractMonster m) {

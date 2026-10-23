@@ -26,6 +26,10 @@ import java.util.List;
  * A card with a light face (bow, guard) and a cursed face (twin blades). Cards start light every combat:
  * combat piles are fresh copies of the master deck and copies never inherit the cursed face.
  *
+ * Design v5: a played cursed face stays cursed and goes to the discard pile; only sealing turns it light again,
+ * and sealing runs the card's seal effect ({@link Seal}, set with setSeal in the subclass constructor). The seal
+ * effect line is appended to the cursed face's text, so it is visible on the card and in the hover preview.
+ *
  * Strings: NAME / DESCRIPTION = light face, EXTENDED_DESCRIPTION[0] = cursed name, [1] = cursed text,
  * optional [2] = cursed text after upgrade; UPGRADE_DESCRIPTION = light text after upgrade (optional).
  * "{M2}" in a text is replaced by the face's magic2 value.
@@ -49,6 +53,7 @@ public abstract class DualFaceCard extends CustomCard {
     public boolean alwaysExhaust;
     private boolean[] lightUpgrades = new boolean[3];
     private boolean[] cursedUpgrades = new boolean[3];
+    private Seal seal = Seal.NONE;
     /** True while a hover preview (the other face) is being built, so the preview gets no preview of its own. */
     private static boolean buildingPreview;
 
@@ -104,6 +109,7 @@ public abstract class DualFaceCard extends CustomCard {
         }
         if (upgraded) name += "+";
         rawDescription = text.replace("{M2}", String.valueOf(f.magic2));
+        if (cursedFace && seal.kind != Seal.Kind.NONE) rawDescription += " NL " + sealText();
         target = cursedFace ? cursedTarget : lightTarget;
         baseDamage = damage = f.damage;
         baseBlock = block = f.block;
@@ -145,6 +151,26 @@ public abstract class DualFaceCard extends CustomCard {
         } finally {
             buildingPreview = false;
         }
+    }
+
+    /** Call once from the subclass constructor. */
+    protected void setSeal(Seal s) {
+        seal = s;
+        applyFace();
+    }
+
+    public Seal seal() {
+        return seal;
+    }
+
+    private String sealText() {
+        UIStrings ui = CardCrawlGame.languagePack.getUIString(ElfPrototypeMod.makeID("Seal"));
+        return ui.TEXT[seal.kind.ordinal()].replace("{S}", String.valueOf(seal.amount(upgraded)));
+    }
+
+    /** Runs the seal effect (from Lumen.seal, after the card turned light). */
+    public void triggerSeal(AbstractPlayer p) {
+        seal.run(p, upgraded);
     }
 
     @Override
@@ -241,8 +267,7 @@ public abstract class DualFaceCard extends CustomCard {
     public final void use(AbstractPlayer p, AbstractMonster m) {
         Lumen.notePlayed(cursedFace);
         if (cursedFace) {
-            useCursed(p, m);
-            if (!purgeOnUse) Lumen.queueAutoSeal(this); // temporary double-play copies just vanish
+            useCursed(p, m); // stays cursed and goes to the discard pile (design v5)
         } else {
             useLight(p, m);
         }

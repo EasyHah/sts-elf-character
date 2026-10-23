@@ -24,9 +24,9 @@ public final class ElfCards {
                 new CommonCards.PurifyingLight(), new CommonCards.CurseWard(), new CommonCards.Premonition(),
                 new CommonCards.Nock(), new CommonCards.Unbind(),
                 // uncommon
-                new PowerCards.Resonance(), new PowerCards.Recollection(), new PowerCards.Bloodblades(),
+                new PowerCards.Recollection(), new PowerCards.Bloodblades(),
                 new PowerCards.Radiance(), new PowerCards.BacklashEcho(), new PowerCards.Composure(),
-                new PowerCards.CreepingCurse(), new PowerCards.Vigil(),
+                new PowerCards.CreepingCurse(), new PowerCards.Vigil(), new PowerCards.Penance(),
                 new UncommonCards.TwinMoon(), new UncommonCards.Skim(), new UncommonCards.Heartseeker(),
                 new UncommonCards.Harvest(), new UncommonCards.Volley(), new UncommonCards.MirrorEdge(),
                 new UncommonCards.Leech(), new UncommonCards.Chain(), new UncommonCards.Sunder(),
@@ -36,7 +36,7 @@ public final class ElfCards {
                 new UncommonCards.Turnabout(), new UncommonCards.Insight(), new UncommonCards.Offering(),
                 new UncommonCards.BowGuard(), new UncommonCards.Bind(), new UncommonCards.Steady(),
                 // rare
-                new PowerCards.MoonAwakening(), new PowerCards.Afterglow(), new PowerCards.Evernight(),
+                new PowerCards.Resonance(), new PowerCards.MoonAwakening(), new PowerCards.Afterglow(), new PowerCards.Evernight(),
                 new PowerCards.CursedHeart(), new PowerCards.LightOath(),
                 new RareCards.ThousandBlades(), new RareCards.Starfall(), new RareCards.Devour(),
                 new RareCards.Echo(), new RareCards.Execution(),

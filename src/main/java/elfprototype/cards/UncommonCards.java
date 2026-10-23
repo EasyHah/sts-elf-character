@@ -41,6 +41,7 @@ public final class UncommonCards {
             super("TwinMoon", 2, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(14, 4),
                     CardTarget.ENEMY, FaceStats.of().damage(3, 1).hits(5, 0));
+            setSeal(Seal.of(Seal.Kind.DAMAGE_RANDOM, 6, 2));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -58,6 +59,7 @@ public final class UncommonCards {
             super("Skim", 0, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(4, 2),
                     CardTarget.ENEMY, FaceStats.of().damage(2, 1).hits(2, 0));
+            setSeal(Seal.of(Seal.Kind.DAMAGE_RANDOM, 3, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -77,6 +79,7 @@ public final class UncommonCards {
             super("Heartseeker", 2, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(16, 4).magic(6, 2),
                     CardTarget.ENEMY, FaceStats.of().damage(5, 1).hits(3, 0).magic2(2, 0));
+            setSeal(Seal.of(Seal.Kind.VULN_RANDOM, 2, 0));
         }
 
         @Override
@@ -100,22 +103,27 @@ public final class UncommonCards {
             super("Harvest", 1, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(8, 3),
                     CardTarget.ENEMY, FaceStats.of().damage(3, 1).hits(3, 0));
+            setSeal(Seal.of(Seal.Kind.ENERGY, 1, 0));
+        }
+
+        /** Light: +3 per cursed card in hand. */
+        @Override
+        protected int bonusDamage(AbstractMonster target) {
+            return isCursed() ? 0 : 3 * Lumen.countInHand(true, this);
+        }
+
+        /** Cursed: one more hit per 2 cursed cards in the discard pile. */
+        @Override
+        protected int bonusHits() {
+            return isCursed() ? Lumen.countInDiscard(true) / 2 : 0;
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
-            addToBot(new DamageThenAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_HEAVY,
-                    (killed, dealt) -> {
-                        if (killed) AbstractDungeon.actionManager.addToTop(new GainEnergyAction(1));
-                    }));
+            hit(m, AttackEffect.SLASH_HEAVY);
         }
 
         protected void useCursed(AbstractPlayer p, AbstractMonster m) {
-            for (int i = 0; i < magicNumber; i++) {
-                addToBot(new DamageThenAction(m, new DamageInfo(p, damage, damageTypeForTurn),
-                        AttackEffect.SLASH_HORIZONTAL, (killed, dealt) -> {
-                            if (killed) AbstractDungeon.actionManager.addToTop(new DrawCardAction(p, 1));
-                        }));
-            }
+            hits(m, AttackEffect.SLASH_HORIZONTAL);
         }
     }
 
@@ -125,6 +133,7 @@ public final class UncommonCards {
             super("Volley", 2, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ALL_ENEMY, FaceStats.of().damage(11, 4).aoe(),
                     CardTarget.ALL_ENEMY, FaceStats.of().damage(3, 1).hits(3, 0).aoe());
+            setSeal(Seal.of(Seal.Kind.DAMAGE_ALL, 3, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -142,6 +151,7 @@ public final class UncommonCards {
             super("MirrorEdge", 1, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(7, 3).block(4, 2),
                     CardTarget.ENEMY, FaceStats.of().damage(3, 1).hits(2, 0));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 4, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -162,6 +172,7 @@ public final class UncommonCards {
             super("Leech", 1, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(7, 3),
                     CardTarget.ENEMY, FaceStats.of().damage(3, 1).hits(3, 0));
+            setSeal(Seal.of(Seal.Kind.HEAL, 2, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -184,6 +195,7 @@ public final class UncommonCards {
             super("Chain", 1, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(5, 2).hits(1, 0),
                     CardTarget.ENEMY, FaceStats.of().damage(2, 1).hits(2, 0));
+            setSeal(Seal.of(Seal.Kind.DAMAGE_RANDOM_TWICE, 2, 1));
         }
 
         @Override
@@ -211,6 +223,7 @@ public final class UncommonCards {
             super("Sunder", 2, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(12, 4),
                     CardTarget.ENEMY, FaceStats.of().damage(4, 1).hits(4, 0));
+            setSeal(Seal.of(Seal.Kind.STRIP_BLOCK_RANDOM, 6, 2));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -229,6 +242,7 @@ public final class UncommonCards {
             super("Shatter", 1, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ALL_ENEMY, FaceStats.of().damage(0, 0).aoe(),
                     CardTarget.ALL_ENEMY, FaceStats.of().damage(1, 1).hits(3, 0).aoe());
+            setSeal(Seal.of(Seal.Kind.DAMAGE_CHIME_ALL, 0, 0));
         }
 
         @Override
@@ -251,6 +265,7 @@ public final class UncommonCards {
             super("Pursuit", 1, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(8, 3),
                     CardTarget.ENEMY, FaceStats.of().damage(3, 1).hits(2, 0));
+            setSeal(Seal.of(Seal.Kind.NEXT_ATTACK, 3, 1));
         }
 
         @Override
@@ -273,6 +288,7 @@ public final class UncommonCards {
             super("Release", 1, CardType.ATTACK, CardRarity.UNCOMMON,
                     CardTarget.ALL_ENEMY, FaceStats.of().magic(3, 1),
                     CardTarget.ALL_ENEMY, FaceStats.of().magic(5, 2));
+            setSeal(Seal.of(Seal.Kind.DAMAGE_ALL, 2, 1));
         }
 
         private void release(AbstractPlayer p) {
@@ -303,7 +319,8 @@ public final class UncommonCards {
         public DarkPact() {
             super("DarkPact", 0, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of().magic(3, -1).exhaust(),
-                    CardTarget.SELF, FaceStats.of().magic(3, -1).exhaust());
+                    CardTarget.SELF, FaceStats.of().magic(6, -1).exhaust());
+            setSeal(Seal.of(Seal.Kind.ENERGY, 1, 0));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -313,7 +330,7 @@ public final class UncommonCards {
 
         protected void useCursed(AbstractPlayer p, AbstractMonster m) {
             addToBot(new LoseHPAction(p, p, magicNumber));
-            addToBot(new GainEnergyAction(2));
+            addToBot(new GainEnergyAction(3)); // bigger price, bigger payoff
         }
     }
 
@@ -322,6 +339,7 @@ public final class UncommonCards {
         public Spread() {
             super("Spread", 1, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of(), CardTarget.SELF, FaceStats.of());
+            setSeal(Seal.of(Seal.Kind.CHIME, 1, 0));
         }
 
         @Override
@@ -344,6 +362,7 @@ public final class UncommonCards {
         public Mirror() {
             super("Mirror", 1, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of(), CardTarget.SELF, FaceStats.of());
+            setSeal(Seal.of(Seal.Kind.BLOCK, 4, 1));
         }
 
         @Override
@@ -377,6 +396,7 @@ public final class UncommonCards {
             super("CurseBarrier", 2, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of().block(14, 4),
                     CardTarget.SELF, FaceStats.of().block(7, 3));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 6, 2));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -394,6 +414,7 @@ public final class UncommonCards {
         public Rewind() {
             super("Rewind", 1, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of(), CardTarget.SELF, FaceStats.of());
+            setSeal(Seal.of(Seal.Kind.BLOCK, 4, 1));
         }
 
         @Override
@@ -416,6 +437,7 @@ public final class UncommonCards {
             super("ForestBreath", 1, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of().magic(3, 1),
                     CardTarget.SELF, FaceStats.of().magic(2, 1));
+            setSeal(Seal.of(Seal.Kind.DRAW, 1, 0));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -435,6 +457,7 @@ public final class UncommonCards {
             super("Turnabout", 0, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of().magic(1, 0).magic2(0, 1),
                     CardTarget.SELF, FaceStats.of().magic(2, 0));
+            setSeal(Seal.of(Seal.Kind.CHIME, 1, 0));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -455,6 +478,7 @@ public final class UncommonCards {
             super("Insight", 1, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of().block(0, 0),
                     CardTarget.SELF, FaceStats.of().cost(1, -1));
+            setSeal(Seal.of(Seal.Kind.BLOCK_CHIME, 0, 0));
         }
 
         @Override
@@ -479,6 +503,7 @@ public final class UncommonCards {
         public Offering() {
             super("Offering", 1, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of(), CardTarget.SELF, FaceStats.of());
+            setSeal(Seal.of(Seal.Kind.BLOCK, 4, 1));
         }
 
         @Override
@@ -495,7 +520,12 @@ public final class UncommonCards {
 
         protected void useCursed(AbstractPlayer p, AbstractMonster m) {
             addToBot(new PickHandAction(uiText(6), 1, c -> true, c -> {
-                AbstractDungeon.actionManager.addToTop(new DrawCardAction(p, 2));
+                if (c.type == CardType.CURSE) {
+                    AbstractDungeon.actionManager.addToTop(new GainEnergyAction(1));
+                    AbstractDungeon.actionManager.addToTop(new DrawCardAction(p, 3));
+                } else {
+                    AbstractDungeon.actionManager.addToTop(new DrawCardAction(p, 2));
+                }
                 AbstractDungeon.actionManager.addToTop(new ExhaustSpecificCardAction(c, p.hand));
             }));
         }
@@ -507,6 +537,7 @@ public final class UncommonCards {
             super("BowGuard", 1, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of().block(8, 3),
                     CardTarget.SELF, FaceStats.of().block(4, 2));
+            setSeal(Seal.of(Seal.Kind.NEXT_TURN_BLOCK, 4, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -527,6 +558,7 @@ public final class UncommonCards {
             super("Bind", 1, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.ENEMY, FaceStats.of().magic(2, 1),
                     CardTarget.ENEMY, FaceStats.of().magic(2, 1));
+            setSeal(Seal.of(Seal.Kind.WEAK_RANDOM, 1, 0));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -545,6 +577,7 @@ public final class UncommonCards {
             super("Steady", 1, CardType.SKILL, CardRarity.UNCOMMON,
                     CardTarget.SELF, FaceStats.of().block(6, 3),
                     CardTarget.SELF, FaceStats.of().magic(2, 1));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 3, 1));
         }
 
         private void noBacklash(AbstractPlayer p) {

@@ -14,6 +14,7 @@ public class StrikeElf extends DualFaceCard {
         super(SIMPLE_ID, 1, CardType.ATTACK, CardRarity.BASIC,
                 CardTarget.ENEMY, FaceStats.of().damage(6, 3),
                 CardTarget.ENEMY, FaceStats.of().damage(4, 1).hits(2, 0));
+        setSeal(Seal.of(Seal.Kind.DAMAGE_RANDOM, 3, 1));
         tags.add(CardTags.STRIKE);
         tags.add(CardTags.STARTER_STRIKE);
     }

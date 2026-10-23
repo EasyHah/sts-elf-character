@@ -3,7 +3,7 @@ package elfprototype.mechanics;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
-/** Queued by a cursed face's use(): turns it light again before UseCardAction moves it back to hand. */
+/** Queued by Cracked Seal / Whole Seal when a cursed face is played: seals it (runs its seal effect) before UseCardAction puts it in the discard pile. */
 public class SealSelfAction extends AbstractGameAction {
     private final AbstractCard card;
 

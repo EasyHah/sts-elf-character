@@ -30,6 +30,7 @@ public final class CommonCards {
             super("ThicketArrow", 1, CardType.ATTACK, CardRarity.COMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(9, 3),
                     CardTarget.ENEMY, FaceStats.of().damage(3, 1).hits(3, 0));
+            setSeal(Seal.of(Seal.Kind.DAMAGE_RANDOM, 4, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -47,6 +48,7 @@ public final class CommonCards {
             super("QuickArrow", 0, CardType.ATTACK, CardRarity.COMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(3, 2),
                     CardTarget.ENEMY, FaceStats.of().damage(2, 1).hits(2, 0));
+            setSeal(Seal.of(Seal.Kind.DAMAGE_RANDOM, 3, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -56,6 +58,7 @@ public final class CommonCards {
 
         protected void useCursed(AbstractPlayer p, AbstractMonster m) {
             hits(m, AttackEffect.SLASH_HORIZONTAL);
+            draw(1); // v5: the cursed face must not be worse than the light one
         }
     }
 
@@ -65,6 +68,7 @@ public final class CommonCards {
             super("ScatterShot", 1, CardType.ATTACK, CardRarity.COMMON,
                     CardTarget.ALL_ENEMY, FaceStats.of().damage(6, 3).aoe(),
                     CardTarget.ALL_ENEMY, FaceStats.of().damage(2, 1).hits(3, 0).aoe());
+            setSeal(Seal.of(Seal.Kind.DAMAGE_ALL, 2, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -82,6 +86,7 @@ public final class CommonCards {
             super("SnareShot", 1, CardType.ATTACK, CardRarity.COMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(7, 2).magic2(1, 1),
                     CardTarget.ENEMY, FaceStats.of().damage(3, 1).hits(2, 0).magic2(1, 1));
+            setSeal(Seal.of(Seal.Kind.WEAK_RANDOM, 1, 0));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -101,6 +106,7 @@ public final class CommonCards {
             super("ChargedShot", 2, CardType.ATTACK, CardRarity.COMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(12, 4),
                     CardTarget.ENEMY, FaceStats.of().damage(5, 1).hits(3, 0));
+            setSeal(Seal.of(Seal.Kind.NEXT_LIGHT_ATTACK, 4, 2));
         }
 
         @Override
@@ -123,6 +129,7 @@ public final class CommonCards {
             super("CorruptingEdge", 1, CardType.ATTACK, CardRarity.COMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(6, 3),
                     CardTarget.ENEMY, FaceStats.of().damage(3, 1).hits(2, 0));
+            setSeal(Seal.of(Seal.Kind.ERODE, 1, 0));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -142,6 +149,7 @@ public final class CommonCards {
             super("GladeThrust", 1, CardType.ATTACK, CardRarity.COMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(5, 2).block(5, 2),
                     CardTarget.ENEMY, FaceStats.of().damage(2, 1).hits(4, 0));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 4, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -160,6 +168,7 @@ public final class CommonCards {
             super("Riposte", 1, CardType.ATTACK, CardRarity.COMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(6, 3),
                     CardTarget.ENEMY, FaceStats.of().damage(4, 1).hits(2, 0));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 3, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -179,6 +188,7 @@ public final class CommonCards {
             super("EmberShot", 1, CardType.ATTACK, CardRarity.COMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(4, 2),
                     CardTarget.ENEMY, FaceStats.of().damage(1, 1).hits(4, 0));
+            setSeal(Seal.of(Seal.Kind.CHIME, 1, 0));
         }
 
         @Override
@@ -201,6 +211,7 @@ public final class CommonCards {
             super("Recoil", 1, CardType.ATTACK, CardRarity.COMMON,
                     CardTarget.ENEMY, FaceStats.of().damage(7, 3),
                     CardTarget.ENEMY, FaceStats.of().damage(3, 1).hits(2, 0));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 3, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -226,6 +237,7 @@ public final class CommonCards {
             super("LeafWard", 1, CardType.SKILL, CardRarity.COMMON,
                     CardTarget.SELF, FaceStats.of().block(8, 3),
                     CardTarget.SELF, FaceStats.of().block(4, 2));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 4, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -244,6 +256,7 @@ public final class CommonCards {
             super("HoldBreath", 1, CardType.SKILL, CardRarity.COMMON,
                     CardTarget.SELF, FaceStats.of().block(6, 3),
                     CardTarget.SELF, FaceStats.of().magic(2, 1));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 4, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -262,6 +275,7 @@ public final class CommonCards {
             super("SealingRite", 1, CardType.SKILL, CardRarity.COMMON,
                     CardTarget.SELF, FaceStats.of().block(5, 3),
                     CardTarget.SELF, FaceStats.of().magic(2, 1));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 3, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -281,6 +295,7 @@ public final class CommonCards {
             super("Invite", 1, CardType.SKILL, CardRarity.COMMON,
                     CardTarget.SELF, FaceStats.of(),
                     CardTarget.SELF, FaceStats.of());
+            setSeal(Seal.of(Seal.Kind.CHIME, 1, 0));
         }
 
         @Override
@@ -304,7 +319,8 @@ public final class CommonCards {
         public Moonstep() {
             super("Moonstep", 0, CardType.SKILL, CardRarity.COMMON,
                     CardTarget.SELF, FaceStats.of().block(3, 2),
-                    CardTarget.SELF, FaceStats.of().block(2, 2));
+                    CardTarget.SELF, FaceStats.of().block(4, 2));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 2, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -329,6 +345,7 @@ public final class CommonCards {
             super("PurifyingLight", 1, CardType.SKILL, CardRarity.COMMON,
                     CardTarget.SELF, FaceStats.of().magic(3, 1),
                     CardTarget.SELF, FaceStats.of().cost(1, -1));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 3, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -353,6 +370,7 @@ public final class CommonCards {
             super("CurseWard", 1, CardType.SKILL, CardRarity.COMMON,
                     CardTarget.SELF, FaceStats.of().block(7, 3).magic(3, 1),
                     CardTarget.SELF, FaceStats.of().block(0, 0).magic(4, 1));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 4, 1));
         }
 
         @Override
@@ -375,6 +393,7 @@ public final class CommonCards {
             super("Premonition", 1, CardType.SKILL, CardRarity.COMMON,
                     CardTarget.SELF, FaceStats.of().magic(3, 1),
                     CardTarget.SELF, FaceStats.of().magic(3, 1));
+            setSeal(Seal.of(Seal.Kind.BLOCK, 3, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -392,6 +411,7 @@ public final class CommonCards {
             super("Nock", 0, CardType.SKILL, CardRarity.COMMON,
                     CardTarget.SELF, FaceStats.of().magic(5, 3),
                     CardTarget.SELF, FaceStats.of().magic(2, 1));
+            setSeal(Seal.of(Seal.Kind.NEXT_ATTACK, 3, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {
@@ -409,6 +429,7 @@ public final class CommonCards {
             super("Unbind", 0, CardType.SKILL, CardRarity.COMMON,
                     CardTarget.SELF, FaceStats.of().magic(1, 0).magic2(1, 1),
                     CardTarget.SELF, FaceStats.of().magic(2, 0).magic2(0, 1));
+            setSeal(Seal.of(Seal.Kind.NEXT_TURN_BLOCK, 3, 1));
         }
 
         protected void useLight(AbstractPlayer p, AbstractMonster m) {

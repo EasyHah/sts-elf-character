@@ -5,7 +5,7 @@
       "erode",
       "eroded"
     ],
-    "DESCRIPTION": "Flip a light card to its cursed face. Cursed faces are stronger, #ySeal themselves after being played (then go to the discard pile), and #yBacklash if still in hand at end of turn."
+    "DESCRIPTION": "Flip a light card to its cursed face. Cursed faces are stronger, stay cursed after being played, and #yBacklash if still in hand at end of turn."
   },
   {
     "PROPER_NAME": "Seal",
@@ -13,7 +13,7 @@
       "seal",
       "sealed"
     ],
-    "DESCRIPTION": "Flip a cursed card back to its light face."
+    "DESCRIPTION": "Flip a cursed card back to its light face and trigger its Seal effect. The only way to turn a cursed card light again."
   },
   {
     "PROPER_NAME": "Flip",

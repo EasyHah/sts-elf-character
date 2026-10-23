@@ -16,7 +16,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Core rules of design v4: erode (light -> cursed), seal (cursed -> light), chime (flips this turn), backlash.
+ * Core rules (design v5): erode (light -> cursed), seal (cursed -> light, runs the seal effect), chime (flips this
+ * turn), backlash. A played cursed face stays cursed; only a seal turns it back.
  * Every flip goes through here so chime, listeners and card numbers stay in sync. Call only from inside actions.
  */
 public final class Lumen {
@@ -69,11 +70,42 @@ public final class Lumen {
     }
 
     public static void seal(AbstractCard c, boolean auto) {
+        seal(c, auto, 1);
+    }
+
+    /**
+     * Cursed -> light, then the card's seal effect runs `times` times (Great Seal: twice).
+     * auto = sealed by a relic right after it was played (Cracked Seal / Whole Seal); still runs the effect.
+     */
+    public static void seal(AbstractCard c, boolean auto, int times) {
         if (!canSeal(c)) return;
-        ((DualFaceCard) c).setCursed(false);
-        if (!auto) c.superFlash(SEAL_COLOR.cpy());
+        DualFaceCard card = (DualFaceCard) c;
+        card.setCursed(false);
+        c.superFlash(SEAL_COLOR.cpy());
         addChime(1);
+        for (int i = 0; i < times; i++) card.triggerSeal(AbstractDungeon.player);
         for (SealListener l : listeners()) l.onSeal(c, auto);
+    }
+
+    /** Cleans up to n cursed cards in the discard pile: light again, no seal effect, no chime (Great Seal cursed). */
+    public static int cleanseDiscard(int n) {
+        int done = 0;
+        for (AbstractCard c : new ArrayList<>(AbstractDungeon.player.discardPile.group)) {
+            if (done >= n) break;
+            if (canSeal(c)) {
+                ((DualFaceCard) c).setCursed(false);
+                done++;
+            }
+        }
+        return done;
+    }
+
+    public static int countInDiscard(boolean cursed) {
+        int n = 0;
+        for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
+            if (cursed ? canSeal(c) : canErode(c)) n++;
+        }
+        return n;
     }
 
     /** Erodes the leftmost light cards in hand (CreepingCurse, DuskGauntlet, CursedCrown). Returns how many. */
@@ -91,10 +123,14 @@ public final class Lumen {
 
     /** Seals every cursed card in hand. Returns how many were sealed. */
     public static int sealAllInHand() {
+        return sealAllInHand(1);
+    }
+
+    public static int sealAllInHand(int effectTimes) {
         int n = 0;
         for (AbstractCard c : new ArrayList<>(AbstractDungeon.player.hand.group)) {
             if (canSeal(c)) {
-                seal(c, false);
+                seal(c, false, effectTimes);
                 n++;
             }
         }
@@ -119,15 +155,6 @@ public final class Lumen {
             if (c != except && (cursed ? canSeal(c) : canErode(c))) n++;
         }
         return n;
-    }
-
-    /**
-     * Called from DualFaceCard.use() for a cursed face: it turns light again after it resolves and then goes to the
-     * discard pile like any other card (rule changed 2026-10-23: it used to return to hand, which let two cards that
-     * erode each other loop for free).
-     */
-    public static void queueAutoSeal(DualFaceCard c) {
-        AbstractDungeon.actionManager.addToBottom(new SealSelfAction(c));
     }
 
     /** Raises chime by n right away (flips, Avatar, Overflow, Execution). */

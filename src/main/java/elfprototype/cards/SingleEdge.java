@@ -16,6 +16,7 @@ public class SingleEdge extends DualFaceCard {
         super(SIMPLE_ID, 1, CardType.ATTACK, CardRarity.BASIC,
                 CardTarget.ENEMY, FaceStats.of().damage(7, 3),
                 CardTarget.ENEMY, FaceStats.of().damage(3, 1).hits(3, 0));
+        setSeal(Seal.of(Seal.Kind.NEXT_ATTACK, 3, 1));
     }
 
     @Override
