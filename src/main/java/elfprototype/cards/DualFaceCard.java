@@ -49,6 +49,8 @@ public abstract class DualFaceCard extends CustomCard {
     public boolean alwaysExhaust;
     private boolean[] lightUpgrades = new boolean[3];
     private boolean[] cursedUpgrades = new boolean[3];
+    /** True while a hover preview (the other face) is being built, so the preview gets no preview of its own. */
+    private static boolean buildingPreview;
 
     protected DualFaceCard(String simpleId, int cost, CardType type, CardRarity rarity,
                            CardTarget lightTarget, FaceStats light, CardTarget cursedTarget, FaceStats cursed) {
@@ -126,6 +128,23 @@ public abstract class DualFaceCard extends CustomCard {
         setOrbTexture(bg + "energy_orb.png", bg + "energy_orb_p.png");
         initializeTitle();
         initializeDescription();
+        if (!buildingPreview) refreshOtherFacePreview();
+    }
+
+    /**
+     * Hovering a card shows the other face next to it (the game's cardsToPreview, like the vanilla Shiv preview),
+     * with the same upgrade state. Rebuilt whenever this card's face or upgrade changes.
+     */
+    private void refreshOtherFacePreview() {
+        buildingPreview = true;
+        try {
+            DualFaceCard other = (DualFaceCard) makeCopy();
+            if (upgraded) other.upgrade();
+            other.forceFace(!cursedFace);
+            cardsToPreview = other;
+        } finally {
+            buildingPreview = false;
+        }
     }
 
     @Override
